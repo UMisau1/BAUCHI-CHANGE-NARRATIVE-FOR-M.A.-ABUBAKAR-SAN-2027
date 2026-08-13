@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ==========================================
+         META
+    =========================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dashboard | M.A. ABUBAKAR, SAN, Campaign Management System</title>
+
+    <!-- ==========================================
+         GOOGLE FONTS
+    =========================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- ==========================================
+         FONT AWESOME
+    =========================================== -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- ==========================================
+         CSS FILES
+    =========================================== -->
+
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+<body>
+
+<!-- ==========================================
+     SIDEBAR
+========================================== -->
+
+<aside class="sidebar">
+
+    <div class="logo">
+
+        <img src="images/m.a.-photo.jpg" alt="Logo">
+
+        <h2>M.A. SAN, CMS</h2>
+
+    </div>
+
+    <ul>
+
+        <li class="active">
+            <i class="fa-solid fa-house"></i>
+            Dashboard
+        </li>
+
+        <li>
+            <i class="fa-solid fa-chart-line"></i>
+            Situation Room
+        </li>
+
+        <li>
+            <i class="fa-solid fa-users"></i>
+            Members
+        </li>
+
+        <li>
+            <i class="fa-solid fa-user-group"></i>
+            Volunteers
+        </li>
+
+        <li>
+            <i class="fa-solid fa-map-location-dot"></i>
+            LGAs
+        </li>
+
+        <li>
+            <i class="fa-solid fa-location-dot"></i>
+            Wards
+        </li>
+
+        <li>
+            <i class="fa-solid fa-check-to-slot"></i>
+            Polling Units
+        </li>
+
+        <li>
+            <i class="fa-solid fa-file-lines"></i>
+            Reports
+        </li>
+
+        <li>
+            <i class="fa-solid fa-calendar-days"></i>
+            Events
+        </li>
+
+        <li>
+            <i class="fa-solid fa-folder-open"></i>
+            Documents
+        </li>
+
+        <li>
+            <i class="fa-solid fa-chart-pie"></i>
+            Analytics
+        </li>
+
+        <li>
+            <i class="fa-solid fa-gear"></i>
+            Settings
+        </li>
+
+        <li>
+            <i class="fa-solid fa-right-from-bracket"></i>
+            Logout
+        </li>
+
+    </ul>
+
+</aside>
+
+
+<div class="main-content">
+
+    <!-- ==========================================
+         TOPBAR
+    =========================================== -->
+
+    <header class="topbar">
+
+        <!-- Topbar Left -->
+        <div class="topbar-left">
+
+            <button id="menuToggle">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <h1>Dashboard</h1>
+
+        </div>
+
+        <!-- Search -->
+        <div class="search-box">
+
+            <i class="fa-solid fa-search"></i>
+
+            <input
+                type="text"
+                placeholder="Search members, reports...">
+
+        </div>
+
+        <!-- Right -->
+        <div class="topbar-right">
+
+            <div class="notification">
+
+                <button class="icon-btn" id="notificationBtn">
+
+                    <i class="fa-solid fa-bell"></i>
+
+                    <span class="badge">5</span>
+
+                </button>
+
+                <div class="notification-menu" id="notificationMenu">
+
+                    <h3>Notifications</h3>
+
+                    <hr>
+
+                    <div class="notification-item">
+
+                        <strong>New Member Registered</strong>
+
+                        <small>2 minutes ago</small>
+
+                    </div>
+
+                    <div class="notification-item">
+
+                        <strong>Situation Report Received</strong>
+
+                        <small>10 minutes ago</small>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="profile">
+
+                <img src="images/admin.jpg" alt="Admin">
+
+                <div>
+
+                    <strong>Administrator</strong>
+
+                    <br>
+
+                    <small id="currentDate"></small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- ==========================================
+         DASHBOARD CARDS
+    =========================================== -->
+
+    <section class="cards">
+
+        <div class="card">
+
+            <h3>Total Members</h3>
+
+            <h2 id="membersCount">0</h2>
+
+            <small>Registered Members</small>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Volunteers</h3>
+
+            <h2 id="volunteersCount">0</h2>
+
+            <small>Active Volunteers</small>
+
+        </div>
+
+        <div class="card">
+
+            <h3>LGAs Covered</h3>
+
+            <h2 id="lgasCount">0</h2>
+
+            <small>Across Bauchi State</small>
+
+        </div>
+
+        <div class="card">
+
+            <h3>Reports Today</h3>
+
+            <h2 id="reportsCount">0</h2>
+
+            <small>Today's Situation Reports</small>
+
+        </div>
+
+    </section>
+</header>
+
+<!-- ==========================================
+     QUICK ACTIONS
+========================================== -->
+
+<section class="quick-actions">
+
+    <div class="quick-card">
+        <i class="fa-solid fa-user-plus"></i>
+        <h3>Add Member</h3>
+        <p>Register a new campaign member.</p>
+    </div>
+
+    <div class="quick-card">
+        <i class="fa-solid fa-user-group"></i>
+        <h3>Add Volunteer</h3>
+        <p>Create a new volunteer profile.</p>
+    </div>
+
+    <div class="quick-card">
+        <i class="fa-solid fa-file-circle-plus"></i>
+        <h3>New Report</h3>
+        <p>Submit a situation report.</p>
+    </div>
+
+    <div class="quick-card">
+        <i class="fa-solid fa-calendar-plus"></i>
+        <h3>Create Event</h3>
+        <p>Schedule campaign activities.</p>
+    </div>
+
+</section>
+<!-- ==========================================
+     CHART AREA
+========================================== -->
+
+<section class="chart-section">
+
+<div class="chart-box">
+
+<h2>Membership Growth</h2>
+
+<canvas id="membersChart"></canvas>
+
+</div>
+
+<div class="chart-box">
+
+<h2>Volunteer Growth</h2>
+
+<canvas id="volunteerChart"></canvas>
+
+</div>
+
+</section>
+
+<!-- ==========================================
+     RECENT REPORTS
+========================================== -->
+
+<section class="table-section">
+
+<h2>Latest Reports</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Time</th>
+
+<th>LGA</th>
+
+<th>Ward</th>
+
+<th>Reporter</th>
+
+<th>Status</th>
+
+</tr>
+
+</thead>
+<script src="js/sidebar.js"></script>
+
+<tbody>
+
+<tr>
+
+<td>08:15 AM</td>
+
+<td>Misau</td>
+
+<td>Hardawa</td>
+
+<td>Coordinator</td>
+
+<td>Received</td>
+
+</tr>
+
+<tr>
+
+<td>09:05 AM</td>
+
+<td>Ningi</td>
+
+<td>Bashe</td>
+
+<td>Volunteer</td>
+
+<td>Pending</td>
+
+</tr>
+
+<tr>
+
+<td>10:40 AM</td>
+
+<td>Katagum</td>
+
+<td>Madara</td>
+
+<td>Coordinator</td>
+
+<td>Completed</td>
+
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+<!-- ==========================================
+     FOOTER
+========================================== -->
+
+<footer>
+
+<p>
+
+© 2026 BAUCHI CHANGE NARRATIVE FOR M.A. ABUBAKAR SAN 2027 Campaign Management System
+
+</p>
+
+</footer>
+
+</div>
+
+
+
+<!-- ==========================================
+     CHART.JS
+========================================== -->
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<!-- ==========================================
+     DASHBOARD JS
+========================================== -->
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="js/dashboard.js"></script>
+
+<script src="js/sidebar.js"></script>
+
+
+</body>
+
+</html>

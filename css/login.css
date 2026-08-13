@@ -1,0 +1,367 @@
+/* ==========================================
+   GOOGLE FONT & RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:20px;
+
+}
+
+
+/* ==========================================
+   LOGIN CONTAINER
+========================================== */
+
+.login-container{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+/* ==========================================
+   LOGIN CARD
+========================================== */
+
+.login-card{
+
+    width:100%;
+
+    max-width:430px;
+
+    background:#ffffff;
+
+    border-radius:18px;
+
+    padding:40px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.20);
+
+    text-align:center;
+
+}
+
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.logo img{
+
+    width:90px;
+
+    height:90px;
+
+    object-fit:contain;
+
+    margin-bottom:15px;
+
+}
+
+
+/* ==========================================
+   TITLES
+========================================== */
+
+.login-title{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#0f172a;
+
+    margin-bottom:6px;
+
+}
+
+.login-subtitle{
+
+    color:#555;
+
+    margin-bottom:20px;
+
+}
+
+.login-heading{
+
+    color:#2563eb;
+
+    margin-bottom:25px;
+
+    font-size:22px;
+
+}
+
+
+/* ==========================================
+   FORM
+========================================== */
+
+.login-form{
+
+    text-align:left;
+
+}
+
+.form-group{
+
+    margin-bottom:20px;
+
+}
+
+.form-group label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+}
+
+
+/* ==========================================
+   INPUT BOX
+========================================== */
+
+.input-box{
+
+    display:flex;
+
+    align-items:center;
+
+    border:1px solid #d1d5db;
+
+    border-radius:10px;
+
+    padding:0 15px;
+
+    height:52px;
+
+    transition:.3s;
+
+}
+
+.input-box:focus-within{
+
+    border-color:#2563eb;
+
+    box-shadow:0 0 0 3px rgba(37,99,235,.15);
+
+}
+
+.input-box i{
+
+    color:#777;
+
+    margin-right:10px;
+
+}
+
+.input-box input{
+
+    border:none;
+
+    outline:none;
+
+    width:100%;
+
+    font-size:15px;
+
+    background:transparent;
+
+}
+
+
+/* ==========================================
+   PASSWORD ICON
+========================================== */
+
+#togglePassword{
+
+    cursor:pointer;
+
+    color:#666;
+
+    margin-left:10px;
+
+}
+
+
+/* ==========================================
+   OPTIONS
+========================================== */
+
+.login-options{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+    font-size:14px;
+
+}
+
+.remember-me{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+}
+
+.forgot-password{
+
+    text-decoration:none;
+
+    color:#2563eb;
+
+    font-weight:600;
+
+}
+
+.forgot-password:hover{
+
+    text-decoration:underline;
+
+}
+
+
+/* ==========================================
+   ERROR MESSAGE
+========================================== */
+
+#errorMessage{
+
+    color:#dc2626;
+
+    text-align:center;
+
+    margin-bottom:15px;
+
+    min-height:20px;
+
+}
+
+
+/* ==========================================
+   LOGIN BUTTON
+========================================== */
+
+.login-btn{
+
+    width:100%;
+
+    height:52px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#2563eb;
+
+    color:#fff;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.login-btn:hover{
+
+    background:#1d4ed8;
+
+    transform:translateY(-2px);
+
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.login-footer{
+
+    text-align:center;
+
+    margin-top:30px;
+
+    color:#666;
+
+    font-size:13px;
+
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:480px){
+
+.login-card{
+
+padding:25px;
+
+}
+
+.login-title{
+
+font-size:24px;
+
+}
+
+.login-heading{
+
+font-size:20px;
+
+}
+
+.login-options{
+
+flex-direction:column;
+
+gap:12px;
+
+align-items:flex-start;
+
+}
+
+}

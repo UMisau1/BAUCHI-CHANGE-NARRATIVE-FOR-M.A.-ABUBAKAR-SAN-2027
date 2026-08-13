@@ -1,0 +1,543 @@
+/* =====================================
+   RESPONSIVE CSS
+===================================== */
+
+/* =====================================
+   LARGE TABLETS & SMALL LAPTOPS
+===================================== */
+
+@media (max-width:1024px){
+
+    .container{
+
+        width:92%;
+
+    }
+
+    .hero-container{
+
+        grid-template-columns:1fr;
+        text-align:center;
+        gap:40px;
+
+    }
+
+    .hero-content p{
+
+        margin:auto auto 30px;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+    }
+
+    .hero-image img{
+
+        max-width:350px;
+
+    }
+
+    .counter-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .about-grid{
+
+        grid-template-columns:1fr;
+        text-align:center;
+
+    }
+
+    .manifesto-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .achievement-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .gallery-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .news-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .testimonial-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .leadership-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .footer-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .contact-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+/* =====================================
+   TABLETS
+===================================== */
+
+@media (max-width:768px){
+
+    section{
+
+        padding:60px 0;
+
+    }
+
+    .section-title h2{
+
+        font-size:2rem;
+
+    }
+
+    .header .container{
+
+        flex-direction:column;
+        gap:20px;
+
+    }
+
+    .logo-area{
+
+        flex-direction:column;
+        text-align:center;
+
+    }
+
+    .site-title h1{
+
+        font-size:1.4rem;
+
+    }
+
+    .navbar .container{
+
+        justify-content:center;
+
+    }
+
+    .nav-links{
+
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+        padding:15px 0;
+
+    }
+
+    .hero{
+
+        min-height:auto;
+        padding:80px 0;
+
+    }
+
+    .hero-content h1{
+
+        font-size:2.5rem;
+
+    }
+
+    .hero-content h2{
+
+        font-size:1.5rem;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:column;
+        align-items:center;
+
+    }
+
+    .btn{
+
+        width:220px;
+        text-align:center;
+
+    }
+
+    .counter-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .manifesto-grid,
+    .achievement-grid,
+    .gallery-grid,
+    .news-grid,
+    .testimonial-grid,
+    .leadership-grid,
+    .footer-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .countdown-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .join-box{
+
+        padding:40px 25px;
+
+    }
+
+    .join-buttons{
+
+        flex-direction:column;
+        align-items:center;
+
+    }
+
+}
+
+/* =====================================
+   MOBILE PHONES
+===================================== */
+
+@media (max-width:576px){
+
+    .container{
+
+        width:95%;
+
+    }
+
+    .section-title h2{
+
+        font-size:1.7rem;
+
+    }
+
+    .hero-content h1{
+
+        font-size:2rem;
+
+    }
+
+    .hero-content h2{
+
+        font-size:1.2rem;
+
+    }
+
+    .hero-content p{
+
+        font-size:1rem;
+
+    }
+
+    .counter-card h2{
+
+        font-size:2rem;
+
+    }
+
+    .time-box{
+
+        padding:25px 15px;
+
+    }
+
+    .time-box span{
+
+        font-size:2rem;
+
+    }
+
+    .leader-card img{
+
+        height:240px;
+
+    }
+
+    .gallery-grid img{
+
+        height:220px;
+
+    }
+
+    .news-card img{
+
+        height:200px;
+
+    }
+
+    .video-wrapper{
+
+        border-radius:10px;
+
+    }
+
+    .footer{
+
+        text-align:center;
+
+    }
+
+    .footer-social{
+
+        margin-top:20px;
+
+    }
+
+    .footer-social a{
+
+        margin:5px;
+
+    }
+
+    .whatsapp-float{
+
+        width:55px;
+        height:55px;
+        font-size:26px;
+        right:15px;
+        bottom:15px;
+
+    }
+
+    #backToTop{
+
+        width:45px;
+        height:45px;
+        right:15px;
+        bottom:80px;
+
+    }
+
+}
+/* =====================================
+   SMALL MOBILE DEVICES
+===================================== */
+
+@media (max-width:400px){
+
+    .logo{
+
+        width:55px;
+
+    }
+
+    .site-title h1{
+
+        font-size:1.15rem;
+
+    }
+
+    .site-title p{
+
+        font-size:.85rem;
+
+    }
+
+    .hero-content h1{
+
+        font-size:1.7rem;
+
+    }
+
+    .hero-content h2{
+
+        font-size:1rem;
+
+    }
+
+    .hero-content p{
+
+        font-size:.95rem;
+
+    }
+
+    .btn{
+
+        width:100%;
+        padding:14px 20px;
+
+    }
+
+    .section-title h2{
+
+        font-size:1.5rem;
+
+    }
+
+    .countdown-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .time-box{
+
+        padding:20px;
+
+    }
+
+    .time-box span{
+
+        font-size:1.8rem;
+
+    }
+
+}
+
+/* =====================================
+   LANDSCAPE PHONES
+===================================== */
+
+@media (max-height:500px) and (orientation:landscape){
+
+    .hero{
+
+        min-height:auto;
+        padding:80px 0;
+
+    }
+
+    .hero-container{
+
+        gap:30px;
+
+    }
+
+    .hero-image img{
+
+        max-width:250px;
+
+    }
+
+}
+
+/* =====================================
+   EXTRA LARGE SCREENS
+===================================== */
+
+@media (min-width:1400px){
+
+    .container{
+
+        max-width:1320px;
+
+    }
+
+}
+
+/* =====================================
+   ACCESSIBILITY
+===================================== */
+
+html{
+
+    -webkit-text-size-adjust:100%;
+
+}
+
+button,
+input,
+select,
+textarea{
+
+    font:inherit;
+
+}
+
+img,
+video{
+
+    max-width:100%;
+    height:auto;
+
+}
+
+/* =====================================
+   SMOOTH TRANSITIONS
+===================================== */
+
+*{
+
+    transition:
+    background-color .3s ease,
+    color .3s ease,
+    border-color .3s ease,
+    transform .3s ease;
+
+}
+@media(max-width:768px){
+
+.count-box{
+
+    width:140px;
+
+}
+
+.count-box h2{
+
+    font-size:2.3rem;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.count-box{
+
+    width:120px;
+
+    padding:25px;
+
+}
+
+.count-box h2{
+
+    font-size:2rem;
+
+}
+
+}
+@media(max-width:768px){
+
+.media-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}

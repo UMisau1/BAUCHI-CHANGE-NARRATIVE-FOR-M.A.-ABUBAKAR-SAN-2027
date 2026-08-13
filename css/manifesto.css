@@ -1,0 +1,547 @@
+/* ==========================================
+   MANIFESTO PAGE STYLESHEET
+========================================== */
+
+
+/* ==========================================
+   PAGE BANNER
+========================================== */
+
+.page-banner{
+
+    background:linear-gradient(rgba(0,135,81,.90),
+    rgba(0,135,81,.90)),
+    url("../images/manifesto-banner.jpg")
+    center/cover no-repeat;
+
+    padding:120px 0;
+
+    text-align:center;
+
+    color:#fff;
+
+}
+
+.page-banner h1{
+
+    font-size:3rem;
+
+    color:#fff;
+
+    margin-bottom:15px;
+
+}
+
+.page-banner p{
+
+    font-size:1.1rem;
+
+    color:#f5f5f5;
+
+}
+
+
+/* ==========================================
+   INTRODUCTION
+========================================== */
+
+.manifesto-intro{
+
+    padding:80px 0;
+
+    background:#fff;
+
+}
+
+.manifesto-intro .section-title{
+
+    max-width:850px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.manifesto-intro .section-title h2{
+
+    color:#008751;
+
+    margin-bottom:20px;
+
+}
+
+.manifesto-intro .section-title p{
+
+    line-height:1.9;
+
+    color:#555;
+
+}
+
+
+/* ==========================================
+   MANIFESTO GRID
+========================================== */
+
+.manifesto-page{
+
+    padding:90px 0;
+
+    background:#f8f9fa;
+
+}
+
+.manifesto-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+}
+
+.manifesto-card{
+
+    background:#fff;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    border-top:5px solid transparent;
+
+}
+
+.manifesto-card:hover{
+
+    transform:translateY(-10px);
+
+    border-top-color:#008751;
+
+}
+
+.manifesto-icon{
+
+    width:80px;
+
+    height:80px;
+
+    border-radius:50%;
+
+    background:#008751;
+
+    color:#fff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:2rem;
+
+    margin-bottom:25px;
+
+}
+
+.manifesto-card h3{
+
+    color:#008751;
+
+    margin-bottom:15px;
+
+}
+
+.manifesto-card p{
+
+    color:#555;
+
+    line-height:1.9;
+
+}
+/* ==========================================
+   IMPLEMENTATION PLAN
+========================================== */
+
+.implementation-plan{
+
+    padding:90px 0;
+
+    background:#ffffff;
+
+}
+
+.plan-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+    margin-top:50px;
+
+}
+
+.plan-card{
+
+    position:relative;
+
+    background:#fff;
+
+    padding:35px 30px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    overflow:hidden;
+
+}
+
+.plan-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.plan-number{
+
+    width:70px;
+
+    height:70px;
+
+    margin:0 auto 25px;
+
+    background:#008751;
+
+    color:#fff;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:1.4rem;
+
+    font-weight:700;
+
+}
+
+.plan-card h3{
+
+    color:#008751;
+
+    margin-bottom:15px;
+
+}
+
+.plan-card p{
+
+    color:#555;
+
+    line-height:1.8;
+
+}
+
+
+/* ==========================================
+   CALL TO ACTION
+========================================== */
+
+.manifesto-cta{
+
+    padding:100px 0;
+
+    background:linear-gradient(
+        135deg,
+        #008751,
+        #006b40
+    );
+
+    text-align:center;
+
+    color:#fff;
+
+}
+
+.manifesto-cta .cta-content{
+
+    max-width:850px;
+
+    margin:auto;
+
+}
+
+.manifesto-cta h2{
+
+    color:#fff;
+
+    font-size:2.8rem;
+
+    margin-bottom:20px;
+
+}
+
+.manifesto-cta p{
+
+    color:#f4f4f4;
+
+    line-height:1.9;
+
+    font-size:1.1rem;
+
+    margin-bottom:35px;
+
+}
+
+.cta-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.cta-buttons .btn{
+
+    min-width:220px;
+
+}
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+@media (max-width:992px){
+
+.page-banner{
+
+    padding:100px 0;
+
+}
+
+.page-banner h1{
+
+    font-size:2.5rem;
+
+}
+
+.manifesto-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.plan-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+@media (max-width:768px){
+
+.page-banner{
+
+    padding:90px 0;
+
+}
+
+.page-banner h1{
+
+    font-size:2.2rem;
+
+}
+
+.manifesto-intro,
+
+.manifesto-page,
+
+.implementation-plan,
+
+.manifesto-cta{
+
+    padding:70px 0;
+
+}
+
+.manifesto-grid,
+
+.plan-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.manifesto-card{
+
+    padding:30px;
+
+}
+
+.manifesto-icon{
+
+    width:70px;
+
+    height:70px;
+
+    font-size:1.8rem;
+
+}
+
+.manifesto-cta h2{
+
+    font-size:2rem;
+
+}
+
+}
+
+
+@media (max-width:576px){
+
+.page-banner{
+
+    padding:70px 0;
+
+}
+
+.page-banner h1{
+
+    font-size:1.8rem;
+
+}
+
+.page-banner p{
+
+    font-size:1rem;
+
+}
+
+.manifesto-card{
+
+    padding:25px;
+
+}
+
+.plan-card{
+
+    padding:25px;
+
+}
+
+.plan-number{
+
+    width:60px;
+
+    height:60px;
+
+    font-size:1.2rem;
+
+}
+
+.manifesto-cta{
+
+    padding:60px 0;
+
+}
+
+.manifesto-cta h2{
+
+    font-size:1.7rem;
+
+}
+
+.manifesto-cta p{
+
+    font-size:.95rem;
+
+}
+
+.cta-buttons{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+.cta-buttons .btn{
+
+    width:100%;
+
+}
+
+}
+
+
+@media (max-width:400px){
+
+.page-banner h1{
+
+    font-size:1.5rem;
+
+}
+
+.manifesto-icon{
+
+    width:60px;
+
+    height:60px;
+
+    font-size:1.5rem;
+
+}
+
+.manifesto-card h3{
+
+    font-size:1.2rem;
+
+}
+
+.plan-card h3{
+
+    font-size:1.2rem;
+
+}
+
+.plan-card p,
+
+.manifesto-card p{
+
+    font-size:.92rem;
+
+}
+
+.manifesto-cta h2{
+
+    font-size:1.5rem;
+
+}
+
+}
+
+
+/* ==========================================
+   END OF MANIFESTO.CSS
+========================================== */

@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Members | M.A. ABUBAKAR, SAN, Campaign Management System</title>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="css/members.css">
+
+</head>
+
+<body>
+
+<!-- ===============================
+        DASHBOARD WRAPPER
+================================ -->
+
+<div class="dashboard">
+
+<!-- ===============================
+            SIDEBAR
+================================ -->
+
+<aside class="sidebar">
+
+    <div class="logo">
+
+        <img src="images/logo.png"
+             alt="M.A. SAN Logo">
+
+        <h2>M.A. SAN CMS</h2>
+
+    </div>
+
+    <ul class="sidebar-menu">
+
+        <li>
+
+            <a href="dashboard.html">
+
+                <i class="fas fa-home"></i>
+
+                Dashboard
+
+            </a>
+
+        </li>
+
+        <li class="active">
+
+            <a href="members.html">
+
+                <i class="fas fa-users"></i>
+
+                Members
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="volunteers.html">
+
+                <i class="fas fa-user-friends"></i>
+
+                Volunteers
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="events.html">
+
+                <i class="fas fa-calendar-alt"></i>
+
+                Events
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="reports.html">
+
+                <i class="fas fa-chart-line"></i>
+
+                Reports
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="resources.html">
+
+                <i class="fas fa-folder-open"></i>
+
+                Resources
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="settings.html">
+
+                <i class="fas fa-cog"></i>
+
+                Settings
+
+            </a>
+
+        </li>
+
+        <li>
+
+            <a href="logout.html">
+
+                <i class="fas fa-sign-out-alt"></i>
+
+                Logout
+
+            </a>
+
+        </li>
+
+    </ul>
+
+</aside>
+
+<!-- ===============================
+         MAIN CONTENT
+================================ -->
+
+<main class="main-content">
+
+<!-- ===============================
+            TOPBAR
+================================ -->
+
+<header class="topbar">
+
+    <div>
+
+        <h1>
+
+            Members Management
+
+        </h1>
+
+        <p>
+
+            Manage registered campaign members
+
+        </p>
+
+    </div>
+
+    <div class="topbar-actions">
+
+        <button class="notification-btn">
+
+            <i class="fas fa-bell"></i>
+
+        </button>
+
+        <img src="images/admin.jpg"
+             class="admin-photo"
+             alt="Admin">
+
+    </div>
+
+</header>
+<!-- =====================================
+        MEMBER STATISTICS
+===================================== -->
+
+<section class="stats-grid">
+
+    <div class="stat-card">
+
+        <div class="stat-icon blue">
+
+            <i class="fas fa-users"></i>
+
+        </div>
+
+        <div class="stat-info">
+
+            <h2 id="totalMembers">25,450</h2>
+
+            <p>Total Members</p>
+
+        </div>
+
+    </div>
+
+    <div class="stat-card">
+
+        <div class="stat-icon green">
+
+            <i class="fas fa-user-check"></i>
+
+        </div>
+
+        <div class="stat-info">
+
+            <h2 id="activeMembers">24,980</h2>
+
+            <p>Active Members</p>
+
+        </div>
+
+    </div>
+
+    <div class="stat-card">
+
+        <div class="stat-icon orange">
+
+            <i class="fas fa-user-plus"></i>
+
+        </div>
+
+        <div class="stat-info">
+
+            <h2 id="newToday">156</h2>
+
+            <p>New Today</p>
+
+        </div>
+
+    </div>
+
+    <div class="stat-card">
+
+        <div class="stat-icon red">
+
+            <i class="fas fa-user-clock"></i>
+
+        </div>
+
+        <div class="stat-info">
+
+            <h2 id="pendingMembers">87</h2>
+
+            <p>Pending Approval</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =====================================
+        SEARCH & FILTER
+===================================== -->
+
+<section class="search-panel">
+
+    <div class="search-box">
+
+        <i class="fas fa-search"></i>
+
+        <input
+            type="text"
+            id="searchMember"
+            placeholder="Search by Name, ID or Phone">
+
+    </div>
+
+    <select id="filterLGA">
+
+        <option value="">All LGAs</option>
+
+        <option>Misau</option>
+
+        <option>Bauchi</option>
+
+        <option>Ningi</option>
+
+        <option>Katagum</option>
+
+        <option>Jama'are</option>
+
+    </select>
+
+    <select id="filterStatus">
+
+        <option value="">All Status</option>
+
+        <option>Active</option>
+
+        <option>Pending</option>
+
+        <option>Inactive</option>
+
+    </select>
+
+    <button class="btn-search">
+
+        <i class="fas fa-search"></i>
+
+        Search
+
+    </button>
+
+</section>
+
+<!-- =====================================
+        ACTION BUTTONS
+===================================== -->
+
+<section class="table-toolbar">
+
+    <div class="left-tools">
+
+        <a
+            href="add-member.html"
+            class="btn-primary">
+
+            <i class="fas fa-user-plus"></i>
+
+            Add Member
+
+        </a>
+
+    </div>
+
+    <div class="right-tools">
+
+        <button id="refreshBtn">
+
+            <i class="fas fa-rotate"></i>
+
+            Refresh
+
+        </button>
+
+        <button id="exportExcel">
+
+            <i class="fas fa-file-excel"></i>
+
+            Excel
+
+        </button>
+
+        <button id="exportPDF">
+
+            <i class="fas fa-file-pdf"></i>
+
+            PDF
+
+        </button>
+
+        <button id="printMembers">
+
+            <i class="fas fa-print"></i>
+
+            Print
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- =====================================
+        MEMBERS TABLE
+===================================== -->
+
+<section class="members-table-section">
+
+    <div class="table-responsive">
+
+        <table id="membersTable">
+
+            <thead>
+
+                <tr>
+
+                    <th>#</th>
+
+                    <th>Photo</th>
+
+                    <th>Member ID</th>
+
+                    <th>Full Name</th>
+
+                    <th>Gender</th>
+
+                    <th>Phone</th>
+
+                    <th>LGA</th>
+
+                    <th>Ward</th>
+
+                    <th>Polling Unit</th>
+
+                    <th>Date</th>
+
+                    <th>Status</th>
+
+                    <th>Actions</th>
+
+                </tr>
+
+            </thead>
+
+            <tbody id="membersTableBody">
+
+                <tr>
+
+                    <td>1</td>
+
+                    <td>
+
+                        <img src="images/avatar.png"
+                             class="member-photo"
+                             alt="Member">
+
+                    </td>
+
+                    <td>M.A. SAN000001</td>
+
+                    <td>Umar Muhammad</td>
+
+                    <td>Male</td>
+
+                    <td>08031234567</td>
+
+                    <td>Misau</td>
+
+                    <td>Hardawa</td>
+
+                    <td>PU-001</td>
+
+                    <td>10 Jul 2027</td>
+
+                    <td>
+
+                        <span class="badge active">
+
+                            Active
+
+                        </span>
+
+                    </td>
+
+                    <td class="action-buttons">
+
+                        <button class="view-btn"
+                                title="View">
+
+                            <i class="fas fa-eye"></i>
+
+                        </button>
+
+                        <button class="edit-btn"
+                                title="Edit">
+
+                            <i class="fas fa-pen"></i>
+
+                        </button>
+
+                        <button class="print-btn"
+                                title="Print ID">
+
+                            <i class="fas fa-id-card"></i>
+
+                        </button>
+
+                        <button class="download-btn"
+                                title="Download ID">
+
+                            <i class="fas fa-download"></i>
+
+                        </button>
+
+                        <button class="delete-btn"
+                                title="Delete">
+
+                            <i class="fas fa-trash"></i>
+
+                        </button>
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+</section>
+
+<!-- =====================================
+        PAGINATION
+===================================== -->
+
+<section class="pagination-section">
+
+    <button class="page-btn">
+
+        <i class="fas fa-angle-left"></i>
+
+    </button>
+
+    <button class="page-btn active">
+
+        1
+
+    </button>
+
+    <button class="page-btn">
+
+        2
+
+    </button>
+
+    <button class="page-btn">
+
+        3
+
+    </button>
+
+    <button class="page-btn">
+
+        4
+
+    </button>
+
+    <button class="page-btn">
+
+        <i class="fas fa-angle-right"></i>
+
+    </button>
+
+</section>
+
+<!-- =====================================
+        FOOTER
+===================================== -->
+
+<footer class="dashboard-footer">
+
+    <p>
+
+        © 2026 MAKAMA BABBA Campaign Management System.
+        All Rights Reserved.
+
+    </p>
+
+</footer>
+
+</main>
+
+</div>
+
+<!-- ==============================
+        JAVASCRIPT
+================================ -->
+
+<script src="js/members.js"></script>
+
+</body>
+
+</html>
+
+
+

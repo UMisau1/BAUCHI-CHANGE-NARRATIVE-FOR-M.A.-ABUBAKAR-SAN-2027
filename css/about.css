@@ -1,0 +1,586 @@
+/* =========================================================
+   M.A. ABUBAKAR CAMPAIGN 2027
+   BIOGRAPHY PAGE STYLE
+   about.css
+========================================================= */
+
+
+/* =========================================================
+   BIOGRAPHY PAGE
+========================================================= */
+
+.about-section {
+    padding: 90px 0;
+    background: #ffffff;
+}
+
+.about-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+}
+
+
+/* =========================================================
+   ABOUT IMAGE
+========================================================= */
+
+.about-image {
+    position: relative;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 480px;
+    height: 520px;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+    margin: auto;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
+    border: 6px solid #ffffff;
+}
+
+
+/* =========================================================
+   ABOUT CONTENT
+========================================================= */
+
+.about-content {
+    max-width: 650px;
+}
+
+.section-tag {
+    display: inline-block;
+    color: #00843d;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.about-content h2 {
+    font-size: 38px;
+    line-height: 1.2;
+    color: #123524;
+    margin-bottom: 25px;
+    font-weight: 800;
+}
+
+.about-content p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   BACKGROUND / VISION MISSION
+========================================================= */
+
+.vision-mission {
+    padding: 90px 0;
+    background: #f4faf6;
+}
+
+.vm-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.vm-card {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+    border-top: 4px solid #00843d;
+    transition: 0.3s ease;
+}
+
+.vm-card:hover {
+    transform: translateY(-8px);
+}
+
+.vm-icon {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #00843d;
+    color: #ffffff;
+    font-size: 28px;
+}
+
+.vm-card h3 {
+    color: #123524;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.vm-card p {
+    color: #666;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   CORE VALUES / EXPERIENCE
+========================================================= */
+
+.core-values {
+    padding: 90px 0;
+    background: #ffffff;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.value-card {
+    background: #f8fbf9;
+    padding: 35px 25px;
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid #e4eee8;
+    transition: 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+    border-color: #00843d;
+}
+
+.value-card > i {
+    font-size: 35px;
+    color: #00843d;
+    margin-bottom: 20px;
+}
+
+.value-card h3 {
+    font-size: 20px;
+    color: #123524;
+    margin-bottom: 12px;
+}
+
+.value-card p {
+    color: #666;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   OBJECTIVES
+========================================================= */
+
+.objectives {
+    padding: 90px 0;
+    background: #f4faf6;
+}
+
+.objectives-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.objective-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    background: #ffffff;
+    padding: 22px 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    transition: 0.3s ease;
+}
+
+.objective-item:hover {
+    transform: translateX(5px);
+}
+
+.objective-item i {
+    color: #00843d;
+    font-size: 21px;
+    margin-top: 2px;
+}
+
+.objective-item span {
+    color: #444;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   DIRECTORATES / COMMITMENTS
+========================================================= */
+
+.directorates {
+    padding: 90px 0;
+    background: #ffffff;
+}
+
+.directorates-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.directorate-card {
+    background: #f8fbf9;
+    padding: 35px 20px;
+    min-height: 150px;
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid #e1ebe5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease;
+}
+
+.directorate-card:hover {
+    transform: translateY(-7px);
+    background: #00843d;
+}
+
+.directorate-card i {
+    color: #00843d;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.directorate-card h3 {
+    color: #123524;
+    font-size: 17px;
+}
+
+.directorate-card:hover i,
+.directorate-card:hover h3 {
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   SECTION TITLES
+========================================================= */
+
+.section-title {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 55px;
+}
+
+.section-title span {
+    display: inline-block;
+    color: #00843d;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
+
+.section-title h2 {
+    color: #123524;
+    font-size: 36px;
+    line-height: 1.25;
+    margin-bottom: 15px;
+}
+
+.section-title p {
+    color: #666;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   PAGE BANNER
+========================================================= */
+
+.page-banner {
+    position: relative;
+    padding: 90px 20px;
+    background: linear-gradient(
+        135deg,
+        #006b32,
+        #00843d,
+        #005728
+    );
+    text-align: center;
+    overflow: hidden;
+}
+
+.page-banner::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.06);
+    top: -150px;
+    left: -100px;
+}
+
+.page-banner::after {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    bottom: -200px;
+    right: -100px;
+}
+
+.page-banner .container {
+    position: relative;
+    z-index: 2;
+}
+
+.page-banner h1 {
+    color: #ffffff;
+    font-size: 45px;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.page-banner p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.about-cta {
+    padding: 90px 20px;
+    background: linear-gradient(
+        135deg,
+        #006b32,
+        #00843d
+    );
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.cta-content h2 {
+    color: #ffffff;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.cta-content p {
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.8;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.about-cta .btn-outline {
+    border: 2px solid #ffffff;
+    color: #ffffff;
+}
+
+.about-cta .btn-outline:hover {
+    background: #ffffff;
+    color: #00843d;
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode .about-section,
+body.dark-mode .core-values,
+body.dark-mode .directorates {
+    background: #101713;
+}
+
+body.dark-mode .vision-mission,
+body.dark-mode .objectives {
+    background: #151d18;
+}
+
+body.dark-mode .about-content h2,
+body.dark-mode .section-title h2,
+body.dark-mode .vm-card h3,
+body.dark-mode .value-card h3,
+body.dark-mode .directorate-card h3 {
+    color: #ffffff;
+}
+
+body.dark-mode .about-content p,
+body.dark-mode .section-title p,
+body.dark-mode .vm-card p,
+body.dark-mode .value-card p,
+body.dark-mode .objective-item span {
+    color: #c8d1cc;
+}
+
+body.dark-mode .vm-card,
+body.dark-mode .value-card,
+body.dark-mode .objective-item,
+body.dark-mode .directorate-card {
+    background: #1c2720;
+    border-color: #2c3b31;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .directorates-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .about-section,
+    .vision-mission,
+    .core-values,
+    .objectives,
+    .directorates,
+    .about-cta {
+        padding: 60px 15px;
+    }
+
+    .about-wrapper {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .about-image img {
+        height: 420px;
+        max-width: 360px;
+    }
+
+    .about-content {
+        max-width: 100%;
+    }
+
+    .about-content h2 {
+        font-size: 29px;
+    }
+
+    .section-title h2 {
+        font-size: 29px;
+    }
+
+    .vm-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .objectives-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .directorates-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .page-banner {
+        padding: 65px 15px;
+    }
+
+    .page-banner h1 {
+        font-size: 32px;
+    }
+
+    .page-banner p {
+        font-size: 14px;
+    }
+
+    .cta-content h2 {
+        font-size: 29px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .about-image img {
+        height: 350px;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .directorates-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .vm-card,
+    .value-card,
+    .objective-item,
+    .directorate-card {
+        padding: 28px 20px;
+    }
+
+    .page-banner h1 {
+        font-size: 28px;
+    }
+
+    .cta-content h2 {
+        font-size: 26px;
+    }
+
+}

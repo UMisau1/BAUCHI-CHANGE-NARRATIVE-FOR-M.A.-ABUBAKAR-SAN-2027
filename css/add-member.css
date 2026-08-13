@@ -1,0 +1,343 @@
+/* ==========================================
+   SUPHI CAMPAIGN MANAGEMENT SYSTEM
+   ADD MEMBER CSS
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f5f7fb;
+    display:flex;
+    color:#111827;
+}
+
+:root{
+
+    --primary:#2563eb;
+    --secondary:#16a34a;
+    --danger:#dc2626;
+    --white:#ffffff;
+    --light:#f5f7fb;
+    --dark:#111827;
+    --gray:#6b7280;
+    --radius:12px;
+    --shadow:0 8px 25px rgba(0,0,0,.08);
+
+}
+
+/* ==========================================
+   SIDEBAR
+========================================== */
+
+.sidebar{
+
+    width:260px;
+    background:#111827;
+    min-height:100vh;
+    position:fixed;
+    left:0;
+    top:0;
+    overflow:auto;
+
+}
+
+.logo{
+
+    text-align:center;
+    padding:25px;
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.logo img{
+
+    width:80px;
+
+}
+
+.logo h2{
+
+    color:#fff;
+    margin-top:10px;
+
+}
+
+.sidebar ul{
+
+    list-style:none;
+    padding:20px 0;
+
+}
+
+.sidebar ul li{
+
+    margin:6px 12px;
+    border-radius:10px;
+
+}
+
+.sidebar ul li a{
+
+    display:flex;
+    align-items:center;
+    gap:15px;
+    color:#fff;
+    text-decoration:none;
+    padding:16px;
+
+}
+
+.sidebar ul li.active{
+
+    background:var(--primary);
+
+}
+
+.sidebar ul li:hover{
+
+    background:#1f2937;
+
+}
+
+/* ==========================================
+   MAIN CONTENT
+========================================== */
+
+.main-content{
+
+    margin-left:260px;
+    width:calc(100% - 260px);
+
+}
+/* ==========================================
+   TOPBAR
+========================================== */
+
+.topbar{
+
+    background:#fff;
+    padding:25px 35px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:var(--shadow);
+
+}
+
+.topbar h1{
+
+    font-size:34px;
+
+}
+
+.topbar p{
+
+    color:#777;
+    margin-top:5px;
+
+}
+
+.back-btn{
+
+    background:var(--primary);
+    color:#fff;
+    padding:12px 22px;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:600;
+
+}
+
+.back-btn:hover{
+
+    opacity:.9;
+
+}
+/* ==========================================
+   FORM CONTAINER
+========================================== */
+
+.form-container{
+
+    margin:30px;
+    background:#fff;
+    padding:35px;
+    border-radius:15px;
+    box-shadow:var(--shadow);
+
+}
+
+.form-grid{
+
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+
+}
+
+.form-group{
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+.form-group label{
+
+    margin-bottom:10px;
+    font-weight:600;
+
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+
+    padding:14px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    font-size:15px;
+    outline:none;
+
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+
+    border-color:var(--primary);
+
+}
+
+.full-width{
+
+    grid-column:1 / -1;
+
+}
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.button-group{
+
+    margin-top:35px;
+    display:flex;
+    justify-content:flex-end;
+    gap:20px;
+
+}
+
+.reset-btn{
+
+    background:#6b7280;
+    color:#fff;
+    border:none;
+    padding:14px 25px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:15px;
+
+}
+
+.save-btn{
+
+    background:#16a34a;
+    color:#fff;
+    border:none;
+    padding:14px 30px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:15px;
+
+}
+
+.reset-btn:hover{
+
+    background:#4b5563;
+
+}
+
+.save-btn:hover{
+
+    background:#15803d;
+
+}
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:992px){
+
+.form-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.sidebar{
+
+width:80px;
+
+}
+
+.sidebar .logo h2{
+
+display:none;
+
+}
+
+.main-content{
+
+margin-left:80px;
+width:calc(100% - 80px);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.topbar{
+
+flex-direction:column;
+align-items:flex-start;
+gap:20px;
+
+}
+
+.button-group{
+
+flex-direction:column;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.sidebar{
+
+display:none;
+
+}
+
+.main-content{
+
+margin-left:0;
+width:100%;
+
+}
+
+.form-container{
+
+margin:15px;
+padding:20px;
+
+}
+
+}

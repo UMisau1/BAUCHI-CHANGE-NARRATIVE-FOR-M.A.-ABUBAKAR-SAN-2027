@@ -1,0 +1,251 @@
+/* ==========================================
+   ID CARD PAGE
+========================================== */
+
+body{
+
+    margin:0;
+
+    padding:40px;
+
+    background:#f3f5f7;
+
+    font-family:Poppins,sans-serif;
+
+}
+
+.id-container{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+}
+
+.id-card{
+
+    width:380px;
+
+    margin:auto;
+
+    background:#fff;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+    border:3px solid #008751;
+
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.id-header{
+
+    background:linear-gradient(135deg,#008751,#006b40);
+
+    color:#fff;
+
+    padding:20px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.id-header .logo{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    padding:5px;
+
+}
+
+.id-header h2{
+
+    margin:0;
+
+    font-size:20px;
+
+}
+
+.id-header p{
+
+    margin:5px 0 0;
+
+    font-size:13px;
+
+}
+
+/* ==========================================
+   BODY
+========================================== */
+
+.id-body{
+
+    padding:25px;
+
+}
+
+.photo{
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+}
+
+.photo img{
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:4px solid #008751;
+
+}
+
+.member-details{
+
+    text-align:left;
+
+}
+
+.member-details h3{
+
+    text-align:center;
+
+    color:#008751;
+
+    margin-bottom:20px;
+
+}
+
+.member-details p{
+
+    margin:12px 0;
+
+    font-size:15px;
+
+}
+
+/* ==========================================
+   QR CODE
+========================================== */
+
+.qr-section{
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+.qr{
+
+    width:110px;
+
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.id-footer{
+
+    background:#008751;
+
+    color:#fff;
+
+    padding:12px;
+
+    font-size:13px;
+
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+.buttons{
+
+    margin-top:30px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+/* ==========================================
+   PRINT
+========================================== */
+
+@media print{
+
+    body{
+
+        background:#fff;
+
+        padding:0;
+
+    }
+
+    .buttons{
+
+        display:none;
+
+    }
+
+    .id-card{
+
+        box-shadow:none;
+
+        margin:auto;
+
+    }
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:480px){
+
+    .id-card{
+
+        width:100%;
+
+    }
+
+    body{
+
+        padding:15px;
+
+    }
+
+}

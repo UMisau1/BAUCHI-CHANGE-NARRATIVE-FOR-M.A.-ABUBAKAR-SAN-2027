@@ -1,0 +1,5548 @@
+/* =========================================================
+   ACHIEVEMENTS PAGE
+   INFRASTRUCTURE TRANSFORMATION
+========================================================= */
+
+.achievement-section,
+.project-section {
+    padding: 90px 0;
+}
+
+.infrastructure-section {
+    background: #f6faf7;
+}
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.section-heading {
+    max-width: 850px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.section-heading.left {
+    max-width: 850px;
+    margin-left: 0;
+    text-align: left;
+}
+
+.section-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #008000;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+.section-heading h2 {
+    color: #006b2d;
+    font-size: 38px;
+    line-height: 1.2;
+    margin: 0 0 18px;
+    font-weight: 800;
+}
+
+.section-heading h2 span {
+    color: #d4af37;
+}
+
+.section-heading p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0;
+}
+
+
+/* =========================================================
+   ACHIEVEMENT CATEGORY GRID
+========================================================= */
+
+.achievement-category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.achievement-category-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 24px;
+    background: #ffffff;
+    border-radius: 16px;
+    border: 1px solid rgba(0, 128, 0, 0.12);
+    text-decoration: none;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    transition: all 0.35s ease;
+}
+
+.achievement-category-card:hover {
+    transform: translateY(-7px);
+    border-color: #008000;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.category-icon {
+    min-width: 58px;
+    width: 58px;
+    height: 58px;
+    border-radius: 14px;
+    background: #eaf6ee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-icon i {
+    color: #008000;
+    font-size: 24px;
+}
+
+.category-content {
+    flex: 1;
+}
+
+.category-content h3 {
+    color: #006b2d;
+    font-size: 18px;
+    margin: 0 0 6px;
+}
+
+.category-content p {
+    color: #666;
+    font-size: 13px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.category-arrow {
+    color: #d4af37;
+    font-size: 17px;
+}
+
+
+/* =========================================================
+   ACHIEVEMENT SUMMARY
+========================================================= */
+
+.achievement-summary {
+    margin-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.summary-card {
+    padding: 25px 15px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 15px;
+    border-bottom: 4px solid #008000;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.summary-card i {
+    display: block;
+    color: #d4af37;
+    font-size: 27px;
+    margin-bottom: 12px;
+}
+
+.summary-card strong {
+    display: block;
+    color: #006b2d;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.summary-card span {
+    color: #666;
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   PROJECT SECTION
+========================================================= */
+
+.project-section {
+    background: #ffffff;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+
+/* =========================================================
+   PROJECT CARD
+========================================================= */
+
+.project-card {
+    background: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 128, 0, 0.12);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.35s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.14);
+}
+
+
+/* =========================================================
+   PROJECT IMAGE
+========================================================= */
+
+.project-image {
+    position: relative;
+    height: 230px;
+    overflow: hidden;
+    background: #eeeeee;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.06);
+}
+
+.project-number {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #008000;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 800;
+    border: 3px solid #ffffff;
+}
+
+
+/* =========================================================
+   PROJECT CONTENT
+========================================================= */
+
+.project-content {
+    padding: 25px;
+}
+
+.project-category {
+    display: inline-block;
+    color: #008000;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.project-content h3 {
+    color: #006b2d;
+    font-size: 20px;
+    line-height: 1.35;
+    margin: 0 0 12px;
+}
+
+.project-content p {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.75;
+    margin: 0 0 20px;
+}
+
+
+/* =========================================================
+   PROJECT META
+========================================================= */
+
+.project-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 17px;
+    border-top: 1px solid #eeeeee;
+}
+
+.project-meta span {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 10px;
+    border-radius: 7px;
+    background: #f4f8f5;
+    color: #444;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.project-meta i {
+    color: #008000;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .achievement-category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .achievement-summary {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 700px) {
+
+    .achievement-section,
+    .project-section {
+        padding: 60px 15px;
+    }
+
+    .section-heading h2 {
+        font-size: 29px;
+    }
+
+    .achievement-category-grid,
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .achievement-summary {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+
+    .project-image {
+        height: 220px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .achievement-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .achievement-category-card {
+        padding: 20px 16px;
+    }
+
+    .category-icon {
+        min-width: 50px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .category-content h3 {
+        font-size: 16px;
+    }
+
+    .project-content {
+        padding: 20px;
+    }
+
+    .project-content h3 {
+        font-size: 18px;
+    }
+
+    .project-meta {
+        flex-direction: column;
+    }
+
+    .project-meta span {
+        width: fit-content;
+    }
+}
+/* =========================================================
+ENVIRONMENTAL SUSTAINABILITY
+achievements.html
+========================================================= */
+
+.environmental-section {
+padding: 100px 0;
+background: var(--gray, #f5f7f6);
+}
+
+.environmental-header {
+max-width: 850px;
+margin: 0 auto 60px;
+text-align: center;
+}
+
+.environmental-header .section-label {
+display: inline-block;
+margin-bottom: 15px;
+font-size: 13px;
+font-weight: 800;
+letter-spacing: 1.5px;
+color: var(--primary, #0056b3);
+}
+
+.environmental-header h2 {
+margin: 0 0 20px;
+font-size: clamp(30px, 4vw, 48px);
+line-height: 1.15;
+font-weight: 800;
+color: var(--dark, #1d1d1d);
+}
+
+.environmental-header h2 span {
+display: inline;
+color: var(--secondary, #00a651);
+}
+
+.environmental-header p {
+margin: 0;
+font-size: 16px;
+line-height: 1.8;
+color: var(--text, #444);
+}
+
+/* =========================================================
+ENVIRONMENTAL DETAIL CARD
+========================================================= */
+
+.environmental-detail-card {
+position: relative;
+margin-bottom: 35px;
+padding: 40px;
+background: #fff;
+border: 1px solid rgba(0, 0, 0, 0.07);
+border-radius: var(--radius, 12px);
+box-shadow: var(--shadow, 0 10px 25px rgba(0,0,0,.12));
+overflow: hidden;
+}
+
+.environmental-detail-card::before {
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+width: 5px;
+height: 100%;
+background: var(--secondary, #00a651);
+}
+
+.environmental-card-header {
+display: flex;
+align-items: flex-start;
+gap: 20px;
+margin-bottom: 25px;
+}
+
+.environmental-number {
+flex-shrink: 0;
+width: 58px;
+height: 58px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+background: var(--secondary, #00a651);
+color: #fff;
+font-size: 18px;
+font-weight: 800;
+}
+
+.environmental-card-header .section-label {
+display: block;
+margin-bottom: 8px;
+font-size: 12px;
+font-weight: 800;
+letter-spacing: 1.3px;
+color: var(--primary, #0056b3);
+}
+
+.environmental-card-header h3 {
+margin: 0;
+font-size: clamp(22px, 3vw, 30px);
+line-height: 1.25;
+color: var(--dark, #1d1d1d);
+}
+
+.environmental-detail-card > p {
+margin: 0 0 18px;
+font-size: 16px;
+line-height: 1.8;
+color: var(--text, #444);
+}
+
+/* =========================================================
+ACHIEVEMENT LIST
+========================================================= */
+
+.environmental-detail-card .achievement-list {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 15px;
+margin-top: 30px;
+}
+
+.environmental-detail-card .achievement-item {
+display: flex;
+align-items: flex-start;
+gap: 15px;
+padding: 20px;
+background: #f8faf9;
+border: 1px solid rgba(0, 166, 81, 0.12);
+border-radius: 10px;
+transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.environmental-detail-card .achievement-item {
+transform: translateY(-4px);
+box-shadow: 0 8px 22px rgba(0, 0, 0, .08);
+}
+
+.environmental-detail-card .achievement-item strong {
+flex-shrink: 0;
+width: 34px;
+height: 34px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+background: var(--primary, #0056b3);
+color: #fff;
+font-size: 12px;
+font-weight: 800;
+}
+
+.environmental-detail-card .achievement-item span {
+font-size: 14px;
+line-height: 1.7;
+color: var(--text, #444);
+}
+
+/* =========================================================
+HIGHLIGHT GRID
+========================================================= */
+
+.achievement-highlight-grid {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 20px;
+margin-top: 30px;
+}
+
+.achievement-highlight {
+padding: 30px;
+border-radius: 12px;
+background: linear-gradient(
+135deg,
+rgba(0, 86, 179, .06),
+rgba(0, 166, 81, .08)
+);
+border: 1px solid rgba(0, 166, 81, .15);
+}
+
+.achievement-highlight strong {
+display: block;
+margin-bottom: 10px;
+font-size: 32px;
+font-weight: 800;
+color: var(--secondary, #00a651);
+}
+
+.achievement-highlight span {
+display: block;
+font-size: 14px;
+line-height: 1.7;
+color: var(--text, #444);
+}
+
+/* =========================================================
+ENVIRONMENTAL SUMMARY
+========================================================= */
+
+.environmental-summary {
+margin-top: 55px;
+padding: 55px 40px;
+text-align: center;
+border-radius: 16px;
+background: linear-gradient(
+135deg,
+var(--primary, #0056b3),
+var(--secondary, #00a651)
+);
+color: #fff;
+}
+
+.environmental-summary .section-label {
+display: inline-block;
+margin-bottom: 15px;
+color: #fff;
+font-size: 12px;
+font-weight: 800;
+letter-spacing: 1.5px;
+}
+
+.environmental-summary h3 {
+max-width: 750px;
+margin: 0 auto 15px;
+font-size: clamp(24px, 3vw, 36px);
+line-height: 1.25;
+}
+
+.environmental-summary p {
+max-width: 800px;
+margin: 0 auto;
+font-size: 15px;
+line-height: 1.8;
+opacity: .95;
+}
+
+/* =========================================================
+DE-RESERVATION
+========================================================= */
+
+.dereservation-section {
+margin-top: 55px;
+padding: 40px;
+background: #fff;
+border-radius: var(--radius, 12px);
+box-shadow: var(--shadow, 0 10px 25px rgba(0,0,0,.12));
+}
+
+.dereservation-header {
+max-width: 800px;
+margin-bottom: 30px;
+}
+
+.dereservation-header .content-label {
+display: block;
+margin-bottom: 10px;
+font-size: 12px;
+font-weight: 800;
+letter-spacing: 1.3px;
+color: var(--primary, #0056b3);
+}
+
+.dereservation-header h3 {
+margin: 0 0 12px;
+font-size: 28px;
+color: var(--dark, #1d1d1d);
+}
+
+.dereservation-header p {
+margin: 0;
+font-size: 15px;
+line-height: 1.7;
+color: var(--text, #444);
+}
+
+.dereservation-grid {
+display: grid;
+grid-template-columns: repeat(2, minmax(0, 1fr));
+gap: 20px;
+}
+
+.dereservation-card {
+padding: 30px;
+border: 1px solid rgba(0, 86, 179, .12);
+border-radius: 12px;
+background: #f8fafc;
+transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.dereservation-card {
+transform: translateY(-4px);
+box-shadow: 0 10px 25px rgba(0, 0, 0, .08);
+}
+
+.dereservation-number {
+display: inline-block;
+margin-bottom: 15px;
+padding: 7px 12px;
+border-radius: 20px;
+background: rgba(0, 166, 81, .1);
+color: var(--secondary, #00a651);
+font-size: 12px;
+font-weight: 800;
+}
+
+.dereservation-card h4 {
+margin: 0 0 10px;
+font-size: 20px;
+color: var(--dark, #1d1d1d);
+}
+
+.dereservation-card p {
+margin: 0;
+font-size: 14px;
+line-height: 1.7;
+color: var(--text, #444);
+}
+
+/* =========================================================
+DARK MODE
+========================================================= */
+
+body.dark-mode .environmental-section {
+background: #111827;
+}
+
+body.dark-mode .environmental-detail-card,
+body.dark-mode .dereservation-section {
+background: #1f2937;
+border-color: rgba(255,255,255,.08);
+}
+
+body.dark-mode .environmental-header h2,
+body.dark-mode .environmental-card-header h3,
+body.dark-mode .dereservation-header h3,
+body.dark-mode .dereservation-card h4 {
+color: #fff;
+}
+
+body.dark-mode .environmental-header p,
+body.dark-mode .environmental-detail-card > p,
+body.dark-mode .environmental-detail-card .achievement-item span,
+body.dark-mode .achievement-highlight span,
+body.dark-mode .dereservation-header p,
+body.dark-mode .dereservation-card p {
+color: #d1d5db;
+}
+
+body.dark-mode .environmental-detail-card .achievement-item,
+body.dark-mode .achievement-highlight,
+body.dark-mode .dereservation-card {
+background: #111827;
+border-color: rgba(255,255,255,.08);
+}
+
+/* =========================================================
+RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+.environmental-detail-card .achievement-list {
+    grid-template-columns: 1fr;
+}
+
+.achievement-highlight-grid {
+    grid-template-columns: 1fr;
+}
+
+.dereservation-grid {
+    grid-template-columns: 1fr;
+}
+
+}
+
+@media (max-width: 600px) {
+
+.environmental-section {
+    padding: 70px 0;
+}
+
+.environmental-detail-card,
+.dereservation-section {
+    padding: 25px 20px;
+}
+
+.environmental-card-header {
+    gap: 14px;
+}
+
+.environmental-number {
+    width: 48px;
+    height: 48px;
+    font-size: 15px;
+}
+
+.environmental-card-header h3 {
+    font-size: 21px;
+}
+
+.environmental-detail-card .achievement-item {
+    padding: 16px;
+}
+
+.environmental-summary {
+    padding: 40px 22px;
+}
+
+.dereservation-card {
+    padding: 22px;
+}
+
+}
+/* =========================================================
+   ENVIRONMENTAL SUSTAINABILITY
+========================================================= */
+
+.environmental-section {
+    padding: 100px 0;
+    background: #f7faf8;
+}
+
+.environmental-header {
+    max-width: 850px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.environmental-header .section-label {
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: #16834b;
+}
+
+.environmental-header h2 {
+    margin: 0 0 18px;
+    font-size: clamp(32px, 5vw, 52px);
+    line-height: 1.15;
+    color: #17231d;
+}
+
+.environmental-header h2 span {
+    color: #16834b;
+}
+
+.environmental-header p {
+    max-width: 760px;
+    margin: auto;
+    color: #66736b;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* Environmental detail cards */
+
+.environmental-detail-card {
+    position: relative;
+    margin-bottom: 35px;
+    padding: 38px;
+    background: #ffffff;
+    border: 1px solid #e2ebe5;
+    border-radius: 20px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, .06);
+    overflow: hidden;
+}
+
+.environmental-detail-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: #16834b;
+}
+
+.environmental-card-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.environmental-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 58px;
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: #16834b;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.environmental-card-header .section-label {
+    display: block;
+    margin-bottom: 7px;
+    color: #c49327;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+}
+
+.environmental-card-header h3 {
+    margin: 0;
+    color: #18231d;
+    font-size: clamp(22px, 3vw, 30px);
+}
+
+.environmental-detail-card > p {
+    margin: 0 0 16px;
+    color: #59655e;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+
+/* Achievement list */
+
+.achievement-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 28px;
+}
+
+.achievement-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 18px;
+    background: #f5f9f6;
+    border: 1px solid #e1ebe4;
+    border-radius: 12px;
+    transition: .3s ease;
+}
+
+.achievement-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .07);
+}
+
+.achievement-item strong {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 34px;
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    background: #16834b;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.achievement-item span {
+    color: #536058;
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+
+/* Highlight grid */
+
+.achievement-highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.achievement-highlight {
+    padding: 28px;
+    background: linear-gradient(135deg, #f1f8f3, #ffffff);
+    border: 1px solid #dce9df;
+    border-radius: 15px;
+}
+
+.achievement-highlight strong {
+    display: block;
+    margin-bottom: 10px;
+    color: #16834b;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.achievement-highlight span {
+    color: #59655e;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+
+/* Environmental summary */
+
+.environmental-summary {
+    margin-top: 50px;
+    padding: 50px 35px;
+    text-align: center;
+    background: #17231d;
+    border-radius: 22px;
+}
+
+.environmental-summary .section-label {
+    display: block;
+    margin-bottom: 12px;
+    color: #d2a43a;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.environmental-summary h3 {
+    max-width: 700px;
+    margin: 0 auto 15px;
+    color: #ffffff;
+    font-size: clamp(25px, 4vw, 38px);
+}
+
+.environmental-summary p {
+    max-width: 780px;
+    margin: auto;
+    color: rgba(255, 255, 255, .75);
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   DE-RESERVATION
+========================================================= */
+
+.dereservation-section {
+    margin-top: 45px;
+    padding: 35px;
+    background: #ffffff;
+    border: 1px solid #e1ebe4;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .05);
+}
+
+.dereservation-header {
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+
+.dereservation-header .content-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #16834b;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+}
+
+.dereservation-header h3 {
+    margin: 0 0 12px;
+    font-size: 28px;
+    color: #18231d;
+}
+
+.dereservation-header p {
+    margin: 0;
+    color: #657068;
+    line-height: 1.7;
+}
+
+.dereservation-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.dereservation-card {
+    padding: 28px;
+    border-radius: 15px;
+    background: #f6faf7;
+    border: 1px solid #dfebe2;
+    transition: .3s ease;
+}
+
+.dereservation-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .07);
+}
+
+.dereservation-number {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 7px 12px;
+    border-radius: 20px;
+    background: #16834b;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 800;
+}
+
+.dereservation-card h4 {
+    margin: 0 0 10px;
+    color: #18231d;
+    font-size: 20px;
+}
+
+.dereservation-card p {
+    margin: 0;
+    color: #657068;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   RURAL DEVELOPMENT
+========================================================= */
+
+.rural-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+    margin-top: 35px;
+}
+
+.rural-grid article {
+    padding: 28px;
+    background: #ffffff;
+    border: 1px solid #e3ebe5;
+    border-radius: 16px;
+    transition: .3s ease;
+}
+
+.rural-grid article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, .08);
+}
+
+.rural-grid article > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    margin-bottom: 18px;
+    border-radius: 13px;
+    background: #edf7f0;
+    font-size: 25px;
+}
+
+.rural-grid h4 {
+    margin: 0 0 10px;
+    color: #1c2921;
+    font-size: 19px;
+}
+
+.rural-grid p {
+    margin: 0;
+    color: #68736c;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   GOVERNANCE & INSTITUTIONAL REFORMS
+========================================================= */
+
+.governance-transformation {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.governance-transformation .section-hero {
+    max-width: 850px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.governance-transformation .section-label {
+    color: #16834b;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+}
+
+.governance-transformation .section-hero h2 {
+    margin: 12px 0 18px;
+    color: #18231d;
+    font-size: clamp(32px, 5vw, 50px);
+}
+
+.governance-transformation .section-hero h2 span {
+    color: #16834b;
+}
+
+.governance-transformation .section-hero p {
+    color: #68736c;
+    line-height: 1.8;
+}
+
+.governance-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.governance-card {
+    display: flex;
+    gap: 20px;
+    padding: 32px;
+    background: #f8faf9;
+    border: 1px solid #e3eae5;
+    border-radius: 18px;
+    transition: .3s ease;
+}
+
+.governance-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .08);
+}
+
+.governance-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background: #16834b;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.governance-content .card-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #c49327;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+}
+
+.governance-content h3 {
+    margin: 0 0 12px;
+    color: #1a271f;
+    font-size: 22px;
+}
+
+.governance-content p {
+    margin: 0 0 15px;
+    color: #657068;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.governance-content ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.governance-content li {
+    margin-bottom: 7px;
+    color: #536058;
+    font-size: 13px;
+}
+
+.governance-impact {
+    margin-top: 45px;
+    padding: 45px;
+    background: linear-gradient(135deg, #17231d, #214a35);
+    border-radius: 22px;
+}
+
+.impact-content {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.impact-content .section-label {
+    color: #d2a43a;
+}
+
+.impact-content h3 {
+    margin: 12px 0 15px;
+    color: #ffffff;
+    font-size: clamp(25px, 4vw, 36px);
+}
+
+.impact-content p {
+    margin: 0;
+    color: rgba(255, 255, 255, .75);
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   LEGISLATIVE RECORD
+========================================================= */
+
+.legislative-record,
+.legislative-section {
+    padding: 100px 0;
+    background: #f7faf8;
+}
+
+.legislative-header,
+.legislative-section .section-hero {
+    max-width: 850px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.legislative-header .section-label,
+.legislative-section .section-label {
+    color: #16834b;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.legislative-header h2,
+.legislative-section .section-hero h2 {
+    margin: 12px 0 18px;
+    color: #18231d;
+    font-size: clamp(32px, 5vw, 50px);
+}
+
+.legislative-header h2 span,
+.legislative-section .section-hero h2 span {
+    color: #16834b;
+}
+
+.legislative-header p,
+.legislative-section .section-hero p {
+    color: #657068;
+    line-height: 1.8;
+}
+
+
+/* Statistics */
+
+.legislative-stats,
+.legislative-summary {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 40px;
+}
+
+.legislative-summary {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.legislative-stat {
+    padding: 25px;
+    text-align: center;
+    background: #ffffff;
+    border: 1px solid #e1e9e4;
+    border-radius: 15px;
+}
+
+.legislative-stat strong {
+    display: block;
+    margin-bottom: 7px;
+    color: #16834b;
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.legislative-stat span {
+    color: #69756e;
+    font-size: 13px;
+}
+
+
+/* Years */
+
+.legislative-years {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin-bottom: 55px;
+}
+
+.legislative-year-card {
+    padding: 22px;
+    text-align: center;
+    background: #17231d;
+    border-radius: 13px;
+}
+
+.legislative-year-card strong {
+    display: block;
+    color: #ffffff;
+    font-size: 23px;
+}
+
+.legislative-year-card span {
+    display: block;
+    margin-top: 5px;
+    color: #d2a43a;
+    font-size: 13px;
+}
+
+
+/* Legislative content */
+
+.legislative-intro {
+    margin-bottom: 30px;
+}
+
+.content-label,
+.legislative-card-label {
+    color: #16834b;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+}
+
+.legislative-intro h3 {
+    margin: 8px 0;
+    color: #18231d;
+    font-size: 28px;
+}
+
+.legislative-intro p {
+    color: #657068;
+    line-height: 1.7;
+}
+
+.legislative-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.legislative-card {
+    display: flex;
+    gap: 20px;
+    padding: 28px;
+    background: #ffffff;
+    border: 1px solid #e1e9e4;
+    border-radius: 17px;
+    transition: .3s ease;
+}
+
+.legislative-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, .07);
+}
+
+.legislative-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 55px;
+    width: 55px;
+    height: 55px;
+    background: #edf7f0;
+    border-radius: 13px;
+    font-size: 25px;
+}
+
+.legislative-card h3 {
+    margin: 7px 0 13px;
+    color: #18231d;
+    font-size: 20px;
+}
+
+.legislative-card ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.legislative-card li {
+    margin-bottom: 7px;
+    color: #5e6962;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+/* Legislative highlight */
+
+.legislative-highlight {
+    margin-top: 45px;
+    padding: 45px;
+    text-align: center;
+    background: #17231d;
+    border-radius: 20px;
+}
+
+.legislative-highlight .section-label {
+    color: #d2a43a;
+}
+
+.legislative-highlight h3 {
+    max-width: 700px;
+    margin: 12px auto;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.legislative-highlight p {
+    max-width: 750px;
+    margin: auto;
+    color: rgba(255, 255, 255, .72);
+    line-height: 1.8;
+}
+
+.legislative-source {
+    margin-top: 20px;
+    color: #68736c;
+    font-size: 12px;
+    text-align: center;
+}
+
+.legislative-source span {
+    display: block;
+    margin-top: 5px;
+}
+
+
+/* Legislative controls */
+
+.legislative-controls {
+    display: grid;
+    grid-template-columns: 180px 220px 1fr;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.legislative-controls select,
+.legislative-controls input,
+.executive-controls select,
+.executive-controls input {
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #dce5df;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #354139;
+    outline: none;
+    font: inherit;
+}
+
+.legislative-controls select:focus,
+.legislative-controls input:focus,
+.executive-controls select:focus,
+.executive-controls input:focus {
+    border-color: #16834b;
+    box-shadow: 0 0 0 3px rgba(22, 131, 75, .1);
+}
+
+.legislative-laws-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+/* =========================================================
+   EXECUTIVE DIRECTIVES
+========================================================= */
+
+.executive-directives {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.executive-directives .section-hero {
+    max-width: 850px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.executive-directives .section-label {
+    color: #16834b;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+}
+
+.executive-directives .section-hero h2 {
+    margin: 12px 0;
+    color: #18231d;
+    font-size: clamp(32px, 5vw, 50px);
+}
+
+.executive-directives .section-hero h2 span {
+    color: #16834b;
+}
+
+.executive-directives .section-hero p {
+    color: #657068;
+    line-height: 1.8;
+}
+
+.executive-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 35px;
+}
+
+.executive-stat {
+    padding: 25px;
+    text-align: center;
+    background: #f7faf8;
+    border: 1px solid #e1e9e4;
+    border-radius: 15px;
+}
+
+.executive-stat strong {
+    display: block;
+    margin-bottom: 7px;
+    color: #16834b;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.executive-stat span {
+    color: #69756e;
+    font-size: 13px;
+}
+
+.executive-controls {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.executive-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.executive-card {
+    padding: 25px;
+    background: #f8faf9;
+    border: 1px solid #e0e9e3;
+    border-radius: 16px;
+    transition: .3s ease;
+}
+
+.executive-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, .07);
+}
+
+.executive-card-year {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 6px 10px;
+    border-radius: 20px;
+    background: #16834b;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.executive-card-category {
+    display: block;
+    margin-bottom: 7px;
+    color: #c49327;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.executive-card h3 {
+    margin: 0 0 10px;
+    color: #18231d;
+    font-size: 19px;
+}
+
+.executive-card p {
+    margin: 0;
+    color: #657068;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.executive-empty {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.executive-empty h3 {
+    margin-bottom: 8px;
+    color: #18231d;
+}
+
+.executive-empty p {
+    color: #68736c;
+}
+
+
+/* =========================================================
+   FUTURE SECTORS
+========================================================= */
+
+.future-sectors {
+    padding: 100px 0;
+    background: #f7faf8;
+}
+
+.future-sectors .section-hero {
+    max-width: 850px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.future-sectors .section-label {
+    color: #16834b;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+}
+
+.future-sectors .section-hero h2 {
+    margin: 12px 0;
+    color: #18231d;
+    font-size: clamp(32px, 5vw, 50px);
+}
+
+.future-sectors .section-hero h2 span {
+    color: #16834b;
+}
+
+.future-sectors .section-hero p {
+    color: #657068;
+    line-height: 1.8;
+}
+
+.future-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.future-card {
+    position: relative;
+    padding: 32px;
+    background: #ffffff;
+    border: 1px solid #e0e9e3;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: .3s ease;
+}
+
+.future-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
+}
+
+.future-number {
+    position: absolute;
+    top: 20px;
+    right: 22px;
+    color: #dce8df;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.future-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    margin-bottom: 22px;
+    background: #edf7f0;
+    border-radius: 14px;
+    font-size: 27px;
+}
+
+.future-content {
+    position: relative;
+    z-index: 1;
+}
+
+.future-content .card-label {
+    color: #c49327;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.1px;
+}
+
+.future-content h3 {
+    margin: 8px 0 12px;
+    color: #18231d;
+    font-size: 21px;
+}
+
+.future-content p {
+    margin: 0;
+    color: #657068;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.future-vision {
+    margin-top: 45px;
+    padding: 50px;
+    background: #17231d;
+    border-radius: 22px;
+}
+
+.future-vision-content {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.future-vision .section-label {
+    color: #d2a43a;
+}
+
+.future-vision h3 {
+    margin: 12px 0 15px;
+    color: #ffffff;
+    font-size: clamp(26px, 4vw, 38px);
+}
+
+.future-vision p {
+    margin: 0;
+    color: rgba(255, 255, 255, .72);
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   ACHIEVEMENTS CTA
+========================================================= */
+
+.achievements-cta {
+    padding: 90px 0;
+    background: #16834b;
+}
+
+.cta-content {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.cta-content .section-label {
+    color: #d9b75d;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.cta-content h2 {
+    margin: 15px 0;
+    color: #ffffff;
+    font-size: clamp(30px, 5vw, 48px);
+}
+
+.cta-content h2 span {
+    display: block;
+    color: #e5c56b;
+}
+
+.cta-content p {
+    color: rgba(255, 255, 255, .8);
+    line-height: 1.8;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.cta-buttons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 24px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: .3s ease;
+}
+
+.primary-btn {
+    background: #ffffff;
+    color: #16834b;
+}
+
+.secondary-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, .6);
+    color: #ffffff;
+}
+
+.cta-buttons a:hover {
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   DARK MODE COMPATIBILITY
+========================================================= */
+
+body.dark-mode .environmental-section,
+body.dark-mode .legislative-record,
+body.dark-mode .legislative-section,
+body.dark-mode .future-sectors {
+    background: #101612;
+}
+
+body.dark-mode .environmental-detail-card,
+body.dark-mode .dereservation-section,
+body.dark-mode .rural-grid article,
+body.dark-mode .governance-card,
+body.dark-mode .legislative-card,
+body.dark-mode .legislative-stat,
+body.dark-mode .executive-stat,
+body.dark-mode .executive-card,
+body.dark-mode .future-card,
+body.dark-mode .legislative-controls select,
+body.dark-mode .legislative-controls input,
+body.dark-mode .executive-controls select,
+body.dark-mode .executive-controls input {
+    background: #18221c;
+    border-color: #29372f;
+}
+
+body.dark-mode .environmental-header h2,
+body.dark-mode .environmental-card-header h3,
+body.dark-mode .dereservation-header h3,
+body.dark-mode .dereservation-card h4,
+body.dark-mode .rural-grid h4,
+body.dark-mode .governance-content h3,
+body.dark-mode .legislative-header h2,
+body.dark-mode .legislative-section .section-hero h2,
+body.dark-mode .legislative-intro h3,
+body.dark-mode .legislative-card h3,
+body.dark-mode .executive-directives .section-hero h2,
+body.dark-mode .executive-card h3,
+body.dark-mode .future-sectors .section-hero h2,
+body.dark-mode .future-content h3 {
+    color: #ffffff;
+}
+
+body.dark-mode .environmental-header p,
+body.dark-mode .environmental-detail-card > p,
+body.dark-mode .achievement-item span,
+body.dark-mode .achievement-highlight span,
+body.dark-mode .dereservation-header p,
+body.dark-mode .dereservation-card p,
+body.dark-mode .rural-grid p,
+body.dark-mode .governance-content p,
+body.dark-mode .governance-content li,
+body.dark-mode .legislative-header p,
+body.dark-mode .legislative-section .section-hero p,
+body.dark-mode .legislative-intro p,
+body.dark-mode .legislative-card li,
+body.dark-mode .executive-directives .section-hero p,
+body.dark-mode .executive-card p,
+body.dark-mode .future-sectors .section-hero p,
+body.dark-mode .future-content p {
+    color: #aebbb3;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .future-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .legislative-laws-grid,
+    .executive-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .rural-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .environmental-section,
+    .governance-transformation,
+    .legislative-record,
+    .legislative-section,
+    .executive-directives,
+    .future-sectors {
+        padding: 70px 0;
+    }
+
+    .achievement-list,
+    .achievement-highlight-grid,
+    .dereservation-grid,
+    .governance-grid,
+    .legislative-grid,
+    .future-grid,
+    .legislative-laws-grid,
+    .executive-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .legislative-stats,
+    .executive-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .legislative-summary {
+        grid-template-columns: 1fr;
+    }
+
+    .legislative-years {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .legislative-controls,
+    .executive-controls {
+        grid-template-columns: 1fr;
+    }
+
+    .rural-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .environmental-detail-card,
+    .dereservation-section,
+    .governance-card {
+        padding: 25px;
+    }
+}
+
+
+@media (max-width: 520px) {
+
+    .legislative-stats,
+    .executive-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .legislative-years {
+        grid-template-columns: 1fr;
+    }
+
+    .environmental-card-header {
+        align-items: flex-start;
+    }
+
+    .environmental-number {
+        flex-basis: 48px;
+        width: 48px;
+        height: 48px;
+    }
+
+    .environmental-card-header h3 {
+        font-size: 21px;
+    }
+
+    .achievement-item {
+        padding: 14px;
+    }
+
+    .governance-card {
+        flex-direction: column;
+    }
+
+    .legislative-card {
+        flex-direction: column;
+    }
+
+    .legislative-highlight,
+    .future-vision,
+    .governance-impact {
+        padding: 30px 20px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .cta-buttons a {
+        width: 100%;
+    }
+}
+/* =========================================================
+   ACHIEVEMENTS.CSS
+   Environmental • Rural • Governance • Legislative
+   Executive • Future Sectors
+========================================================= */
+
+
+/* =========================================================
+   GLOBAL ACHIEVEMENT VARIABLES
+========================================================= */
+
+:root {
+    --ach-primary: #0b6b3a;
+    --ach-primary-dark: #064c2a;
+    --ach-secondary: #d4af37;
+    --ach-gold-light: #f3df9b;
+    --ach-dark: #17231c;
+    --ach-text: #4a514c;
+    --ach-muted: #737b75;
+    --ach-light: #f6f8f7;
+    --ach-white: #ffffff;
+    --ach-border: #e2e8e4;
+    --ach-shadow: 0 12px 35px rgba(0, 0, 0, .08);
+    --ach-radius: 16px;
+    --ach-transition: .35s ease;
+}
+
+
+/* =========================================================
+   SECTION HEADINGS
+========================================================= */
+
+.section-heading,
+.environmental-header,
+.legislative-header,
+.section-hero {
+    max-width: 850px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.section-heading.left {
+    text-align: left;
+    margin-left: 0;
+}
+
+.section-tag,
+.section-label,
+.content-label,
+.card-label {
+    display: inline-block;
+    color: var(--ach-primary);
+    font-size: .78rem;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 12px;
+}
+
+.section-heading h2,
+.environmental-header h2,
+.section-hero h2,
+.legislative-header h2 {
+    margin: 0 0 18px;
+    color: var(--ach-dark);
+    font-size: clamp(2rem, 4vw, 3.3rem);
+    line-height: 1.15;
+}
+
+.section-heading h2 span,
+.environmental-header h2 span,
+.section-hero h2 span,
+.legislative-header h2 span {
+    color: var(--ach-primary);
+}
+
+.section-heading p,
+.environmental-header p,
+.section-hero p,
+.legislative-header p {
+    color: var(--ach-text);
+    line-height: 1.8;
+    margin: 0;
+}
+
+
+/* =========================================================
+   INFRASTRUCTURE
+========================================================= */
+
+.infrastructure-section {
+    padding: 90px 0;
+    background: var(--ach-white);
+}
+
+.achievement-category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.achievement-category-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 25px;
+    background: var(--ach-white);
+    border: 1px solid var(--ach-border);
+    border-radius: var(--ach-radius);
+    text-decoration: none;
+    color: inherit;
+    box-shadow: var(--ach-shadow);
+    transition: transform var(--ach-transition),
+                border-color var(--ach-transition),
+                box-shadow var(--ach-transition);
+}
+
+.achievement-category-card:hover {
+    transform: translateY(-7px);
+    border-color: var(--ach-primary);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, .12);
+}
+
+.category-icon {
+    min-width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(11, 107, 58, .09);
+    color: var(--ach-primary);
+    border-radius: 14px;
+    font-size: 1.4rem;
+}
+
+.category-content {
+    flex: 1;
+}
+
+.category-content h3 {
+    margin: 0 0 7px;
+    font-size: 1.08rem;
+    color: var(--ach-dark);
+}
+
+.category-content p {
+    margin: 0;
+    color: var(--ach-muted);
+    line-height: 1.55;
+    font-size: .9rem;
+}
+
+.category-arrow {
+    color: var(--ach-secondary);
+    font-size: 1rem;
+}
+
+
+/* =========================================================
+   ACHIEVEMENT SUMMARY
+========================================================= */
+
+.achievement-summary {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 45px;
+}
+
+.summary-card {
+    text-align: center;
+    padding: 28px 20px;
+    border-radius: var(--ach-radius);
+    background: var(--ach-light);
+    border: 1px solid var(--ach-border);
+}
+
+.summary-card i {
+    display: block;
+    margin-bottom: 12px;
+    color: var(--ach-primary);
+    font-size: 1.5rem;
+}
+
+.summary-card strong {
+    display: block;
+    color: var(--ach-dark);
+    font-size: 1.15rem;
+    margin-bottom: 5px;
+}
+
+.summary-card span {
+    color: var(--ach-muted);
+    font-size: .88rem;
+}
+
+
+/* =========================================================
+   PROJECT SECTIONS
+========================================================= */
+
+.project-section {
+    padding: 90px 0;
+    background: var(--ach-light);
+}
+
+.project-section:nth-of-type(even) {
+    background: var(--ach-white);
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    overflow: hidden;
+    background: var(--ach-white);
+    border-radius: var(--ach-radius);
+    border: 1px solid var(--ach-border);
+    box-shadow: var(--ach-shadow);
+    transition: transform var(--ach-transition);
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+}
+
+.project-image {
+    position: relative;
+    height: 230px;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .5s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.06);
+}
+
+.project-number {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--ach-primary);
+    color: var(--ach-white);
+    border-radius: 10px;
+    font-weight: 800;
+}
+
+.project-content {
+    padding: 25px;
+}
+
+.project-category {
+    color: var(--ach-primary);
+    font-size: .75rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.project-content h3 {
+    margin: 9px 0 12px;
+    color: var(--ach-dark);
+    font-size: 1.2rem;
+}
+
+.project-content p {
+    color: var(--ach-text);
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.project-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-top: 15px;
+    border-top: 1px solid var(--ach-border);
+}
+
+.project-meta span {
+    color: var(--ach-muted);
+    font-size: .85rem;
+}
+
+.project-meta i {
+    color: var(--ach-primary);
+    margin-right: 5px;
+}
+
+
+/* =========================================================
+   ENVIRONMENTAL SECTION
+========================================================= */
+
+.environmental-section {
+    padding: 100px 0;
+    background: var(--ach-light);
+}
+
+.environmental-detail-card {
+    margin-bottom: 30px;
+    padding: 35px;
+    background: var(--ach-white);
+    border: 1px solid var(--ach-border);
+    border-radius: 20px;
+    box-shadow: var(--ach-shadow);
+}
+
+.environmental-card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+    margin-bottom: 22px;
+}
+
+.environmental-number {
+    min-width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--ach-primary);
+    color: var(--ach-white);
+    border-radius: 12px;
+    font-weight: 800;
+}
+
+.environmental-card-header h3 {
+    margin: 0;
+    color: var(--ach-dark);
+    font-size: 1.5rem;
+}
+
+.environmental-detail-card > p {
+    color: var(--ach-text);
+    line-height: 1.8;
+}
+
+.achievement-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.achievement-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 18px;
+    background: var(--ach-light);
+    border-radius: 12px;
+    border: 1px solid var(--ach-border);
+}
+
+.achievement-item strong {
+    min-width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--ach-secondary);
+    color: #222;
+    border-radius: 50%;
+    font-size: .78rem;
+}
+
+.achievement-item span {
+    color: var(--ach-text);
+    line-height: 1.6;
+}
+
+.achievement-highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.achievement-highlight {
+    padding: 25px;
+    background: linear-gradient(
+        135deg,
+        rgba(11, 107, 58, .08),
+        rgba(212, 175, 55, .08)
+    );
+    border-left: 4px solid var(--ach-primary);
+    border-radius: 12px;
+}
+
+.achievement-highlight strong {
+    display: block;
+    color: var(--ach-primary);
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+}
+
+.achievement-highlight span {
+    color: var(--ach-text);
+    line-height: 1.6;
+}
+
+.environmental-summary {
+    margin-top: 45px;
+    padding: 45px;
+    text-align: center;
+    background: var(--ach-primary);
+    color: var(--ach-white);
+    border-radius: 20px;
+}
+
+.environmental-summary .section-label {
+    color: var(--ach-gold-light);
+}
+
+.environmental-summary h3 {
+    margin: 10px 0 15px;
+    font-size: 1.8rem;
+}
+
+.environmental-summary p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+    opacity: .92;
+}
+
+
+/* =========================================================
+   DE-RESERVATION
+========================================================= */
+
+.dereservation-section {
+    margin-top: 35px;
+}
+
+.dereservation-header {
+    margin-bottom: 25px;
+}
+
+.dereservation-header h3 {
+    margin: 8px 0 10px;
+    color: var(--ach-dark);
+    font-size: 1.5rem;
+}
+
+.dereservation-header p {
+    color: var(--ach-text);
+    line-height: 1.7;
+}
+
+.dereservation-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.dereservation-card {
+    padding: 28px;
+    background: var(--ach-light);
+    border: 1px solid var(--ach-border);
+    border-radius: 16px;
+    transition: transform var(--ach-transition);
+}
+
+.dereservation-card:hover {
+    transform: translateY(-5px);
+}
+
+.dereservation-number {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: var(--ach-primary);
+    font-weight: 900;
+    font-size: 1.35rem;
+}
+
+.dereservation-card h4 {
+    margin: 0 0 10px;
+    color: var(--ach-dark);
+}
+
+.dereservation-card p {
+    margin: 0;
+    color: var(--ach-text);
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   RURAL DEVELOPMENT
+========================================================= */
+
+.rural-development,
+.rural-section {
+    padding: 90px 0;
+    background: var(--ach-white);
+}
+
+.rural-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.rural-grid article {
+    padding: 28px;
+    background: var(--ach-light);
+    border: 1px solid var(--ach-border);
+    border-radius: 16px;
+    transition: all var(--ach-transition);
+}
+
+.rural-grid article:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--ach-shadow);
+    border-color: var(--ach-primary);
+}
+
+.rural-grid article > span {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.rural-grid h4 {
+    margin: 0 0 10px;
+    color: var(--ach-dark);
+    font-size: 1.15rem;
+}
+
+.rural-grid p {
+    margin: 0;
+    color: var(--ach-text);
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   GOVERNANCE
+========================================================= */
+
+.governance-transformation {
+    padding: 100px 0;
+    background: var(--ach-light);
+}
+
+.governance-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.governance-card {
+    display: flex;
+    gap: 22px;
+    padding: 30px;
+    background: var(--ach-white);
+    border: 1px solid var(--ach-border);
+    border-radius: 18px;
+    box-shadow: var(--ach-shadow);
+    transition: transform var(--ach-transition);
+}
+
+.governance-card:hover {
+    transform: translateY(-6px);
+}
+
+.governance-number {
+    min-width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--ach-primary);
+    color: var(--ach-white);
+    border-radius: 10px;
+    font-weight: 800;
+}
+
+.governance-content h3 {
+    margin: 5px 0 12px;
+    color: var(--ach-dark);
+}
+
+.governance-content p {
+    color: var(--ach-text);
+    line-height: 1.7;
+}
+
+.governance-content ul {
+    margin: 15px 0 0;
+    padding-left: 18px;
+}
+
+.governance-content li {
+    margin-bottom: 7px;
+    color: var(--ach-text);
+}
+
+.governance-impact {
+    margin-top: 40px;
+    padding: 45px;
+    background: var(--ach-primary);
+    border-radius: 20px;
+    color: var(--ach-white);
+}
+
+.governance-impact .section-label {
+    color: var(--ach-gold-light);
+}
+
+.governance-impact h3 {
+    margin: 8px 0 15px;
+    font-size: 1.8rem;
+}
+
+.governance-impact p {
+    max-width: 850px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   LEGISLATIVE RECORD
+========================================================= */
+
+.legislative-record,
+.legislative-section {
+    padding: 100px 0;
+    background: var(--ach-white);
+}
+
+.legislative-stats,
+.legislative-summary,
+.executive-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 45px;
+}
+
+.legislative-stat,
+.executive-stat {
+    padding: 25px;
+    text-align: center;
+    background: var(--ach-light);
+    border: 1px solid var(--ach-border);
+    border-radius: 15px;
+}
+
+.legislative-stat strong,
+.executive-stat strong {
+    display: block;
+    color: var(--ach-primary);
+    font-size: 1.55rem;
+    margin-bottom: 7px;
+}
+
+.legislative-stat span,
+.executive-stat span {
+    color: var(--ach-muted);
+    font-size: .88rem;
+}
+
+.legislative-years {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin-bottom: 55px;
+}
+
+.legislative-year-card {
+    padding: 22px;
+    text-align: center;
+    border: 1px solid var(--ach-border);
+    border-radius: 14px;
+    background: var(--ach-white);
+}
+
+.legislative-year-card strong {
+    display: block;
+    color: var(--ach-primary);
+    font-size: 1.3rem;
+}
+
+.legislative-year-card span {
+    color: var(--ach-muted);
+    font-size: .85rem;
+}
+
+.legislative-intro {
+    margin-bottom: 30px;
+}
+
+.legislative-intro h3 {
+    color: var(--ach-dark);
+}
+
+.legislative-intro p {
+    color: var(--ach-text);
+    line-height: 1.7;
+}
+
+.legislative-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.legislative-card {
+    display: flex;
+    gap: 20px;
+    padding: 28px;
+    background: var(--ach-light);
+    border: 1px solid var(--ach-border);
+    border-radius: 17px;
+    transition: all var(--ach-transition);
+}
+
+.legislative-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--ach-primary);
+    box-shadow: var(--ach-shadow);
+}
+
+.legislative-icon {
+    min-width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--ach-white);
+    border-radius: 12px;
+    font-size: 1.5rem;
+}
+
+.legislative-card-label {
+    color: var(--ach-primary);
+    font-size: .7rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.legislative-card h3 {
+    margin: 6px 0 12px;
+    color: var(--ach-dark);
+}
+
+.legislative-card ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.legislative-card li {
+    margin-bottom: 7px;
+    color: var(--ach-text);
+    line-height: 1.45;
+}
+
+.legislative-highlight {
+    margin-top: 45px;
+    padding: 45px;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        var(--ach-primary),
+        var(--ach-primary-dark)
+    );
+    color: var(--ach-white);
+    border-radius: 20px;
+}
+
+.legislative-highlight .section-label {
+    color: var(--ach-gold-light);
+}
+
+.legislative-highlight h3 {
+    margin: 10px 0 15px;
+    font-size: 1.8rem;
+}
+
+.legislative-highlight p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.legislative-source {
+    margin-top: 25px;
+    padding: 15px;
+    color: var(--ach-muted);
+    font-size: .85rem;
+    border-top: 1px solid var(--ach-border);
+}
+
+.legislative-source span {
+    display: block;
+    margin-top: 5px;
+}
+
+
+/* =========================================================
+   LEGISLATIVE FILTERS
+========================================================= */
+
+.legislative-controls,
+.executive-controls {
+    display: grid;
+    grid-template-columns: 200px 220px 1fr;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.legislative-controls select,
+.legislative-controls input,
+.executive-controls select,
+.executive-controls input {
+    width: 100%;
+    min-height: 48px;
+    padding: 0 15px;
+    background: var(--ach-white);
+    color: var(--ach-dark);
+    border: 1px solid var(--ach-border);
+    border-radius: 10px;
+    outline: none;
+    font: inherit;
+}
+
+.legislative-controls select:focus,
+.legislative-controls input:focus,
+.executive-controls select:focus,
+.executive-controls input:focus {
+    border-color: var(--ach-primary);
+    box-shadow: 0 0 0 3px rgba(11, 107, 58, .08);
+}
+
+.legislative-laws-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.law-card {
+    padding: 25px;
+    background: var(--ach-white);
+    border: 1px solid var(--ach-border);
+    border-radius: 15px;
+    box-shadow: var(--ach-shadow);
+}
+
+.law-card-year {
+    display: inline-block;
+    padding: 5px 10px;
+    background: rgba(11, 107, 58, .1);
+    color: var(--ach-primary);
+    border-radius: 20px;
+    font-size: .75rem;
+    font-weight: 800;
+}
+
+.law-card h3 {
+    margin: 12px 0 8px;
+    color: var(--ach-dark);
+    font-size: 1.1rem;
+}
+
+.law-card p {
+    color: var(--ach-text);
+    line-height: 1.6;
+}
+
+.law-card-category {
+    color: var(--ach-secondary);
+    font-size: .78rem;
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   EXECUTIVE DIRECTIVES
+========================================================= */
+
+.executive-directives {
+    padding: 100px 0;
+    background: var(--ach-light);
+}
+
+.executive-stats {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.executive-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.executive-card {
+    padding: 27px;
+    background: var(--ach-white);
+    border: 1px solid var(--ach-border);
+    border-radius: 16px;
+    box-shadow: var(--ach-shadow);
+    transition: transform var(--ach-transition);
+}
+
+.executive-card:hover {
+    transform: translateY(-6px);
+}
+
+.executive-card-year {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: rgba(11, 107, 58, .1);
+    color: var(--ach-primary);
+    font-size: .75rem;
+    font-weight: 800;
+}
+
+.executive-card h3 {
+    margin: 13px 0 10px;
+    color: var(--ach-dark);
+    font-size: 1.15rem;
+}
+
+.executive-card p {
+    color: var(--ach-text);
+    line-height: 1.65;
+}
+
+.executive-card-category {
+    color: var(--ach-secondary);
+    font-size: .75rem;
+    font-weight: 800;
+    letter-spacing: .8px;
+}
+
+.executive-empty {
+    padding: 55px 20px;
+    text-align: center;
+    color: var(--ach-muted);
+}
+
+.executive-empty h3 {
+    color: var(--ach-dark);
+}
+
+
+/* =========================================================
+   FUTURE SECTORS
+========================================================= */
+
+.future-sectors {
+    padding: 100px 0;
+    background: var(--ach-white);
+}
+
+.future-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.future-card {
+    position: relative;
+    padding: 30px;
+    overflow: hidden;
+    background: var(--ach-light);
+    border: 1px solid var(--ach-border);
+    border-radius: 18px;
+    transition: transform var(--ach-transition),
+                box-shadow var(--ach-transition);
+}
+
+.future-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--ach-shadow);
+}
+
+.future-number {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: rgba(11, 107, 58, .1);
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+.future-icon {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--ach-white);
+    border-radius: 14px;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+.future-content {
+    position: relative;
+    z-index: 2;
+}
+
+.future-content h3 {
+    margin: 7px 0 12px;
+    color: var(--ach-dark);
+}
+
+.future-content p {
+    color: var(--ach-text);
+    line-height: 1.7;
+}
+
+.future-vision {
+    margin-top: 50px;
+    padding: 50px;
+    background: linear-gradient(
+        135deg,
+        var(--ach-primary),
+        var(--ach-primary-dark)
+    );
+    color: var(--ach-white);
+    border-radius: 22px;
+}
+
+.future-vision .section-label {
+    color: var(--ach-gold-light);
+}
+
+.future-vision h3 {
+    margin: 10px 0 15px;
+    font-size: 2rem;
+}
+
+.future-vision p {
+    max-width: 850px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.achievements-cta {
+    padding: 100px 0;
+    background: var(--ach-dark);
+    color: var(--ach-white);
+}
+
+.cta-content {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.cta-content .section-label {
+    color: var(--ach-gold-light);
+}
+
+.cta-content h2 {
+    margin: 10px 0 18px;
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.cta-content h2 span {
+    color: var(--ach-secondary);
+}
+
+.cta-content p {
+    line-height: 1.8;
+    opacity: .85;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.primary-btn,
+.secondary-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 0 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: all var(--ach-transition);
+}
+
+.primary-btn {
+    background: var(--ach-secondary);
+    color: #222;
+}
+
+.secondary-btn {
+    border: 1px solid rgba(255,255,255,.3);
+    color: var(--ach-white);
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.site-footer {
+    padding: 30px 0;
+    background: #0d1510;
+    color: rgba(255,255,255,.7);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: .85rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+    .achievement-category-grid,
+    .future-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-grid,
+    .legislative-laws-grid,
+    .executive-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .achievement-summary {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .legislative-stats,
+    .executive-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 800px) {
+
+    .infrastructure-section,
+    .environmental-section,
+    .governance-transformation,
+    .legislative-record,
+    .legislative-section,
+    .executive-directives,
+    .future-sectors,
+    .achievements-cta {
+        padding: 70px 0;
+    }
+
+    .achievement-category-grid,
+    .project-grid,
+    .rural-grid,
+    .governance-grid,
+    .legislative-grid,
+    .legislative-laws-grid,
+    .executive-grid,
+    .future-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .achievement-list {
+        grid-template-columns: 1fr;
+    }
+
+    .achievement-highlight-grid,
+    .dereservation-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .legislative-years {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .legislative-controls,
+    .executive-controls {
+        grid-template-columns: 1fr;
+    }
+
+    .environmental-detail-card,
+    .governance-card {
+        padding: 25px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .achievement-summary,
+    .legislative-stats,
+    .legislative-summary,
+    .executive-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .legislative-years {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .environmental-card-header {
+        gap: 15px;
+    }
+
+    .environmental-number {
+        min-width: 45px;
+        height: 45px;
+    }
+
+    .environmental-card-header h3 {
+        font-size: 1.15rem;
+    }
+
+    .governance-card {
+        flex-direction: column;
+    }
+
+    .governance-number {
+        min-width: 45px;
+    }
+
+    .future-vision,
+    .environmental-summary,
+    .governance-impact,
+    .legislative-highlight {
+        padding: 30px 22px;
+    }
+
+    .future-vision h3 {
+        font-size: 1.5rem;
+    }
+
+    .project-image {
+        height: 210px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* =========================================================
+   ACHIEVEMENTS — ENVIRONMENTAL SUSTAINABILITY
+========================================================= */
+
+.environmental-section {
+    padding: 100px 0;
+    background: #f7f9f8;
+}
+
+.environmental-header {
+    max-width: 850px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.environmental-header .section-label {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.environmental-header h2 {
+    margin: 0 0 20px;
+    font-size: clamp(32px, 5vw, 52px);
+    line-height: 1.15;
+    color: #1b1b1b;
+}
+
+.environmental-header h2 span {
+    display: inline-block;
+    color: #16823b;
+}
+
+.environmental-header p {
+    max-width: 760px;
+    margin: auto;
+    color: #666;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   ENVIRONMENTAL DETAIL CARD
+========================================================= */
+
+.environmental-detail-card {
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 35px;
+    margin-bottom: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.07);
+}
+
+.environmental-card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.environmental-number {
+    flex: 0 0 55px;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    background: #16823b;
+    color: #fff;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.environmental-card-header .section-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #16823b;
+}
+
+.environmental-card-header h3 {
+    margin: 0;
+    font-size: 26px;
+    line-height: 1.3;
+    color: #222;
+}
+
+.environmental-detail-card > p {
+    color: #666;
+    line-height: 1.85;
+    margin-bottom: 15px;
+}
+
+
+/* =========================================================
+   ACHIEVEMENT LIST
+========================================================= */
+
+.achievement-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+    margin-top: 28px;
+}
+
+.achievement-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 18px;
+    background: #f5f8f6;
+    border-radius: 12px;
+    border-left: 4px solid #16823b;
+}
+
+.achievement-item strong {
+    flex: 0 0 32px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #16823b;
+    color: #fff;
+    font-size: 13px;
+}
+
+.achievement-item span {
+    color: #555;
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   ACHIEVEMENT HIGHLIGHT GRID
+========================================================= */
+
+.achievement-highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.achievement-highlight {
+    padding: 28px;
+    border-radius: 15px;
+    background: linear-gradient(
+        135deg,
+        #f0f8f2,
+        #ffffff
+    );
+    border: 1px solid rgba(22, 130, 59, 0.15);
+}
+
+.achievement-highlight strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 32px;
+    color: #16823b;
+}
+
+.achievement-highlight span {
+    color: #555;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   ENVIRONMENTAL SUMMARY
+========================================================= */
+
+.environmental-summary {
+    margin-top: 45px;
+    padding: 50px;
+    border-radius: 20px;
+    text-align: center;
+    background: #123d28;
+    color: #fff;
+}
+
+.environmental-summary .section-label {
+    color: #d8b45a;
+}
+
+.environmental-summary h3 {
+    max-width: 700px;
+    margin: 15px auto;
+    font-size: 30px;
+}
+
+.environmental-summary p {
+    max-width: 800px;
+    margin: auto;
+    color: rgba(255,255,255,0.8);
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   DE-RESERVATION
+========================================================= */
+
+.dereservation-section {
+    margin-top: 45px;
+    padding: 40px;
+    border-radius: 18px;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.06);
+    box-shadow: 0 10px 30px rgba(0,0,0,.06);
+}
+
+.dereservation-header {
+    margin-bottom: 30px;
+}
+
+.dereservation-header .content-label {
+    color: #16823b;
+    font-weight: 700;
+}
+
+.dereservation-header h3 {
+    margin: 10px 0;
+    font-size: 28px;
+}
+
+.dereservation-header p {
+    color: #666;
+    line-height: 1.7;
+}
+
+.dereservation-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.dereservation-card {
+    padding: 25px;
+    border-radius: 15px;
+    background: #f7faf8;
+    border: 1px solid rgba(22,130,59,.12);
+}
+
+.dereservation-number {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 7px 12px;
+    border-radius: 30px;
+    background: #16823b;
+    color: #fff;
+    font-weight: 800;
+    font-size: 13px;
+}
+
+.dereservation-card h4 {
+    margin: 0 0 10px;
+    font-size: 21px;
+}
+
+.dereservation-card p {
+    margin: 0;
+    color: #666;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   RURAL DEVELOPMENT
+========================================================= */
+
+.rural-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 40px;
+}
+
+.rural-grid article {
+    padding: 28px;
+    border-radius: 16px;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.07);
+    box-shadow: 0 8px 25px rgba(0,0,0,.05);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.rural-grid article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.09);
+}
+
+.rural-grid article > span {
+    display: block;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.rural-grid h4 {
+    margin: 0 0 10px;
+    font-size: 21px;
+}
+
+.rural-grid p {
+    margin: 0;
+    color: #666;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   GOVERNANCE
+========================================================= */
+
+.governance-transformation {
+    padding: 100px 0;
+    background: #f8faf9;
+}
+
+.governance-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.governance-card {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 18px;
+    border: 1px solid rgba(0,0,0,.06);
+    box-shadow: 0 10px 30px rgba(0,0,0,.05);
+}
+
+.governance-number {
+    flex: 0 0 48px;
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #16823b;
+    color: #fff;
+    font-weight: 800;
+}
+
+.governance-content {
+    min-width: 0;
+}
+
+.governance-content .card-label {
+    color: #16823b;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: .08em;
+}
+
+.governance-content h3 {
+    margin: 8px 0 12px;
+    font-size: 23px;
+}
+
+.governance-content p {
+    color: #666;
+    line-height: 1.7;
+}
+
+.governance-content ul {
+    margin: 18px 0 0;
+    padding-left: 20px;
+}
+
+.governance-content li {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.governance-impact {
+    margin-top: 45px;
+    padding: 50px;
+    border-radius: 20px;
+    background: #123d28;
+    color: #fff;
+}
+
+.governance-impact h3 {
+    margin: 12px 0;
+    font-size: 30px;
+}
+
+.governance-impact p {
+    max-width: 800px;
+    color: rgba(255,255,255,.82);
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   LEGISLATIVE RECORD
+========================================================= */
+
+.legislative-record,
+.legislative-section {
+    padding: 100px 0;
+    background: #fff;
+}
+
+.legislative-header,
+.section-hero {
+    max-width: 850px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.legislative-header h2,
+.section-hero h2 {
+    margin: 12px 0 18px;
+    font-size: clamp(32px, 5vw, 50px);
+}
+
+.legislative-header h2 span,
+.section-hero h2 span {
+    color: #16823b;
+}
+
+.legislative-header p,
+.section-hero p {
+    color: #666;
+    line-height: 1.8;
+}
+
+
+/* Statistics */
+
+.legislative-stats,
+.legislative-summary,
+.executive-stats {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 18px;
+    margin-bottom: 45px;
+}
+
+.legislative-stat,
+.executive-stat {
+    padding: 25px 18px;
+    text-align: center;
+    border-radius: 15px;
+    background: #f7faf8;
+    border: 1px solid rgba(22,130,59,.1);
+}
+
+.legislative-stat strong,
+.executive-stat strong {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 28px;
+    color: #16823b;
+}
+
+.legislative-stat span,
+.executive-stat span {
+    color: #666;
+    font-size: 14px;
+}
+
+
+/* Years */
+
+.legislative-years {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 15px;
+    margin-bottom: 55px;
+}
+
+.legislative-year-card {
+    padding: 22px;
+    text-align: center;
+    border-radius: 14px;
+    background: #123d28;
+    color: #fff;
+}
+
+.legislative-year-card strong {
+    display: block;
+    font-size: 25px;
+}
+
+.legislative-year-card span {
+    display: block;
+    margin-top: 5px;
+    color: rgba(255,255,255,.75);
+}
+
+
+/* Legislative cards */
+
+.legislative-grid,
+.legislative-laws-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.legislative-card {
+    display: flex;
+    gap: 20px;
+    padding: 28px;
+    border-radius: 17px;
+    background: #f8faf9;
+    border: 1px solid rgba(0,0,0,.06);
+}
+
+.legislative-icon {
+    flex: 0 0 52px;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    background: #16823b;
+    font-size: 25px;
+}
+
+.legislative-card-label {
+    color: #16823b;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.legislative-card h3 {
+    margin: 7px 0 14px;
+}
+
+.legislative-card ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.legislative-card li {
+    margin-bottom: 7px;
+    color: #555;
+}
+
+
+/* Controls */
+
+.legislative-controls,
+.executive-controls {
+    display: grid;
+    grid-template-columns: 180px 220px 1fr;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.legislative-controls select,
+.legislative-controls input,
+.executive-controls select,
+.executive-controls input {
+    width: 100%;
+    min-height: 48px;
+    padding: 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+    font: inherit;
+    outline: none;
+}
+
+.legislative-controls input:focus,
+.executive-controls input:focus,
+.legislative-controls select:focus,
+.executive-controls select:focus {
+    border-color: #16823b;
+}
+
+
+/* =========================================================
+   EXECUTIVE DIRECTIVES
+========================================================= */
+
+.executive-directives {
+    padding: 100px 0;
+    background: #f7f9f8;
+}
+
+.executive-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.executive-card {
+    padding: 28px;
+    border-radius: 17px;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.06);
+    box-shadow: 0 8px 25px rgba(0,0,0,.05);
+}
+
+.executive-card-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.executive-year,
+.executive-category {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.executive-year {
+    background: #123d28;
+    color: #fff;
+}
+
+.executive-category {
+    background: #e9f5ed;
+    color: #16823b;
+}
+
+.executive-card h3 {
+    margin: 0 0 12px;
+    font-size: 22px;
+}
+
+.executive-card p {
+    color: #666;
+    line-height: 1.7;
+}
+
+.executive-empty {
+    padding: 50px;
+    text-align: center;
+    background: #fff;
+    border-radius: 15px;
+}
+
+.executive-empty h3 {
+    margin-bottom: 8px;
+}
+
+
+/* =========================================================
+   FUTURE SECTORS
+========================================================= */
+
+.future-sectors {
+    padding: 100px 0;
+    background: #fff;
+}
+
+.future-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+}
+
+.future-card {
+    position: relative;
+    padding: 30px;
+    min-height: 300px;
+    overflow: hidden;
+    border-radius: 18px;
+    background: #f7faf8;
+    border: 1px solid rgba(22,130,59,.1);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.future-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0,0,0,.08);
+}
+
+.future-number {
+    position: absolute;
+    top: 18px;
+    right: 22px;
+    font-size: 45px;
+    font-weight: 900;
+    color: rgba(22,130,59,.08);
+}
+
+.future-icon {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.future-content .card-label {
+    color: #16823b;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.future-content h3 {
+    margin: 8px 0 12px;
+    font-size: 22px;
+}
+
+.future-content p {
+    color: #666;
+    line-height: 1.7;
+}
+
+.future-vision {
+    margin-top: 50px;
+    padding: 55px;
+    border-radius: 22px;
+    background: #123d28;
+    color: #fff;
+    text-align: center;
+}
+
+.future-vision-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.future-vision h3 {
+    margin: 12px 0 15px;
+    font-size: 32px;
+}
+
+.future-vision p {
+    color: rgba(255,255,255,.8);
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.achievements-cta {
+    padding: 100px 0;
+    background: #16823b;
+    color: #fff;
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.cta-content .section-label {
+    color: #d8b45a;
+}
+
+.cta-content h2 {
+    margin: 15px 0;
+    font-size: clamp(32px, 5vw, 48px);
+}
+
+.cta-content h2 span {
+    color: #d8b45a;
+}
+
+.cta-content p {
+    color: rgba(255,255,255,.85);
+    line-height: 1.8;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.primary-btn,
+.secondary-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    padding: 0 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.primary-btn {
+    background: #fff;
+    color: #16823b;
+}
+
+.secondary-btn {
+    border: 1px solid rgba(255,255,255,.6);
+    color: #fff;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.site-footer {
+    padding: 30px 0;
+    background: #101d16;
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-content p {
+    margin: 0;
+    color: rgba(255,255,255,.7);
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 992px) {
+
+    .achievement-list,
+    .governance-grid,
+    .legislative-grid,
+    .legislative-laws-grid,
+    .executive-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .rural-grid,
+    .future-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .legislative-stats,
+    .executive-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .legislative-years {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .legislative-controls,
+    .executive-controls {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .legislative-controls input,
+    .executive-controls input {
+        grid-column: 1 / -1;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .environmental-section,
+    .governance-transformation,
+    .legislative-record,
+    .legislative-section,
+    .executive-directives,
+    .future-sectors,
+    .achievements-cta {
+        padding: 70px 0;
+    }
+
+    .environmental-detail-card,
+    .dereservation-section,
+    .governance-card,
+    .legislative-card,
+    .executive-card {
+        padding: 22px;
+    }
+
+    .achievement-list,
+    .achievement-highlight-grid,
+    .dereservation-grid,
+    .rural-grid,
+    .future-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .legislative-years {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .legislative-stats,
+    .executive-stats {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .legislative-controls,
+    .executive-controls {
+        grid-template-columns: 1fr;
+    }
+
+    .legislative-controls input,
+    .executive-controls input {
+        grid-column: auto;
+    }
+
+    .environmental-card-header {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .future-vision,
+    .governance-impact,
+    .environmental-summary {
+        padding: 35px 22px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .legislative-stats,
+    .executive-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .legislative-years {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .legislative-card {
+        flex-direction: column;
+    }
+
+    .governance-card {
+        flex-direction: column;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .primary-btn,
+    .secondary-btn {
+        width: 100%;
+    }
+}
+/* =========================================================
+   ENVIRONMENTAL SUSTAINABILITY
+========================================================= */
+
+.environmental-section {
+    padding: 100px 0;
+    background: #f7faf8;
+}
+
+.environmental-header {
+    max-width: 850px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.environmental-header .section-label {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.environmental-header h2 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.environmental-header h2 span {
+    display: block;
+    color: var(--primary);
+}
+
+.environmental-header p {
+    color: var(--text);
+    line-height: 1.8;
+}
+
+.environmental-detail-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 35px;
+    margin-bottom: 30px;
+    box-shadow: 0 12px 35px rgba(0,0,0,.07);
+    border: 1px solid rgba(0,0,0,.06);
+}
+
+.environmental-card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.environmental-number {
+    min-width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: var(--primary);
+    color: #fff;
+    font-weight: 800;
+}
+
+.environmental-card-header h3 {
+    margin: 6px 0 0;
+    font-size: 25px;
+}
+
+.environmental-detail-card > p {
+    line-height: 1.8;
+    color: var(--text);
+    margin-bottom: 15px;
+}
+
+.achievement-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.achievement-item {
+    display: flex;
+    gap: 15px;
+    padding: 18px;
+    border-radius: 12px;
+    background: #f5f8f6;
+}
+
+.achievement-item strong {
+    color: var(--primary);
+    min-width: 28px;
+}
+
+.achievement-item span {
+    line-height: 1.6;
+}
+
+.achievement-highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.achievement-highlight {
+    padding: 25px;
+    border-radius: 14px;
+    background: #f5f8f6;
+    border-left: 4px solid var(--primary);
+}
+
+.achievement-highlight strong {
+    display: block;
+    font-size: 30px;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.achievement-highlight span {
+    line-height: 1.6;
+}
+
+.environmental-summary {
+    margin-top: 50px;
+    padding: 45px;
+    border-radius: 20px;
+    background: var(--primary);
+    color: #fff;
+    text-align: center;
+}
+
+.environmental-summary h3 {
+    font-size: 30px;
+    margin: 12px 0 15px;
+}
+
+.environmental-summary p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   DE-RESERVATION
+========================================================= */
+
+.dereservation-section {
+    margin-top: 40px;
+}
+
+.dereservation-header {
+    margin-bottom: 30px;
+}
+
+.dereservation-header h3 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.dereservation-header p {
+    color: var(--text);
+    line-height: 1.7;
+}
+
+.dereservation-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.dereservation-card {
+    padding: 30px;
+    background: #fff;
+    border-radius: 16px;
+    border: 1px solid rgba(0,0,0,.08);
+    box-shadow: 0 8px 25px rgba(0,0,0,.06);
+}
+
+.dereservation-number {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 12px;
+}
+
+.dereservation-card h4 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.dereservation-card p {
+    color: var(--text);
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   RURAL DEVELOPMENT
+========================================================= */
+
+.rural-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.rural-grid article {
+    padding: 28px;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 8px 25px rgba(0,0,0,.06);
+    border: 1px solid rgba(0,0,0,.06);
+    transition: .3s ease;
+}
+
+.rural-grid article:hover {
+    transform: translateY(-6px);
+}
+
+.rural-grid article > span {
+    display: block;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.rural-grid h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.rural-grid p {
+    color: var(--text);
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   GOVERNANCE
+========================================================= */
+
+.governance-transformation {
+    padding: 100px 0;
+    background: #f7faf8;
+}
+
+.governance-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 55px;
+}
+
+.governance-card {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.06);
+    border: 1px solid rgba(0,0,0,.06);
+    transition: .3s ease;
+}
+
+.governance-card:hover {
+    transform: translateY(-5px);
+}
+
+.governance-number {
+    min-width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--primary);
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 800;
+}
+
+.governance-content h3 {
+    font-size: 23px;
+    margin: 8px 0 12px;
+}
+
+.governance-content p {
+    line-height: 1.7;
+    color: var(--text);
+}
+
+.governance-content ul {
+    padding-left: 20px;
+    margin-top: 15px;
+}
+
+.governance-content li {
+    margin-bottom: 8px;
+    color: var(--text);
+}
+
+.governance-impact {
+    margin-top: 45px;
+    padding: 45px;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 10px 30px rgba(0,0,0,.06);
+    text-align: center;
+}
+
+.impact-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.impact-content h3 {
+    font-size: 30px;
+    margin: 12px 0;
+}
+
+.impact-content p {
+    line-height: 1.8;
+    color: var(--text);
+}
+
+
+/* =========================================================
+   LEGISLATIVE RECORD
+========================================================= */
+
+.legislative-record,
+.legislative-section {
+    padding: 100px 0;
+}
+
+.legislative-record {
+    background: #fff;
+}
+
+.legislative-header,
+.section-hero {
+    max-width: 850px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.legislative-header h2,
+.section-hero h2 {
+    font-size: 42px;
+    line-height: 1.2;
+    margin: 12px 0 18px;
+}
+
+.legislative-header h2 span,
+.section-hero h2 span {
+    color: var(--primary);
+}
+
+.legislative-header p,
+.section-hero p {
+    color: var(--text);
+    line-height: 1.8;
+}
+
+.legislative-stats,
+.legislative-summary,
+.executive-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 45px;
+}
+
+.legislative-stat,
+.executive-stat {
+    text-align: center;
+    padding: 25px;
+    background: #f7faf8;
+    border-radius: 14px;
+}
+
+.legislative-stat strong,
+.executive-stat strong {
+    display: block;
+    font-size: 30px;
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+.legislative-stat span,
+.executive-stat span {
+    font-size: 14px;
+    color: var(--text);
+}
+
+.legislative-years {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin-bottom: 60px;
+}
+
+.legislative-year-card {
+    padding: 20px;
+    text-align: center;
+    background: #f5f8f6;
+    border-radius: 12px;
+}
+
+.legislative-year-card strong {
+    display: block;
+    font-size: 24px;
+    color: var(--primary);
+}
+
+.legislative-year-card span {
+    font-size: 14px;
+}
+
+.legislative-content {
+    margin-top: 40px;
+}
+
+.legislative-intro {
+    max-width: 750px;
+    margin-bottom: 35px;
+}
+
+.legislative-intro h3 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.legislative-intro p {
+    line-height: 1.8;
+    color: var(--text);
+}
+
+.legislative-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.legislative-card {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    background: #fff;
+    border-radius: 16px;
+    border: 1px solid rgba(0,0,0,.08);
+    box-shadow: 0 8px 25px rgba(0,0,0,.05);
+}
+
+.legislative-icon {
+    font-size: 35px;
+}
+
+.legislative-card h3 {
+    margin: 8px 0 15px;
+}
+
+.legislative-card ul {
+    padding-left: 20px;
+}
+
+.legislative-card li {
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.legislative-highlight {
+    margin-top: 50px;
+    padding: 45px;
+    text-align: center;
+    background: var(--primary);
+    color: #fff;
+    border-radius: 20px;
+}
+
+.legislative-highlight h3 {
+    font-size: 30px;
+    margin: 12px 0;
+}
+
+.legislative-highlight p {
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+.legislative-source {
+    margin-top: 25px;
+    padding: 18px;
+    font-size: 14px;
+    color: var(--text);
+    text-align: center;
+}
+
+.legislative-source span {
+    display: block;
+    margin-top: 5px;
+}
+
+
+/* =========================================================
+   LEGISLATIVE FILTERS
+========================================================= */
+
+.legislative-controls,
+.executive-controls {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 35px;
+}
+
+.legislative-controls select,
+.executive-controls select,
+.legislative-controls input,
+.executive-controls input {
+    min-height: 48px;
+    padding: 0 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: #fff;
+    outline: none;
+    font-family: inherit;
+}
+
+.legislative-controls select,
+.executive-controls select {
+    min-width: 170px;
+}
+
+.legislative-controls input,
+.executive-controls input {
+    flex: 1;
+}
+
+.legislative-laws-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+
+/* =========================================================
+   EXECUTIVE DIRECTIVES
+========================================================= */
+
+.executive-directives {
+    padding: 100px 0;
+    background: #f7faf8;
+}
+
+.executive-stats {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.executive-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.executive-empty {
+    padding: 50px;
+    text-align: center;
+    background: #fff;
+    border-radius: 15px;
+}
+
+.executive-empty[hidden] {
+    display: none;
+}
+
+
+/* =========================================================
+   FUTURE SECTORS
+========================================================= */
+
+.future-sectors {
+    padding: 100px 0;
+    background: #fff;
+}
+
+.future-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.future-card {
+    position: relative;
+    padding: 35px;
+    background: #f7faf8;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: .3s ease;
+}
+
+.future-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 30px rgba(0,0,0,.08);
+}
+
+.future-number {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 45px;
+    font-weight: 800;
+    opacity: .08;
+}
+
+.future-icon {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.future-content h3 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+.future-content p {
+    line-height: 1.7;
+    color: var(--text);
+}
+
+.future-vision {
+    margin-top: 50px;
+    padding: 50px;
+    border-radius: 20px;
+    background: var(--primary);
+    color: #fff;
+    text-align: center;
+}
+
+.future-vision-content {
+    max-width: 850px;
+    margin: auto;
+}
+
+.future-vision h3 {
+    font-size: 32px;
+    margin: 12px 0;
+}
+
+.future-vision p {
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.achievements-cta {
+    padding: 90px 0;
+    background: #f7faf8;
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.cta-content h2 {
+    font-size: 40px;
+    margin: 15px 0;
+}
+
+.cta-content h2 span {
+    color: var(--primary);
+}
+
+.cta-content p {
+    line-height: 1.8;
+    color: var(--text);
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+
+/* =========================================================
+   MOBILE RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .environmental-header h2,
+    .legislative-header h2,
+    .section-hero h2 {
+        font-size: 34px;
+    }
+
+    .achievement-list,
+    .governance-grid,
+    .legislative-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .rural-grid,
+    .future-grid,
+    .legislative-laws-grid,
+    .executive-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .legislative-stats,
+    .legislative-summary,
+    .executive-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .legislative-years {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .environmental-section,
+    .governance-transformation,
+    .legislative-record,
+    .legislative-section,
+    .executive-directives,
+    .future-sectors {
+        padding: 65px 0;
+    }
+
+    .environmental-detail-card,
+    .governance-card,
+    .legislative-card {
+        padding: 22px;
+    }
+
+    .environmental-card-header {
+        gap: 12px;
+    }
+
+    .environmental-card-header h3 {
+        font-size: 20px;
+    }
+
+    .achievement-list,
+    .achievement-highlight-grid,
+    .rural-grid,
+    .governance-grid,
+    .legislative-grid,
+    .future-grid,
+    .legislative-laws-grid,
+    .executive-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .legislative-stats,
+    .legislative-summary,
+    .executive-stats {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .legislative-years {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .legislative-controls,
+    .executive-controls {
+        flex-direction: column;
+    }
+
+    .legislative-controls select,
+    .executive-controls select {
+        width: 100%;
+    }
+
+    .cta-content h2 {
+        font-size: 30px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .cta-buttons a {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+/* =========================================================
+   ACHIEVEMENT REVEAL ANIMATION
+========================================================= */
+
+.achievement-reveal {
+    opacity: 0;
+    transform: translateY(25px);
+    transition:
+        opacity .7s ease,
+        transform .7s ease;
+}
+
+.achievement-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.future-active {
+    transform: translateY(-7px);
+}
+/* =========================================================
+   GOVERNANCE & INSTITUTIONAL REFORMS
+========================================================= */
+
+.governance-transformation {
+    position: relative;
+    padding: 100px 0;
+    background: #ffffff;
+    overflow: hidden;
+}
+
+.governance-transformation::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(
+        90deg,
+        #0b6b3a,
+        #d4af37,
+        #0b6b3a
+    );
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.governance-transformation .section-hero {
+    max-width: 850px;
+    margin: 0 auto 65px;
+    text-align: center;
+}
+
+.governance-transformation .section-label {
+    display: inline-block;
+    margin-bottom: 14px;
+    color: #0b6b3a;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.governance-transformation .section-hero h2 {
+    margin: 0 0 18px;
+    color: #17251d;
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(32px, 5vw, 50px);
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.governance-transformation .section-hero h2 span {
+    display: block;
+    color: #0b6b3a;
+}
+
+.governance-transformation .section-hero p {
+    max-width: 760px;
+    margin: 0 auto;
+    color: #657169;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   GOVERNANCE GRID
+========================================================= */
+
+.governance-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+
+/* =========================================================
+   GOVERNANCE CARD
+========================================================= */
+
+.governance-card {
+    position: relative;
+    display: flex;
+    gap: 22px;
+    padding: 32px;
+    background: #f8faf9;
+    border: 1px solid rgba(11, 107, 58, 0.10);
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all 0.35s ease;
+}
+
+.governance-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 0;
+    background: #0b6b3a;
+    transition: height 0.35s ease;
+}
+
+.governance-card:hover {
+    transform: translateY(-6px);
+    background: #ffffff;
+    border-color: rgba(11, 107, 58, 0.18);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.08);
+}
+
+.governance-card:hover::before {
+    height: 100%;
+}
+
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.governance-number {
+    flex: 0 0 52px;
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+    background: #0b6b3a;
+    color: #ffffff;
+
+    font-size: 15px;
+    font-weight: 800;
+
+    box-shadow:
+        0 8px 20px rgba(11, 107, 58, 0.18);
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.governance-content {
+    flex: 1;
+}
+
+.governance-content .card-label {
+    display: inline-block;
+    margin-bottom: 8px;
+
+    color: #b38b16;
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+}
+
+.governance-content h3 {
+    margin: 0 0 13px;
+
+    color: #17251d;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 23px;
+    line-height: 1.35;
+    font-weight: 700;
+}
+
+.governance-content p {
+    margin: 0 0 18px;
+
+    color: #657169;
+
+    font-size: 14.5px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   GOVERNANCE LIST
+========================================================= */
+
+.governance-content ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: grid;
+    gap: 9px;
+}
+
+.governance-content li {
+    position: relative;
+
+    padding-left: 22px;
+
+    color: #4f5d55;
+
+    font-size: 13.5px;
+    line-height: 1.6;
+}
+
+.governance-content li::before {
+    content: "✓";
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    color: #0b6b3a;
+
+    font-size: 13px;
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   GOVERNANCE IMPACT
+========================================================= */
+
+.governance-impact {
+    margin-top: 55px;
+    padding: 55px 40px;
+
+    border-radius: 22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #0b6b3a,
+            #064b2a
+        );
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.10);
+
+    overflow: hidden;
+    position: relative;
+}
+
+.governance-impact::before {
+    content: "🏛️";
+
+    position: absolute;
+    right: 35px;
+    top: 20px;
+
+    font-size: 100px;
+    opacity: 0.07;
+}
+
+.impact-content {
+    position: relative;
+    z-index: 2;
+
+    max-width: 850px;
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+.impact-content .section-label {
+    display: inline-block;
+    margin-bottom: 12px;
+
+    color: #f1cf62;
+
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+.impact-content h3 {
+    margin: 0 0 16px;
+
+    color: #ffffff;
+
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(25px, 4vw, 38px);
+    line-height: 1.3;
+}
+
+.impact-content p {
+    max-width: 750px;
+    margin: 0 auto;
+
+    color: rgba(255, 255, 255, 0.87);
+
+    font-size: 15px;
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode .governance-transformation {
+    background: #101914;
+}
+
+body.dark-mode .governance-transformation .section-hero h2,
+body.dark-mode .governance-content h3 {
+    color: #f1f5f2;
+}
+
+body.dark-mode .governance-transformation .section-hero p,
+body.dark-mode .governance-content p,
+body.dark-mode .governance-content li {
+    color: #b7c4bc;
+}
+
+body.dark-mode .governance-card {
+    background: #17221c;
+    border-color: rgba(255, 255, 255, 0.06);
+}
+
+body.dark-mode .governance-card:hover {
+    background: #1b2821;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .governance-transformation {
+        padding: 75px 0;
+    }
+
+    .governance-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .governance-transformation {
+        padding: 60px 0;
+    }
+
+    .governance-transformation .section-hero {
+        margin-bottom: 45px;
+    }
+
+    .governance-card {
+        gap: 15px;
+        padding: 23px;
+        border-radius: 16px;
+    }
+
+    .governance-number {
+        flex-basis: 44px;
+        width: 44px;
+        height: 44px;
+
+        border-radius: 11px;
+
+        font-size: 13px;
+    }
+
+    .governance-content h3 {
+        font-size: 20px;
+    }
+
+    .governance-content p {
+        font-size: 14px;
+    }
+
+    .governance-impact {
+        margin-top: 40px;
+        padding: 40px 22px;
+    }
+
+    .governance-impact::before {
+        display: none;
+    }
+}

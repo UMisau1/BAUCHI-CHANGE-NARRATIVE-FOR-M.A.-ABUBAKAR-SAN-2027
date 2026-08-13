@@ -1,0 +1,501 @@
+/* =========================================================
+   M.A. CAMPAIGN WEBSITE
+   UNDER CONSTRUCTION PAGE
+========================================================= */
+
+
+/* =========================================================
+   PAGE
+========================================================= */
+
+.under-construction-page {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    padding: 100px 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f5f8f6 0%,
+            #ffffff 50%,
+            #f5f8f6 100%
+        );
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+
+/* =========================================================
+   DECORATIVE CIRCLES
+========================================================= */
+
+.under-construction-page::before {
+    content: "";
+
+    position: absolute;
+
+    width: 350px;
+    height: 350px;
+
+    top: -180px;
+    left: -120px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(0, 132, 81, 0.08);
+
+    pointer-events: none;
+}
+
+.under-construction-page::after {
+    content: "";
+
+    position: absolute;
+
+    width: 320px;
+    height: 320px;
+
+    right: -130px;
+    bottom: -170px;
+
+    border-radius: 50%;
+
+    background:
+        rgba(242, 180, 0, 0.10);
+
+    pointer-events: none;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.under-construction-container {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.under-construction-card {
+    width: 100%;
+
+    padding: 65px 50px;
+
+    background: #ffffff;
+
+    border-radius: 28px;
+
+    border-top: 5px solid #008451;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.08);
+
+    text-align: center;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.under-construction-icon {
+    width: 90px;
+    height: 90px;
+
+    margin: 0 auto 28px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 24px;
+
+    background: #e4f5ee;
+
+    color: #008451;
+
+    font-size: 44px;
+
+    box-shadow:
+        0 10px 25px rgba(0, 132, 81, 0.08);
+}
+
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.under-construction-label {
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    color: #008451;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.under-construction-card h1 {
+    margin: 0 0 20px;
+
+    color: #102a24;
+
+    font-size:
+        clamp(40px, 6vw, 68px);
+
+    font-weight: 800;
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+}
+
+.under-construction-card h1 span {
+    display: block;
+
+    color: #f2b400;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.under-construction-description {
+    max-width: 680px;
+
+    margin: 0 auto 15px;
+
+    color: #53645f;
+
+    font-size: 17px;
+
+    font-weight: 500;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   SECONDARY MESSAGE
+========================================================= */
+
+.under-construction-message {
+    max-width: 620px;
+
+    margin: 0 auto 35px;
+
+    color: #7a8883;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.under-construction-divider {
+    width: 70px;
+    height: 3px;
+
+    margin: 0 auto 35px;
+
+    background: #f2b400;
+
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.under-construction-buttons {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+/* =========================================================
+   PRIMARY BUTTON
+========================================================= */
+
+.under-construction-btn-primary {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 52px;
+
+    padding: 0 28px;
+
+    background: #008451;
+
+    color: #ffffff;
+
+    border: 2px solid #008451;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+    text-decoration: none;
+
+    transition:
+        all 0.3s ease;
+}
+
+.under-construction-btn-primary:hover {
+    background: #f2b400;
+
+    border-color: #f2b400;
+
+    color: #102a24;
+
+    transform:
+        translateY(-3px);
+}
+
+
+/* =========================================================
+   SECONDARY BUTTON
+========================================================= */
+
+.under-construction-btn-secondary {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 52px;
+
+    padding: 0 28px;
+
+    background: transparent;
+
+    color: #008451;
+
+    border: 2px solid #008451;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+    text-decoration: none;
+
+    transition:
+        all 0.3s ease;
+}
+
+.under-construction-btn-secondary:hover {
+    background: #008451;
+
+    border-color: #008451;
+
+    color: #ffffff;
+
+    transform:
+        translateY(-3px);
+}
+
+
+/* =========================================================
+   BRAND
+========================================================= */
+
+.under-construction-brand {
+    margin-top: 35px;
+
+    color: #8a9994;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+.under-construction-brand span {
+    color: #008451;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .under-construction-page {
+        padding: 80px 20px;
+    }
+
+    .under-construction-card {
+        padding: 55px 35px;
+    }
+
+    .under-construction-icon {
+        width: 80px;
+        height: 80px;
+
+        font-size: 38px;
+    }
+
+    .under-construction-card h1 {
+        font-size: 48px;
+
+        letter-spacing: -1px;
+    }
+
+    .under-construction-description {
+        font-size: 16px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .under-construction-page {
+        min-height: 100vh;
+
+        padding: 60px 15px;
+    }
+
+    .under-construction-card {
+        padding: 45px 22px;
+
+        border-radius: 22px;
+    }
+
+    .under-construction-icon {
+        width: 70px;
+        height: 70px;
+
+        margin-bottom: 22px;
+
+        border-radius: 19px;
+
+        font-size: 32px;
+    }
+
+    .under-construction-label {
+        font-size: 11px;
+
+        letter-spacing: 1.5px;
+    }
+
+    .under-construction-card h1 {
+        font-size: 38px;
+
+        letter-spacing: -1px;
+    }
+
+    .under-construction-description {
+        font-size: 15px;
+
+        line-height: 1.7;
+    }
+
+    .under-construction-message {
+        font-size: 13px;
+    }
+
+    .under-construction-buttons {
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+    .under-construction-btn-primary,
+    .under-construction-btn-secondary {
+        width: 100%;
+
+        max-width: 320px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .under-construction-page {
+        padding: 45px 12px;
+    }
+
+    .under-construction-card {
+        padding: 38px 18px;
+    }
+
+    .under-construction-card h1 {
+        font-size: 32px;
+    }
+
+    .under-construction-description {
+        font-size: 14px;
+    }
+
+}

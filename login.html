@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- ==========================================
+         BASIC META TAGS
+    =========================================== -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ==========================================
+         TITLE
+    =========================================== -->
+
+    <title>M.A. ABUBAKAR, SAN, Campaign Management System | Login</title>
+
+    <!-- ==========================================
+         GOOGLE FONT
+    =========================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- ==========================================
+         FONT AWESOME
+    =========================================== -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- ==========================================
+         LOGIN CSS
+    =========================================== -->
+
+    <link rel="stylesheet" href="css/login.css">
+
+</head>
+
+<body>
+
+    <!-- ==========================================
+         LOGIN CONTAINER
+    =========================================== -->
+
+    <div class="login-container">
+
+        <div class="login-card">
+
+            <!-- Logo -->
+
+            <div class="logo">
+
+                <img src="images/logo.png" alt="M.A. ABUBAKAR, SAN, Campaign Logo">
+
+            </div>
+
+            <!-- Heading -->
+
+            <h1 class="login-title">
+                M.A. SAN, Campaign
+            </h1>
+
+            <p class="login-subtitle">
+                Campaign Management System
+            </p>
+
+            <h2 class="login-heading">
+                Administrator Login
+            </h2>
+
+            <!-- Login Form -->
+
+            <form id="loginForm" class="login-form">
+
+                <!-- Username -->
+
+                <div class="form-group">
+
+                    <label for="username">
+
+                        Username
+
+                    </label>
+
+                    <div class="input-box">
+
+                        <i class="fa-solid fa-user"></i>
+
+                        <input
+                            type="text"
+                            id="username"
+                            placeholder="Enter your username"
+                            required>
+
+                    </div>
+
+                </div>
+
+                <!-- Password -->
+
+                <div class="form-group">
+
+                    <label for="password">
+
+                        Password
+
+                    </label>
+
+                    <div class="input-box password-box">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Enter your password"
+                            required>
+
+                        <span id="togglePassword">
+
+                            <i class="fa-solid fa-eye"></i>
+
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <!-- Options -->
+
+                <div class="login-options">
+
+                    <label class="remember-me">
+
+                        <input type="checkbox">
+
+                        Remember Me
+
+                    </label>
+
+                    <a href="#" class="forgot-password">
+
+                        Forgot Password?
+
+                    </a>
+
+                </div>
+
+                <!-- Error Message -->
+
+                <div id="errorMessage">
+
+                </div>
+
+                <!-- Login Button -->
+
+                <button
+                    type="submit"
+                    class="login-btn">
+
+                    <i class="fa-solid fa-right-to-bracket"></i>
+
+                    Sign In
+
+                </button>
+
+            </form>
+
+            <!-- Footer -->
+
+            <div class="login-footer">
+
+                © 2026 MAKAMA BABBA Campaign Management System
+
+            </div>
+
+        </div>
+
+    </div>
+<script src="js/login.js"></script>
+
+</body>
+
+</html>
