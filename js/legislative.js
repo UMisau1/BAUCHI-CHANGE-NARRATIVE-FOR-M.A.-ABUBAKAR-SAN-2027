@@ -1,84 +1,152 @@
 /* =========================================================
    LEGISLATIVE RECORD UI
-   MAKAMA BABBA CAMPAIGN WEBSITE
+   Uses the REAL legislative-laws.js DATABASE
 ========================================================= */
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    const lawsGrid = document.getElementById("legislativeLawsGrid");
-    const yearFilter = document.getElementById("lawYearFilter");
-    const categoryFilter = document.getElementById("lawCategoryFilter");
-    const searchInput = document.getElementById("lawSearch");
+    const grid =
+        document.getElementById("legislativeLawsGrid");
 
-    const totalLaws = document.getElementById("totalLaws");
-    const totalCategories = document.getElementById("totalCategories");
-    const legislativeLawCount =
+    const yearFilter =
+        document.getElementById("lawYearFilter");
+
+    const categoryFilter =
+        document.getElementById("lawCategoryFilter");
+
+    const searchInput =
+        document.getElementById("lawSearch");
+
+    const totalLaws =
+        document.getElementById("totalLaws");
+
+    const totalCategories =
+        document.getElementById("totalCategories");
+
+    const lawCount =
         document.getElementById("legislativeLawCount");
 
 
+    if (!grid) return;
+
+
     /* =====================================================
-       CHECK DATABASE
+       GET REAL DATABASE
     ===================================================== */
 
-    if (
-        typeof legislativeLaws === "undefined" ||
-        !Array.isArray(legislativeLaws)
-    ) {
+    const laws =
+        window.legislativeLaws || [];
 
-        console.error(
-            "Legislative laws database was not found."
-        );
+
+    /* =====================================================
+       DATABASE CHECK
+    ===================================================== */
+
+    console.log(
+        "LEGISLATIVE DATABASE:",
+        laws
+    );
+
+    console.log(
+        "TOTAL LAWS:",
+        laws.length
+    );
+
+
+    /* =====================================================
+       IF DATABASE IS NOT AVAILABLE
+    ===================================================== */
+
+    if (!laws.length) {
+
+        if (totalLaws) {
+            totalLaws.textContent = "0";
+        }
+
+        if (totalCategories) {
+            totalCategories.textContent = "0";
+        }
+
+        if (grid) {
+
+            grid.innerHTML = `
+
+                <div class="legislative-empty">
+
+                    <h3>
+                        Legislative records unavailable
+                    </h3>
+
+                    <p>
+                        The legislative database could not be loaded.
+                    </p>
+
+                </div>
+
+            `;
+
+        }
 
         return;
     }
 
 
     /* =====================================================
-       UPDATE STATISTICS
+       40+ MAIN DISPLAY
     ===================================================== */
 
-    if (totalLaws) {
-
-        totalLaws.textContent =
-            legislativeLaws.length;
-
-    }
-
-
-    if (legislativeLawCount) {
-
-        legislativeLawCount.textContent =
-            legislativeLaws.length;
-
+    if (lawCount) {
+        lawCount.textContent = "40+";
     }
 
 
     /* =====================================================
-       GET UNIQUE CATEGORIES
+       REAL TOTAL
+    ===================================================== */
+
+    if (totalLaws) {
+        totalLaws.textContent = laws.length;
+    }
+
+
+    /* =====================================================
+       REAL CATEGORIES
     ===================================================== */
 
     const categories = [
         ...new Set(
-            legislativeLaws.map(
-                law => law.category
-            )
+            laws
+                .map(law => law.category)
+                .filter(Boolean)
         )
     ].sort();
 
 
     if (totalCategories) {
-
         totalCategories.textContent =
             categories.length;
-
     }
 
 
     /* =====================================================
-       POPULATE CATEGORY FILTER
+       CATEGORY DROPDOWN
     ===================================================== */
 
     if (categoryFilter) {
+
+        categoryFilter.innerHTML = "";
+
+        const allOption =
+            document.createElement("option");
+
+        allOption.value = "all";
+        allOption.textContent =
+            "All Categories";
+
+        categoryFilter.appendChild(
+            allOption
+        );
+
 
         categories.forEach(category => {
 
@@ -86,10 +154,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 document.createElement("option");
 
             option.value = category;
-
             option.textContent = category;
 
-            categoryFilter.appendChild(option);
+            categoryFilter.appendChild(
+                option
+            );
 
         });
 
@@ -100,33 +169,93 @@ document.addEventListener("DOMContentLoaded", () => {
        RENDER LAWS
     ===================================================== */
 
-    function renderLaws(records) {
+    function renderLaws() {
 
-        if (!lawsGrid) return;
+        const selectedYear =
+            yearFilter?.value || "all";
+
+        const selectedCategory =
+            categoryFilter?.value || "all";
+
+        const search =
+            searchInput?.value
+                .trim()
+                .toLowerCase() || "";
 
 
-        lawsGrid.innerHTML = "";
+        const filtered =
+            laws.filter(law => {
 
 
-        /* EMPTY STATE */
+                /* YEAR */
 
-        if (records.length === 0) {
+                const yearMatch =
+                    selectedYear === "all" ||
+                    String(law.year) ===
+                    selectedYear;
 
-            lawsGrid.innerHTML = `
+
+                /* CATEGORY */
+
+                const categoryMatch =
+                    selectedCategory === "all" ||
+                    law.category ===
+                    selectedCategory;
+
+
+                /* SEARCH */
+
+                const searchableText = `
+
+                    ${law.lawNo || ""}
+                    ${law.year || ""}
+                    ${law.category || ""}
+                    ${law.title || ""}
+                    ${law.status || ""}
+
+                `.toLowerCase();
+
+
+                const searchMatch =
+                    !search ||
+                    searchableText.includes(
+                        search
+                    );
+
+
+                return (
+                    yearMatch &&
+                    categoryMatch &&
+                    searchMatch
+                );
+
+            });
+
+
+        /* =================================================
+           CLEAR GRID
+        ================================================= */
+
+        grid.innerHTML = "";
+
+
+        /* =================================================
+           EMPTY RESULT
+        ================================================= */
+
+        if (!filtered.length) {
+
+            grid.innerHTML = `
 
                 <div class="legislative-empty">
-
-                    <div class="legislative-empty-icon">
-                        🔎
-                    </div>
 
                     <h3>
                         No legislation found
                     </h3>
 
                     <p>
-                        No legislative record matches
-                        your search or selected filters.
+                        No law matches the selected
+                        year, category or search.
                     </p>
 
                 </div>
@@ -137,9 +266,11 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
 
-        /* CREATE CARDS */
+        /* =================================================
+           CREATE CARDS
+        ================================================= */
 
-        records.forEach((law, index) => {
+        filtered.forEach(law => {
 
             const card =
                 document.createElement("article");
@@ -150,57 +281,46 @@ document.addEventListener("DOMContentLoaded", () => {
 
             card.innerHTML = `
 
-                <div class="legislative-law-number">
+                <div class="law-card-top">
 
-                    ${String(index + 1).padStart(2, "0")}
+                    <span class="law-year">
+                        ${law.year || ""}
+                    </span>
+
+                    <span class="law-category">
+                        ${law.category || ""}
+                    </span>
+
+                </div>
+
+
+                <div class="law-number">
+
+                    LAW NO.
+                    ${law.lawNo || ""}
 
                 </div>
 
 
-                <div class="legislative-law-content">
-
-                    <div class="legislative-law-meta">
-
-                        <span class="law-year">
-                            ${law.year}
-                        </span>
-
-                        <span class="law-category">
-                            ${law.category}
-                        </span>
-
-                    </div>
+                <h3>
+                    ${law.title || ""}
+                </h3>
 
 
-                    <h3>
-                        ${law.title}
-                    </h3>
-
-
-                    <p>
-                        ${law.description}
-                    </p>
-
-
-                    <div class="legislative-law-footer">
-
-                        <span>
-                            <i class="fas fa-landmark"></i>
-                            Legislative Record
-                        </span>
-
-                        <span>
-                            ${law.year}
-                        </span>
-
-                    </div>
-
-                </div>
+                ${
+                    law.status
+                        ? `
+                            <p class="law-status">
+                                ${law.status}
+                            </p>
+                          `
+                        : ""
+                }
 
             `;
 
 
-            lawsGrid.appendChild(card);
+            grid.appendChild(card);
 
         });
 
@@ -208,269 +328,31 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
     /* =====================================================
-       FILTER RECORDS
+       EVENTS
     ===================================================== */
 
-    function filterLaws() {
-
-        const selectedYear =
-            yearFilter
-                ? yearFilter.value
-                : "all";
+    yearFilter?.addEventListener(
+        "change",
+        renderLaws
+    );
 
 
-        const selectedCategory =
-            categoryFilter
-                ? categoryFilter.value
-                : "all";
+    categoryFilter?.addEventListener(
+        "change",
+        renderLaws
+    );
 
 
-        const searchTerm =
-            searchInput
-                ? searchInput.value
-                    .trim()
-                    .toLowerCase()
-                : "";
-
-
-        const filtered =
-            legislativeLaws.filter(law => {
-
-                const matchesYear =
-                    selectedYear === "all" ||
-                    String(law.year) === selectedYear;
-
-
-                const matchesCategory =
-                    selectedCategory === "all" ||
-                    law.category === selectedCategory;
-
-
-                const searchableText = `
-
-                    ${law.title}
-                    ${law.description}
-                    ${law.category}
-                    ${law.year}
-
-                `.toLowerCase();
-
-
-                const matchesSearch =
-                    searchTerm === "" ||
-                    searchableText.includes(searchTerm);
-
-
-                return (
-                    matchesYear &&
-                    matchesCategory &&
-                    matchesSearch
-                );
-
-            });
-
-
-        renderLaws(filtered);
-
-    }
-
-
-    /* =====================================================
-       EVENT LISTENERS
-    ===================================================== */
-
-    if (yearFilter) {
-
-        yearFilter.addEventListener(
-            "change",
-            filterLaws
-        );
-
-    }
-
-
-    if (categoryFilter) {
-
-        categoryFilter.addEventListener(
-            "change",
-            filterLaws
-        );
-
-    }
-
-
-    if (searchInput) {
-
-        searchInput.addEventListener(
-            "input",
-            filterLaws
-        );
-
-    }
+    searchInput?.addEventListener(
+        "input",
+        renderLaws
+    );
 
 
     /* =====================================================
        INITIAL RENDER
     ===================================================== */
 
-    renderLaws(legislativeLaws);
-
-});
-/* =========================================================
-   LEGISLATIVE RECORD JS
-========================================================= */
-
-document.addEventListener("DOMContentLoaded", () => {
-
-    /* =====================================================
-       COUNTER ANIMATION
-    ===================================================== */
-
-    function animateCounter(element, target, duration = 1200) {
-
-        if (!element) return;
-
-        const start = 0;
-        const startTime = performance.now();
-
-        function update(currentTime) {
-
-            const elapsed = currentTime - startTime;
-            const progress = Math.min(elapsed / duration, 1);
-
-            const eased =
-                1 - Math.pow(1 - progress, 3);
-
-            const current =
-                Math.floor(start + (target - start) * eased);
-
-            element.textContent = current;
-
-            if (progress < 1) {
-                requestAnimationFrame(update);
-            } else {
-                element.textContent = target;
-            }
-        }
-
-        requestAnimationFrame(update);
-    }
-
-
-    /* =====================================================
-       MAIN LAW COUNTER
-    ===================================================== */
-
-    const legislativeLawCount =
-    document.getElementById("legislativeLawCount");
-
-if (legislativeLawCount) {
-    legislativeLawCount.textContent = "40+";
-}
-
-
-    /* =====================================================
-       DYNAMIC TOTAL LAWS
-    ===================================================== */
-
-    const totalLaws =
-        document.getElementById("totalLaws");
-
-    if (totalLaws) {
-
-        const value =
-            parseInt(totalLaws.textContent) || 0;
-
-        animateCounter(
-            totalLaws,
-            value
-        );
-    }
-
-
-    /* =====================================================
-       CATEGORY COUNT
-    ===================================================== */
-
-    const totalCategories =
-        document.getElementById("totalCategories");
-
-    if (totalCategories) {
-
-        const value =
-            parseInt(totalCategories.textContent) || 0;
-
-        animateCounter(
-            totalCategories,
-            value
-        );
-    }
-
-
-    /* =====================================================
-       SMOOTH YEAR NAVIGATION
-    ===================================================== */
-
-    const yearCards =
-        document.querySelectorAll(
-            ".legislative-year-card"
-        );
-
-    yearCards.forEach(card => {
-
-        card.addEventListener("click", () => {
-
-            const year =
-                card.querySelector("strong")?.textContent.trim();
-
-            const filter =
-                document.getElementById("lawYearFilter");
-
-            if (!filter || !year) return;
-
-            filter.value = year;
-
-            filter.dispatchEvent(
-                new Event("change")
-            );
-
-            const lawsGrid =
-                document.getElementById(
-                    "legislativeLawsGrid"
-                );
-
-            if (lawsGrid) {
-
-                lawsGrid.scrollIntoView({
-                    behavior: "smooth",
-                    block: "start"
-                });
-
-            }
-
-        });
-
-    });
-
-
-    /* =====================================================
-       SEARCH
-    ===================================================== */
-
-    const search =
-        document.getElementById("lawSearch");
-
-    if (search) {
-
-        search.addEventListener("input", () => {
-
-            const event =
-                new Event("legislativeSearch");
-
-            document.dispatchEvent(event);
-
-        });
-
-    }
+    renderLaws();
 
 });

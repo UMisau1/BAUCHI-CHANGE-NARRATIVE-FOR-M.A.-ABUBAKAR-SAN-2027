@@ -1,0 +1,1759 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Controversial Issues | Mohammed Abdullahi Abubakar, SAN
+    </title>
+
+    <!-- MAIN WEBSITE CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+/* =========================================================
+   CONTROVERSIAL ISSUES — PAGE STYLING
+========================================================= */
+
+.controversial-page {
+    padding: 50px 0 70px;
+}
+
+.controversial-page .page-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.controversial-page .content-section {
+    margin-bottom: 45px;
+}
+
+
+/* =========================================================
+   BAIL-OUT SUMMARY
+========================================================= */
+
+.bailout-summary {
+    margin: 25px 0;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,.08);
+}
+
+.bailout-amount {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   TABLE
+========================================================= */
+
+.bailout-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.bailout-table {
+    width: 100%;
+    min-width: 900px;
+    border-collapse: collapse;
+}
+
+.bailout-table th,
+.bailout-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+    vertical-align: top;
+}
+
+.bailout-table th {
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   ORIGINAL PDF
+========================================================= */
+
+.original-document-section {
+    margin-top: 45px;
+}
+
+.document-viewer {
+    width: 100%;
+    height: 750px;
+    margin-top: 25px;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+}
+
+.document-viewer iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    display: block;
+}
+
+.document-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+</head>
+
+    <!-- =================================================
+         FONT AWESOME
+    ================================================== -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+<!-- =================================================
+         CONTROVERSIAL ISSUES CSS
+    ================================================== -->
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f7f6;
+            color: #222;
+            line-height: 1.7;
+        }
+
+
+        /* =================================================
+           HEADER
+        ================================================= */
+
+        header {
+            background: linear-gradient(
+                135deg,
+                #006b3c,
+                #004d2b
+            );
+
+            color: white;
+
+            text-align: center;
+
+            padding: 70px 20px;
+
+            border-bottom: 5px solid #d4af37;
+        }
+
+
+        header h1 {
+            font-size: 42px;
+            margin-bottom: 12px;
+        }
+
+
+        header p {
+            margin: 5px 0;
+            font-size: 17px;
+        }
+
+
+        /* =================================================
+           MAIN
+        ================================================= */
+
+        main {
+            width: 92%;
+            max-width: 1250px;
+            margin: 50px auto;
+        }
+
+
+        /* =================================================
+           GENERAL SECTION
+        ================================================= */
+
+        main > section {
+            background: white;
+
+            padding: 35px;
+
+            margin-bottom: 35px;
+
+            border-radius: 14px;
+
+            box-shadow:
+                0 8px 25px rgba(0, 0, 0, 0.08);
+        }
+
+
+        main h2 {
+            color: #006b3c;
+
+            font-size: 30px;
+
+            margin-bottom: 18px;
+        }
+
+
+        main h3 {
+            color: #006b3c;
+
+            margin-bottom: 12px;
+        }
+
+
+        main p {
+            margin-bottom: 15px;
+        }
+
+
+        /* =================================================
+           BAILOUT HEADER
+        ================================================== */
+
+        .bailout-header {
+            border-left: 5px solid #d4af37;
+
+            padding-left: 20px;
+
+            margin-bottom: 30px;
+        }
+
+
+        .bailout-header p {
+            max-width: 900px;
+        }
+
+
+        .content-label {
+            display: inline-block;
+
+            color: #9a7b00;
+
+            font-size: 13px;
+
+            font-weight: bold;
+
+            letter-spacing: 1px;
+
+            margin-bottom: 8px;
+        }
+
+
+        /* =================================================
+           DOCUMENT CARD
+        ================================================== */
+
+        .bailout-document-card {
+            background: #f1f7f3;
+
+            border: 1px solid #dce9e1;
+
+            border-radius: 12px;
+
+            padding: 25px;
+
+            margin-bottom: 30px;
+        }
+
+
+        .bailout-document-card h3 {
+            margin-bottom: 18px;
+        }
+
+
+        /* =================================================
+           SUMMARY CARDS
+        ================================================== */
+
+        .bailout-summary {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 20px;
+
+            margin-bottom: 35px;
+        }
+
+
+        .bailout-summary-card {
+            background: linear-gradient(
+                135deg,
+                #006b3c,
+                #008f52
+            );
+
+            color: white;
+
+            padding: 25px;
+
+            border-radius: 12px;
+
+            text-align: center;
+        }
+
+
+        .bailout-summary-card span {
+            display: block;
+
+            font-size: 14px;
+
+            margin-bottom: 10px;
+
+            opacity: 0.9;
+        }
+
+
+        .bailout-summary-card strong {
+            display: block;
+
+            font-size: 23px;
+        }
+
+
+        /* =================================================
+           RECORD HEADER
+        ================================================== */
+
+        .bailout-record-header {
+            margin-bottom: 25px;
+        }
+
+
+        /* =================================================
+           TABLE WRAPPER
+        ================================================== */
+
+        .table-wrapper {
+            width: 100%;
+
+            overflow-x: auto;
+
+            border-radius: 10px;
+        }
+
+
+        /* =================================================
+           BAILOUT TABLE
+        ================================================== */
+
+        .bailout-table {
+            width: 100%;
+
+            min-width: 900px;
+
+            border-collapse: collapse;
+
+            background: white;
+        }
+
+
+        .bailout-table th {
+            background: #006b3c;
+
+            color: white;
+
+            padding: 14px;
+
+            text-align: left;
+
+            font-size: 14px;
+
+            white-space: nowrap;
+        }
+
+
+        .bailout-table td {
+            padding: 14px;
+
+            border-bottom: 1px solid #ddd;
+
+            vertical-align: top;
+
+            font-size: 14px;
+        }
+
+
+        .bailout-table tbody tr:nth-child(even) {
+            background: #f7faf8;
+        }
+
+
+        .bailout-table tbody tr:hover {
+            background: #eef6f1;
+        }
+
+
+        .bailout-table tfoot {
+            background: #fff7d6;
+        }
+
+
+        .bailout-table tfoot th {
+            background: #d4af37;
+
+            color: #222;
+
+            font-weight: bold;
+        }
+
+
+        /* =================================================
+           DOCUMENTARY NOTE
+        ================================================== */
+
+        .documentary-note {
+            margin-top: 30px;
+
+            padding: 25px;
+
+            background: #fff8df;
+
+            border-left: 5px solid #d4af37;
+
+            border-radius: 8px;
+        }
+
+
+        .documentary-note h3 {
+            color: #8a6d00;
+        }
+
+
+        /* =================================================
+           MOBILE
+        ================================================== */
+
+        @media (max-width: 768px) {
+
+            header {
+                padding: 50px 15px;
+            }
+
+
+            header h1 {
+                font-size: 30px;
+            }
+
+
+            header p {
+                font-size: 15px;
+            }
+
+
+            main {
+                width: 94%;
+
+                margin: 30px auto;
+            }
+
+
+            main > section {
+                padding: 22px;
+
+                border-radius: 10px;
+            }
+
+
+            main h2 {
+                font-size: 25px;
+            }
+
+
+            .bailout-summary {
+                grid-template-columns: 1fr;
+            }
+
+
+            .bailout-summary-card strong {
+                font-size: 21px;
+            }
+
+
+            .bailout-table {
+                min-width: 900px;
+            }
+
+        }
+
+
+        /* =================================================
+           SMALL PHONES
+        ================================================== */
+
+        @media (max-width: 480px) {
+
+            header h1 {
+                font-size: 25px;
+            }
+
+
+            main {
+                width: 96%;
+            }
+
+
+            main > section {
+                padding: 18px;
+            }
+
+
+            main h2 {
+                font-size: 22px;
+            }
+
+
+            .bailout-summary-card {
+                padding: 20px;
+            }
+
+        }
+        /* =================================================
+   ORIGINAL BAIL-OUT DOCUMENT
+================================================= */
+
+.original-document-section {
+    margin-top: 35px;
+}
+
+
+.original-document-section .bailout-record-header {
+    margin-bottom: 25px;
+}
+
+
+/* =================================================
+   PDF VIEWER
+================================================= */
+
+.document-viewer {
+    width: 100%;
+    height: 750px;
+
+    background: #f1f1f1;
+
+    border: 1px solid #d9d9d9;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+.document-viewer iframe {
+    width: 100%;
+    height: 100%;
+
+    border: none;
+
+    display: block;
+}
+
+
+/* =================================================
+   DOCUMENT BUTTON
+================================================= */
+
+.document-actions {
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 20px;
+}
+
+
+.document-btn {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 13px 24px;
+
+    background: #006b3c;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    transition: 0.3s ease;
+}
+
+
+.document-btn:hover {
+    background: #004d2b;
+
+    transform: translateY(-2px);
+}
+
+
+.document-btn i {
+    font-size: 18px;
+}
+
+
+/* =================================================
+   MOBILE PDF VIEWER
+================================================= */
+
+@media (max-width: 768px) {
+
+    .document-viewer {
+        height: 600px;
+
+        border-radius: 8px;
+    }
+
+
+    .document-actions {
+        margin-top: 15px;
+    }
+
+
+    .document-btn {
+        width: 100%;
+
+        justify-content: center;
+
+        padding: 14px 18px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .document-viewer {
+        height: 520px;
+    }
+
+}
+
+    </style>
+
+</head
+
+</head>
+
+
+<body>
+
+<!-- ==========================================
+     PROFESSIONAL NAVIGATION V5.0
+========================================== -->
+
+<nav class="navbar">
+
+    <div class="container nav-container">
+
+        <!-- LOGO -->
+        <a href="index.html" class="nav-logo">
+
+            <img
+                src="images/m.a.-photo.jpg"
+                alt="M.A. Abubakar Campaign Logo"
+            >
+
+            <span>M.A. ABUBAKAR Campaign</span>
+
+        </a>
+
+
+        <!-- MOBILE MENU BUTTON -->
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Open Menu"
+            aria-expanded="false"
+        >
+
+            <i class="fas fa-bars"></i>
+
+        </button>
+
+
+        <!-- NAVIGATION -->
+        <ul class="nav-menu" id="navMenu">
+
+            <!-- HOME -->
+            <li>
+                <a href="index.html" class="active">
+                    Home
+                </a>
+            </li>
+
+
+            <!-- ABOUT -->
+            <li class="dropdown">
+
+                <a href="#" class="dropdown-toggle">
+
+                    About
+
+                    <i class="fas fa-chevron-down"></i>
+
+                </a>
+
+                <ul class="dropdown-menu">
+
+                    <li>
+                        <a href="about.html">
+                            About Candidate
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="biography.html">
+                            Biography
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="leadership.html">
+                            Leadership
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="achievements.html">
+                            Achievements
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="controversial-issues.html">
+                            Controversial Issues
+                        </a>
+                    </li>
+
+                </ul>
+
+            </li>
+
+
+            <!-- CAMPAIGN -->
+            <li class="dropdown">
+
+                <a href="#" class="dropdown-toggle">
+
+                    Campaign
+
+                    <i class="fas fa-chevron-down"></i>
+
+                </a>
+
+                <ul class="dropdown-menu">
+
+                    <li>
+                        <a href="manifesto.html">
+                            Manifesto
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="events.html">
+                            Events
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="news.html">
+                            News
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="gallery.html">
+                            Gallery
+                        </a>
+                    </li>
+
+                </ul>
+
+            </li>
+
+
+            <!-- GET INVOLVED -->
+            <li class="dropdown">
+
+                <a href="#" class="dropdown-toggle">
+
+                    Get Involved
+
+                    <i class="fas fa-chevron-down"></i>
+
+                </a>
+
+                <ul class="dropdown-menu">
+
+                    <li>
+                        <a href="register.html">
+                            Register
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="volunteer.html">
+                            Volunteer
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="members.html">
+                            Members
+                        </a>
+                    </li>
+
+                </ul>
+
+            </li>
+
+
+            <!-- SITUATION ROOM -->
+            <li class="dropdown">
+
+                <a href="#" class="dropdown-toggle">
+
+                    Situation Room
+
+                    <i class="fas fa-chevron-down"></i>
+
+                </a>
+
+                <ul class="dropdown-menu">
+
+                    <li>
+                        <a href="dashboard.html">
+                            Dashboard
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="situation-room.html">
+                            Live Reports
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="analytics.html">
+                            Analytics
+                        </a>
+                    </li>
+
+                </ul>
+
+            </li>
+
+
+            <!-- CONTACT -->
+            <li>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </li>
+
+        </ul>
+
+
+        <!-- RIGHT SIDE -->
+        <div class="nav-right">
+
+           <button
+    id="darkModeBtn"
+    type="button"
+    aria-label="Switch to Dark Mode"
+    title="Dark Mode"
+>
+    <span id="darkModeIcon">🌙</span>
+</button>
+
+            <a
+                href="login.html"
+                class="login-btn"
+            >
+
+                <i class="fas fa-user-lock"></i>
+
+                Admin
+
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+    <!-- =====================================================
+         PAGE HEADER
+    ====================================================== -->
+
+    <header class="page-header">
+
+    <h1>
+        Controversial Issues
+    </h1>
+
+    <p>
+        MOHAMMED ABDULLAHI ABUBAKAR, SAN
+    </p>
+
+    <p>
+        Bauchi State 2015–2019
+    </p>
+
+</header>
+
+
+
+    <!-- =====================================================
+         INTRODUCTION
+    ====================================================== -->
+
+    <main>
+
+       <section class="content-section">
+
+            <h2>
+                Introduction
+            </h2>
+
+            <p>
+                This section presents selected issues, records,
+                documents and public information relating to the
+                administration of His Excellency Mohammed Abdullahi
+                Abubakar, SAN, as Governor of Bauchi State from
+                31 May 2015 to 31 May 2019.
+            </p>
+
+            <p>
+                The purpose of this section is to provide visitors
+                with access to relevant documentary records and
+                publicly available information so that the issues
+                can be examined from the available evidence.
+            </p>
+
+        </section>
+
+
+
+        <!-- =====================================================
+     BAIL-OUT FUNDS
+====================================================== -->
+
+<section class="bailout-section">
+
+    <div class="bailout-header">
+
+        <span class="content-label">
+            PUBLIC FINANCE & ACCOUNTABILITY
+        </span>
+
+        <h2>
+            Federal Government Bail-Out Funds
+        </h2>
+
+        <p>
+            This section presents the available record concerning
+            the utilization of Federal Government Bail-Out funds
+            received by Bauchi State during the period covered by
+            the document.
+        </p>
+
+    </div>
+
+
+    <!-- =================================================
+         DOCUMENT IDENTIFICATION
+    ================================================== -->
+
+    <div class="bailout-document-card">
+
+        <h3>
+            Official Utilization Record
+        </h3>
+
+        <p>
+            <strong>Office:</strong>
+            Office of the Accountant General, Bauchi State
+        </p>
+
+        <p>
+            <strong>Document:</strong>
+            Utilization of Federal Government Bail-Out
+        </p>
+
+        <p>
+            <strong>Period:</strong>
+            September 2015 – August 2016
+        </p>
+
+    </div>
+
+
+    <!-- =================================================
+         BAIL-OUT SUMMARY
+    ================================================== -->
+
+    <div class="bailout-summary">
+
+        <div class="bailout-summary-card">
+
+            <span>
+                Amount Received from Bail-Out
+            </span>
+
+            <strong>
+                ₦8,609,100,000.00
+            </strong>
+
+        </div>
+
+
+        <div class="bailout-summary-card">
+
+            <span>
+                Period Covered
+            </span>
+
+            <strong>
+                2015 – 2016
+            </strong>
+
+        </div>
+
+
+        <div class="bailout-summary-card">
+
+            <span>
+                Recorded Balance
+            </span>
+
+            <strong>
+                ₦1,594,201.08
+            </strong>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================================
+         UTILIZATION RECORD
+    ================================================== -->
+
+    <div class="bailout-record">
+
+        <div class="bailout-record-header">
+
+            <span class="content-label">
+                DOCUMENTARY RECORD
+            </span>
+
+            <h3>
+                Utilization of Bail-Out Funds
+            </h3>
+
+            <p>
+                The following entries reproduce the utilization
+                record presented in the available document.
+            </p>
+
+        </div>
+
+
+        <div class="table-wrapper">
+
+            <table class="bailout-table">
+
+                <thead>
+
+                    <tr>
+
+                        <th>
+                            MDA
+                        </th>
+
+                        <th>
+                            Details of Payment
+                        </th>
+
+                        <th>
+                            Amount
+                        </th>
+
+                        <th>
+                            Cumulative Balance
+                        </th>
+
+                        <th>
+                            Remarks
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            OAG
+                        </td>
+
+                        <td>
+                            For the settlement of September,
+                            2015 Staff Salaries
+                        </td>
+
+                        <td>
+                            ₦2,251,688,575.89
+                        </td>
+
+                        <td>
+                            ₦6,357,411,424.11
+                        </td>
+
+                        <td>
+                            16/9/2015 Paid
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            OAG
+                        </td>
+
+                        <td>
+                            For the settlement of outstanding
+                            balance of April, 2015 Staff Salaries
+                        </td>
+
+                        <td>
+                            ₦1,426,640,890.34
+                        </td>
+
+                        <td>
+                            ₦4,930,770,533.77
+                        </td>
+
+                        <td>
+                            16/9/2015 Paid
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            OAG
+                        </td>
+
+                        <td>
+                            Areas of Salary January, 2015,
+                            i.e. Political Office Holders
+                        </td>
+
+                        <td>
+                            ₦76,815,773.54
+                        </td>
+
+                        <td>
+                            ₦4,853,954,760.23
+                        </td>
+
+                        <td>
+                            16/9/2015 Paid
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            OAG
+                        </td>
+
+                        <td>
+                            Contribution to SUBEB
+                            September, 2015
+                        </td>
+
+                        <td>
+                            ₦10,000,000.00
+                        </td>
+
+                        <td>
+                            ₦4,843,954,760.23
+                        </td>
+
+                        <td>
+                            16/9/2015 Paid
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            OAG
+                        </td>
+
+                        <td>
+                            Saudi Drivers Salary
+                            September, 2015
+                        </td>
+
+                        <td>
+                            ₦2,463,500.00
+                        </td>
+
+                        <td>
+                            ₦4,841,491,260.23
+                        </td>
+
+                        <td>
+                            16/9/2015 Paid
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            OAG
+                        </td>
+
+                        <td>
+                            Fertilizer Staff Salary
+                            September, 2015
+                        </td>
+
+                        <td>
+                            ₦2,082,661.11
+                        </td>
+
+                        <td>
+                            ₦4,839,408,599.12
+                        </td>
+
+                        <td>
+                            16/9/2015 Paid
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            OAG
+                        </td>
+
+                        <td>
+                            Settlement of outstanding
+                            April and September, 2015 Staff
+                            Salaries for Local Government and LEA
+                        </td>
+
+                        <td>
+                            ₦3,378,620,000.00
+                        </td>
+
+                        <td>
+                            ₦1,460,788,599.12
+                        </td>
+
+                        <td>
+                            16/9/2015 Paid
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            OAG
+                        </td>
+
+                        <td>
+                            Settlement of outstanding April and
+                            September, 2015 Staff Salaries for
+                            Local Government and LEA
+                        </td>
+
+                        <td>
+                            ₦946,957,675.63
+                        </td>
+
+                        <td>
+                            ₦513,830,923.49
+                        </td>
+
+                        <td>
+                            16/9/2015 Paid
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            OAG
+                        </td>
+
+                        <td>
+                            Settlement of State Pension
+                            for September, 2015
+                        </td>
+
+                        <td>
+                            ₦268,819,306.75
+                        </td>
+
+                        <td>
+                            ₦245,011,616.74
+                        </td>
+
+                        <td>
+                            16/9/2015 Paid
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            OAG
+                        </td>
+
+                        <td>
+                            Settlement of Salaries
+                            i.r.o State University
+                            for September, 2015
+                        </td>
+
+                        <td>
+                            ₦50,000,000.00
+                        </td>
+
+                        <td>
+                            ₦195,011,616.74
+                        </td>
+
+                        <td>
+                            29/9/2015 Paid
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            OAG
+                        </td>
+
+                        <td>
+                            Payment of Arrears
+                            i.r.o 373 Secondary School Teachers
+                        </td>
+
+                        <td>
+                            ₦106,744,404.80
+                        </td>
+
+                        <td>
+                            ₦88,267,211.94
+                        </td>
+
+                        <td>
+                            10/11/2015 Paid
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            OAG
+                        </td>
+
+                        <td>
+                            Settlement of part of May and June,
+                            2016 Salaries of State University,
+                            Bauchi
+                        </td>
+
+                        <td>
+                            ₦70,000,000.00
+                        </td>
+
+                        <td>
+                            ₦18,267,211.94
+                        </td>
+
+                        <td>
+                            10/08/2016 Paid
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            OAG
+                        </td>
+
+                        <td>
+                            Settlement of September, 2016
+                            Salaries of Bauchi State University
+                        </td>
+
+                        <td>
+                            ₦16,673,010.86
+                        </td>
+
+                        <td>
+                            ₦1,594,201.08
+                        </td>
+
+                        <td>
+                            3/11/2016 Paid
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+
+                <tfoot>
+
+                    <tr>
+
+                        <th colspan="2">
+                            BALANCE
+                        </th>
+
+                        <th>
+                            ₦8,607,505,798.92
+                        </th>
+
+                        <th>
+                            ₦1,594,201.08
+                        </th>
+
+                        <th>
+                        </th>
+
+                    </tr>
+
+                </tfoot>
+
+            </table>
+
+        </div>
+
+    </div>
+
+    <!-- =================================================
+     ORIGINAL BAIL-OUT DOCUMENT
+================================================== -->
+
+<section class="original-document-section">
+
+    <div class="bailout-record-header">
+
+        <span class="content-label">
+            ORIGINAL SOURCE DOCUMENT
+        </span>
+
+        <h3>
+            Official Bail-Out Utilization Document
+        </h3>
+
+        <p>
+            Visitors may view the original document relating to
+            the utilization of the Federal Government Bail-Out
+            funds received by Bauchi State.
+        </p>
+
+    </div>
+
+
+    <div class="document-viewer">
+
+        <iframe
+            src="documents/bailout.pdf"
+            title="Original Bauchi State Bail-Out Document">
+        </iframe>
+
+    </div>
+
+
+    <div class="document-actions">
+
+        <a
+            href="documents/bailout.pdf"
+            target="_blank"
+            class="document-btn">
+
+            <i class="fas fa-file-pdf"></i>
+            Open Original PDF
+
+        </a>
+
+    </div>
+
+</section>
+
+    <!-- =================================================
+         DOCUMENTARY NOTE
+    ================================================== -->
+
+    <div class="documentary-note">
+
+         <h3>
+        Documentary Note
+    </h3>
+
+    <p>
+        The figures and payment details presented in this section
+        are reproduced from the Bail-Out Utilization document
+        identified above.
+    </p>
+
+    <p>
+        The purpose of presenting the record is to provide visitors
+        with access to the documented information and the original
+        source material for independent examination.
+    </p>
+
+    <p>
+        Where the record contains dates, descriptions, amounts or
+        balances, they are presented as stated in the source
+        document.
+    </p>
+
+</div>
+</section>
+
+    </main>
+
+<!-- =====================================
+        FOOTER
+===================================== -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <!-- About -->
+
+            <div class="footer-column">
+
+                <img src="images/apc-logo.png"
+                     alt="APC Logo"
+                     class="footer-logo">
+
+                <h3>M.A. ABUBAKAR SAN Support Campaign 2027</h3>
+
+                <p>
+
+                    
+                    Together we are building a peaceful,
+                    prosperous and united Bauchi State.
+
+                </p>
+
+            </div>
+
+            <!-- Quick Links -->
+
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li><a href="index.html">Home</a></li>
+
+                    <li><a href="about.html">About</a></li>
+
+                    <li><a href="manifesto.html">Manifesto</a></li>
+
+                    <li><a href="gallery.html">Gallery</a></li>
+
+                    <li><a href="news.html">News</a></li>
+
+                    <li><a href="register.html">Register</a></li>
+
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- Directorates -->
+
+            <div class="footer-column">
+
+                <h3>Directorates</h3>
+
+                <ul>
+
+                    <li>Education</li>
+
+                    <li>Healthcare</li>
+
+
+                    <li>Agriculture</li>
+
+                    <li>Youth Empowerment</li>
+
+                    <li>Women Development</li>
+
+                    <li>Media & Communication</li>
+
+                    <li>Religious Affairs</li>
+
+                </ul>
+
+            </div>
+
+            <!-- Social Media -->
+
+            <div class="footer-column">
+
+                <h3>Follow Us</h3>
+
+                <p>
+
+                    Stay connected with all campaign activities.
+
+                </p>
+
+                <div class="social-links">
+
+                    <a href="#">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 BAUCHI CHANGE NARRATIVE FOR M.A. ABUBAKAR SAN 2027 Support Campaign. All Rights Reserved.
+
+            </p>
+
+            <p>
+
+                Designed & Developed by
+                <strong>AHALU BUSINESS ENTERPRISE NIGERIA</strong>
+
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- =====================================
+     BACK TO TOP
+===================================== -->
+
+<button
+    id="backToTop"
+    type="button"
+    aria-label="Back to top"
+    title="Back to Top"
+>
+
+    <i class="fas fa-arrow-up"></i>
+
+</button>
+
+
+<!-- =====================================
+     MAIN JAVASCRIPT
+===================================== -->
+
+<script src="js/main.js"></script>
+
+
+</body>
+
+</html>

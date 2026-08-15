@@ -5054,3 +5054,847 @@ footer,
     }
 
 }
+/* =========================================================
+   RURAL TRANSFORMATION — FINAL CSS FIX
+========================================================= */
+
+.rural-development-section {
+    width: 100%;
+    padding: 80px 0;
+}
+
+.rural-development-section .container {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.rural-development-header {
+    margin-bottom: 45px;
+}
+
+.rural-development-header .section-label {
+    display: inline-block;
+    margin-bottom: 14px;
+}
+
+.rural-development-header h2 {
+    margin: 0 0 18px;
+    line-height: 1.15;
+}
+
+.rural-development-header h2 span {
+    display: inline;
+}
+
+.rural-development-header p {
+    max-width: 1000px;
+    margin: 0;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   INTRODUCTION
+========================================================= */
+
+.rural-introduction {
+    margin-bottom: 45px;
+}
+
+.rural-intro-content {
+    width: 100%;
+}
+
+.rural-intro-content .content-label {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.rural-intro-content h3 {
+    margin: 0 0 18px;
+    line-height: 1.3;
+}
+
+.rural-intro-content p {
+    margin: 0 0 14px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   RURAL SECTOR GRID
+========================================================= */
+
+.rural-sector-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 26px;
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   RURAL SECTOR CARD
+========================================================= */
+
+.rural-sector-card {
+    position: relative;
+    min-width: 0;
+    height: 100%;
+    padding: 30px 28px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 120, 70, 0.10);
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.rural-sector-icon {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 18px;
+
+    border-radius: 14px;
+    background: #eef8f1;
+
+    font-size: 25px;
+    line-height: 1;
+}
+
+
+/* =========================================================
+   CARD TITLE — IMPORTANT FIX
+========================================================= */
+
+.rural-sector-card h3 {
+    display: block;
+
+    margin: 0 0 12px;
+
+    font-size: 21px;
+    font-weight: 800;
+    line-height: 1.25;
+
+    color: #08783f;
+
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =========================================================
+   CARD TEXT
+========================================================= */
+
+.rural-sector-card p {
+    position: relative;
+    z-index: 2;
+
+    margin: 0;
+
+    font-size: 15px;
+    line-height: 1.7;
+
+    color: #666;
+}
+
+
+/* =========================================================
+   MICRO PROJECTS
+========================================================= */
+
+.micro-projects-section {
+    margin-top: 70px;
+}
+
+.micro-projects-heading {
+    margin-bottom: 30px;
+}
+
+.micro-projects-heading h3 {
+    margin: 0 0 14px;
+    line-height: 1.3;
+}
+
+.micro-projects-heading p {
+    margin: 0;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   MICRO PROJECT STATISTICS
+========================================================= */
+
+.micro-project-stats {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.micro-stat-card {
+    padding: 28px 20px;
+
+    text-align: center;
+
+    background: #ffffff;
+    border: 1px solid rgba(0, 120, 70, 0.10);
+    border-radius: 16px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.micro-stat-card strong {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 30px;
+    line-height: 1.1;
+    font-weight: 800;
+
+    color: #08783f;
+}
+
+.micro-stat-card span {
+    display: block;
+
+    font-size: 14px;
+    line-height: 1.5;
+
+    color: #666;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .rural-sector-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .micro-project-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .rural-development-section {
+        padding: 55px 0;
+    }
+
+    .rural-development-section .container {
+        width: 90%;
+    }
+
+    .rural-development-header h2 {
+        font-size: 30px;
+    }
+
+    .rural-sector-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .rural-sector-card {
+        padding: 25px 22px;
+    }
+
+    .rural-sector-card h3 {
+        font-size: 20px;
+        line-height: 1.3;
+    }
+
+    .rural-sector-card p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .micro-project-stats {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* =========================================================
+   AGRICULTURE RECORD OF SERVICE
+   M.A. CAMPAIGN WEBSITE
+   AGRICULTURE UI DESIGN
+========================================================= */
+
+.agriculture-record-section {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.agriculture-record-section .container {
+    width: min(1200px, 92%);
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.agriculture-record-header {
+    margin-bottom: 35px;
+}
+
+.agriculture-record-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    margin-bottom: 12px;
+
+    color: #08783f;
+
+    font-size: 14px;
+    font-weight: 800;
+
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
+
+.agriculture-record-header h2 {
+    margin: 0 0 15px;
+
+    color: #222222;
+
+    font-size: clamp(28px, 4vw, 42px);
+    line-height: 1.15;
+    font-weight: 800;
+}
+
+.agriculture-record-header h2 span {
+    color: #08783f;
+}
+
+.agriculture-record-header p {
+    max-width: 900px;
+
+    margin: 0;
+
+    color: #666666;
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   STATISTICS
+========================================================= */
+
+.agriculture-record-statistics {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 18px;
+
+    margin: 35px 0;
+}
+
+.agriculture-stat-card {
+    padding: 22px 20px;
+
+    background: #ffffff;
+
+    border: 1px solid #e5eee9;
+
+    border-radius: 14px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.06);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.agriculture-stat-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 14px 30px rgba(0, 0, 0, 0.10);
+}
+
+.agriculture-stat-card strong {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #08783f;
+
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.agriculture-stat-card span {
+    color: #666666;
+
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   FILTER AREA
+========================================================= */
+
+.agriculture-record-filters {
+    display: grid;
+
+    grid-template-columns:
+        180px 240px 1fr;
+
+    gap: 12px;
+
+    margin-bottom: 35px;
+}
+
+.agriculture-record-filters select,
+.agriculture-record-filters input {
+    width: 100%;
+
+    min-height: 48px;
+
+    padding: 0 15px;
+
+    background: #ffffff;
+
+    color: #333333;
+
+    border: 1px solid #dfe8e3;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.agriculture-record-filters select:focus,
+.agriculture-record-filters input:focus {
+    border-color: #08783f;
+
+    box-shadow:
+        0 0 0 3px rgba(8, 120, 63, 0.10);
+}
+
+
+/* =========================================================
+   RECORD GRID
+========================================================= */
+
+#agricultureRecordGrid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fill, minmax(300px, 1fr));
+
+    gap: 22px;
+}
+
+
+/* =========================================================
+   RECORD CARD
+========================================================= */
+
+.agriculture-record-card {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+
+    padding: 25px;
+
+    background: #ffffff;
+
+    border: 1px solid #e3ebe7;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.06);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.agriculture-record-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background: #08783f;
+}
+
+.agriculture-record-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #cfe2d8;
+
+    box-shadow:
+        0 18px 38px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================================================
+   CARD TOP
+========================================================= */
+
+.agriculture-record-card-top {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin-bottom: 18px;
+}
+
+.agriculture-record-year {
+    display: inline-flex;
+
+    align-items: center;
+
+    padding: 6px 11px;
+
+    background: #eef8f2;
+
+    color: #08783f;
+
+    border-radius: 7px;
+
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.agriculture-record-category {
+    max-width: 65%;
+
+    padding: 6px 10px;
+
+    background: #f8f4e8;
+
+    color: #8a6a00;
+
+    border-radius: 7px;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    text-align: right;
+
+    line-height: 1.3;
+}
+
+
+/* =========================================================
+   CARD TITLE
+========================================================= */
+
+.agriculture-record-card h3 {
+    margin: 0 0 12px;
+
+    color: #222222;
+
+    font-size: 20px;
+
+    line-height: 1.35;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.agriculture-record-description {
+    margin: 0 0 18px;
+
+    color: #666666;
+
+    font-size: 14px;
+
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   FIGURE
+========================================================= */
+
+.agriculture-record-figure {
+    margin-top: auto;
+
+    margin-bottom: 14px;
+
+    padding: 13px 15px;
+
+    background: #f1f9f4;
+
+    border-left: 4px solid #08783f;
+
+    border-radius: 8px;
+
+    color: #075f32;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.agriculture-record-status {
+    display: inline-flex;
+
+    align-self: flex-start;
+
+    margin-bottom: 12px;
+
+    padding: 6px 10px;
+
+    background: #edf7f1;
+
+    color: #08783f;
+
+    border-radius: 20px;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    line-height: 1.3;
+}
+
+
+/* =========================================================
+   SOURCE
+========================================================= */
+
+.agriculture-record-source {
+    padding-top: 12px;
+
+    border-top: 1px solid #edf0ee;
+
+    color: #777777;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   EMPTY STATE
+========================================================= */
+
+.agriculture-record-empty {
+    grid-column: 1 / -1;
+
+    padding: 45px 25px;
+
+    background: #f8faf9;
+
+    border: 1px dashed #cfdcd5;
+
+    border-radius: 14px;
+
+    text-align: center;
+}
+
+.agriculture-record-empty h3 {
+    margin: 0 0 8px;
+
+    color: #222222;
+
+    font-size: 20px;
+}
+
+.agriculture-record-empty p {
+    margin: 0;
+
+    color: #777777;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   CARD REVEAL ANIMATION
+========================================================= */
+
+@keyframes agricultureCardReveal {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .agriculture-record-statistics {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .agriculture-record-filters {
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+    .agriculture-record-filters input {
+        grid-column: 1 / -1;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .agriculture-record-section {
+        padding: 55px 0;
+    }
+
+    .agriculture-record-section .container {
+        width: 92%;
+    }
+
+    .agriculture-record-header {
+        margin-bottom: 25px;
+    }
+
+    .agriculture-record-header h2 {
+        font-size: 28px;
+    }
+
+    .agriculture-record-header p {
+        font-size: 14px;
+
+        line-height: 1.7;
+    }
+
+
+    .agriculture-record-statistics {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+
+        margin: 25px 0;
+    }
+
+    .agriculture-stat-card {
+        padding: 18px;
+    }
+
+
+    .agriculture-record-filters {
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+    }
+
+    .agriculture-record-filters input {
+        grid-column: auto;
+    }
+
+
+    #agricultureRecordGrid {
+        grid-template-columns: 1fr;
+
+        gap: 16px;
+    }
+
+
+    .agriculture-record-card {
+        padding: 20px;
+    }
+
+
+    .agriculture-record-card-top {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .agriculture-record-category {
+        max-width: 100%;
+
+        text-align: left;
+    }
+
+
+    .agriculture-record-card h3 {
+        font-size: 18px;
+    }
+
+}

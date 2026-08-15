@@ -1,7 +1,7 @@
 /* =========================================================
    M.A. ABUBAKAR CAMPAIGN 2027
    MAIN.JS
-   Clean & Stable Version
+   CLEAN & STABLE VERSION
 ========================================================= */
 
 
@@ -9,27 +9,45 @@
    PAGE LOADER
 ========================================================= */
 
-document.addEventListener("DOMContentLoaded", function () {
+function hidePageLoader() {
 
     const loader = document.getElementById("loader");
 
-    if (loader) {
+    if (!loader) return;
 
-        setTimeout(function () {
+    loader.classList.add("loader-hidden");
 
-            loader.classList.add("loader-hidden");
+    setTimeout(function () {
 
-            setTimeout(function () {
+        if (loader) {
 
-                if (loader) {
-                    loader.remove();
-                }
+            loader.style.display = "none";
 
-            }, 600);
+        }
 
-        }, 300);
+    }, 700);
 
-    }
+}
+
+
+/* Hide loader as soon as DOM is ready */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    setTimeout(function () {
+
+        hidePageLoader();
+
+    }, 300);
+
+});
+
+
+/* Safety: also hide loader when everything loads */
+
+window.addEventListener("load", function () {
+
+    hidePageLoader();
 
 });
 
@@ -63,22 +81,47 @@ window.addEventListener("scroll", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    const menuToggle = document.getElementById("menuToggle");
-    const navMenu = document.getElementById("navMenu");
 
-    if (!menuToggle || !navMenu) return;
+    const menuToggle =
+        document.getElementById("menuToggle");
 
 
-    /* -----------------------------------------------------
+    /* HTML uses class="nav-menu" */
+
+    const navMenu =
+        document.querySelector(".nav-menu");
+
+
+    if (!menuToggle || !navMenu) {
+
+        console.warn(
+            "Mobile navigation elements not found."
+        );
+
+        return;
+
+    }
+
+
+    /* =====================================================
        HAMBURGER MENU
-    ----------------------------------------------------- */
+    ===================================================== */
 
     menuToggle.addEventListener("click", function (event) {
 
+        event.preventDefault();
         event.stopPropagation();
+
 
         const isOpen =
             navMenu.classList.toggle("active");
+
+
+        menuToggle.classList.toggle(
+            "active",
+            isOpen
+        );
+
 
         menuToggle.setAttribute(
             "aria-expanded",
@@ -89,27 +132,20 @@ document.addEventListener("DOMContentLoaded", function () {
         const icon =
             menuToggle.querySelector("i");
 
+
         if (icon) {
 
             if (isOpen) {
 
                 icon.classList.remove("fa-bars");
-                icon.classList.add("fa-times");
 
-                menuToggle.setAttribute(
-                    "aria-label",
-                    "Close Menu"
-                );
+                icon.classList.add("fa-times");
 
             } else {
 
                 icon.classList.remove("fa-times");
-                icon.classList.add("fa-bars");
 
-                menuToggle.setAttribute(
-                    "aria-label",
-                    "Open Menu"
-                );
+                icon.classList.add("fa-bars");
 
             }
 
@@ -118,92 +154,114 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    /* -----------------------------------------------------
-       DROPDOWN MENUS
-    ----------------------------------------------------- */
+    /* =====================================================
+       MOBILE DROPDOWN MENUS
+    ===================================================== */
 
     const dropdownToggles =
-        document.querySelectorAll(".dropdown-toggle");
+        document.querySelectorAll(
+            ".dropdown > a"
+        );
 
 
     dropdownToggles.forEach(function (toggle) {
 
-        toggle.addEventListener("click", function (event) {
 
-            if (window.innerWidth <= 991) {
-
-                event.preventDefault();
-                event.stopPropagation();
+        toggle.addEventListener(
+            "click",
+            function (event) {
 
 
-                const dropdown =
-                    toggle.closest(".dropdown");
+                /* Only mobile */
 
-                if (!dropdown) return;
+                if (window.innerWidth <= 991) {
 
-
-                /* Close other dropdowns */
-
-                document
-                    .querySelectorAll(".dropdown.active")
-                    .forEach(function (otherDropdown) {
-
-                        if (otherDropdown !== dropdown) {
-
-                            otherDropdown.classList.remove(
-                                "active"
-                            );
-
-                        }
-
-                    });
+                    event.preventDefault();
+                    event.stopPropagation();
 
 
-                /* Toggle current dropdown */
+                    const dropdown =
+                        toggle.closest(".dropdown");
 
-                dropdown.classList.toggle("active");
+
+                    if (!dropdown) return;
+
+
+                    /* Close other dropdowns */
+
+                    document
+                        .querySelectorAll(
+                            ".dropdown.active"
+                        )
+                        .forEach(function (otherDropdown) {
+
+                            if (
+                                otherDropdown !==
+                                dropdown
+                            ) {
+
+                                otherDropdown.classList.remove(
+                                    "active"
+                                );
+
+                            }
+
+                        });
+
+
+                    /* Toggle current */
+
+                    dropdown.classList.toggle(
+                        "active"
+                    );
+
+                }
 
             }
-
-        });
+        );
 
     });
 
 
-    /* -----------------------------------------------------
-       NORMAL LINKS
-    ----------------------------------------------------- */
+    /* =====================================================
+       NORMAL NAVIGATION LINKS
+    ===================================================== */
 
     const normalLinks =
         navMenu.querySelectorAll(
-            ".dropdown-menu a, > li:not(.dropdown) > a"
+            "li:not(.dropdown) > a, .dropdown-menu a"
         );
 
 
     normalLinks.forEach(function (link) {
 
-        link.addEventListener("click", function () {
+        link.addEventListener(
+            "click",
+            function () {
 
-            if (window.innerWidth <= 991) {
+                if (window.innerWidth <= 991) {
 
-                closeMobileMenu();
+                    closeMobileMenu();
+
+                }
 
             }
-
-        });
+        );
 
     });
 
 
-    /* -----------------------------------------------------
-       CLOSE MENU FUNCTION
-    ----------------------------------------------------- */
+    /* =====================================================
+       CLOSE MOBILE MENU
+    ===================================================== */
 
     function closeMobileMenu() {
+
 
         navMenu.classList.remove("active");
 
         menuToggle.classList.remove("active");
+
 
         menuToggle.setAttribute(
             "aria-expanded",
@@ -214,61 +272,87 @@ document.addEventListener("DOMContentLoaded", function () {
         const icon =
             menuToggle.querySelector("i");
 
+
         if (icon) {
 
             icon.classList.remove("fa-times");
+
             icon.classList.add("fa-bars");
 
         }
 
 
         document
-            .querySelectorAll(".dropdown.active")
+            .querySelectorAll(
+                ".dropdown.active"
+            )
             .forEach(function (dropdown) {
 
-                dropdown.classList.remove("active");
+                dropdown.classList.remove(
+                    "active"
+                );
 
             });
 
     }
 
 
-    /* -----------------------------------------------------
-       CLICK OUTSIDE
-    ----------------------------------------------------- */
+    /* =====================================================
+       CLICK OUTSIDE MENU
+    ===================================================== */
 
-    document.addEventListener("click", function (event) {
-
-        if (window.innerWidth > 991) return;
-
-        const navbarElement =
-            document.querySelector(".navbar");
-
-        if (!navbarElement) return;
+    document.addEventListener(
+        "click",
+        function (event) {
 
 
-        if (!navbarElement.contains(event.target)) {
+            if (window.innerWidth > 991) {
 
-            closeMobileMenu();
+                return;
+
+            }
+
+
+            const navbarElement =
+                document.querySelector(
+                    ".navbar"
+                );
+
+
+            if (!navbarElement) return;
+
+
+            if (
+                !navbarElement.contains(
+                    event.target
+                )
+            ) {
+
+                closeMobileMenu();
+
+            }
 
         }
+    );
 
-    });
+
+    /* =====================================================
+       RESET MOBILE MENU ON DESKTOP
+    ===================================================== */
+
+    window.addEventListener(
+        "resize",
+        function () {
 
 
-    /* -----------------------------------------------------
-       RESET WHEN RETURNING TO DESKTOP
-    ----------------------------------------------------- */
+            if (window.innerWidth > 991) {
 
-    window.addEventListener("resize", function () {
+                closeMobileMenu();
 
-        if (window.innerWidth > 991) {
-
-            closeMobileMenu();
+            }
 
         }
-
-    });
+    );
 
 });
 
@@ -277,158 +361,228 @@ document.addEventListener("DOMContentLoaded", function () {
    BACK TO TOP
 ========================================================= */
 
-document.addEventListener("DOMContentLoaded", function () {
-
-    const backToTop =
-        document.getElementById("backToTop");
-
-    if (!backToTop) return;
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
 
 
-    window.addEventListener("scroll", function () {
-
-        if (window.scrollY > 400) {
-
-            backToTop.classList.add("show");
-
-        } else {
-
-            backToTop.classList.remove("show");
-
-        }
-
-    });
-
-
-    backToTop.addEventListener("click", function () {
-
-        window.scrollTo({
-
-            top: 0,
-
-            behavior: "smooth"
-
-        });
-
-    });
-
-});
-
-
-/* =========================================================
-   DARK MODE
-========================================================= */
-
-document.addEventListener("DOMContentLoaded", function () {
-
-    const darkModeBtn =
-        document.getElementById("darkModeBtn");
-
-    const darkModeIcon =
-        document.getElementById("darkModeIcon");
-
-
-    if (!darkModeBtn || !darkModeIcon) {
-
-        console.warn("Dark Mode button not found.");
-
-        return;
-
-    }
-
-
-    darkModeBtn.addEventListener("click", function (event) {
-
-        event.preventDefault();
-        event.stopPropagation();
-
-
-        document.body.classList.toggle("dark-mode");
-
-
-        const isDark =
-            document.body.classList.contains("dark-mode");
-
-
-        if (isDark) {
-
-            darkModeIcon.textContent = "☀️";
-
-            darkModeBtn.setAttribute(
-                "aria-label",
-                "Switch to Light Mode"
+        const backToTop =
+            document.getElementById(
+                "backToTop"
             );
 
-            darkModeBtn.setAttribute(
-                "title",
-                "Light Mode"
-            );
 
-        } else {
-
-            darkModeIcon.textContent = "🌙";
-
-            darkModeBtn.setAttribute(
-                "aria-label",
-                "Switch to Dark Mode"
-            );
-
-            darkModeBtn.setAttribute(
-                "title",
-                "Dark Mode"
-            );
-
-        }
-
-    });
-
-});
-
-/* =========================================================
-   SMOOTH SCROLL
-========================================================= */
-
-document
-    .querySelectorAll('a[href^="#"]')
-    .forEach(function (anchor) {
-
-        anchor.addEventListener(
-            "click",
-            function (event) {
-
-                const href =
-                    this.getAttribute("href");
+        if (!backToTop) return;
 
 
-                if (!href || href === "#") {
-
-                    return;
-
-                }
+        window.addEventListener(
+            "scroll",
+            function () {
 
 
-                const target =
-                    document.querySelector(href);
+                if (window.scrollY > 400) {
 
+                    backToTop.classList.add(
+                        "show"
+                    );
 
-                if (target) {
+                } else {
 
-                    event.preventDefault();
-
-                    target.scrollIntoView({
-
-                        behavior: "smooth",
-
-                        block: "start"
-
-                    });
+                    backToTop.classList.remove(
+                        "show"
+                    );
 
                 }
 
             }
         );
 
-    });
+
+        backToTop.addEventListener(
+            "click",
+            function () {
+
+
+                window.scrollTo({
+
+                    top: 0,
+
+                    behavior: "smooth"
+
+                });
+
+            }
+        );
+
+    }
+);
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+
+        const darkModeBtn =
+            document.getElementById(
+                "darkModeBtn"
+            );
+
+
+        if (!darkModeBtn) {
+
+            return;
+
+        }
+
+
+        darkModeBtn.addEventListener(
+            "click",
+            function (event) {
+
+
+                event.preventDefault();
+
+                event.stopPropagation();
+
+
+                document.body.classList.toggle(
+                    "dark-mode"
+                );
+
+
+                const isDark =
+                    document.body.classList.contains(
+                        "dark-mode"
+                    );
+
+
+                /* Change icon if one exists */
+
+                const icon =
+                    darkModeBtn.querySelector("i");
+
+
+                if (icon) {
+
+                    if (isDark) {
+
+                        icon.classList.remove(
+                            "fa-moon"
+                        );
+
+                        icon.classList.add(
+                            "fa-sun"
+                        );
+
+                    } else {
+
+                        icon.classList.remove(
+                            "fa-sun"
+                        );
+
+                        icon.classList.add(
+                            "fa-moon"
+                        );
+
+                    }
+
+                }
+
+
+                darkModeBtn.setAttribute(
+                    "aria-label",
+                    isDark
+                        ? "Switch to Light Mode"
+                        : "Switch to Dark Mode"
+                );
+
+
+                darkModeBtn.setAttribute(
+                    "title",
+                    isDark
+                        ? "Light Mode"
+                        : "Dark Mode"
+                );
+
+            }
+        );
+
+    }
+);
+
+
+/* =========================================================
+   SMOOTH SCROLL
+========================================================= */
+
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
+
+
+        document
+            .querySelectorAll(
+                'a[href^="#"]'
+            )
+            .forEach(function (anchor) {
+
+
+                anchor.addEventListener(
+                    "click",
+                    function (event) {
+
+
+                        const href =
+                            this.getAttribute(
+                                "href"
+                            );
+
+
+                        if (
+                            !href ||
+                            href === "#"
+                        ) {
+
+                            return;
+
+                        }
+
+
+                        const target =
+                            document.querySelector(
+                                href
+                            );
+
+
+                        if (target) {
+
+                            event.preventDefault();
+
+
+                            target.scrollIntoView({
+
+                                behavior:
+                                    "smooth",
+
+                                block:
+                                    "start"
+
+                            });
+
+                        }
+
+                    }
+                );
+
+            });
+
+    }
+);
 
 
 /* =========================================================
@@ -436,62 +590,82 @@ document
 ========================================================= */
 
 const sections =
-    document.querySelectorAll("section[id]");
+    document.querySelectorAll(
+        "section[id]"
+    );
 
 
 if (sections.length > 0) {
+
 
     window.addEventListener(
         "scroll",
         function () {
 
+
             let current = "";
 
 
-            sections.forEach(function (section) {
-
-                const sectionTop =
-                    section.offsetTop - 120;
-
-                const sectionHeight =
-                    section.offsetHeight;
+            sections.forEach(
+                function (section) {
 
 
-                if (
-                    window.scrollY >= sectionTop &&
-                    window.scrollY <
-                    sectionTop + sectionHeight
-                ) {
-
-                    current =
-                        section.getAttribute("id");
-
-                }
-
-            });
+                    const sectionTop =
+                        section.offsetTop - 120;
 
 
-            document
-                .querySelectorAll(".nav-menu a")
-                .forEach(function (link) {
-
-                    link.classList.remove(
-                        "active"
-                    );
+                    const sectionHeight =
+                        section.offsetHeight;
 
 
                     if (
-                        link.getAttribute("href") ===
-                        "#" + current
+                        window.scrollY >=
+                        sectionTop
+                        &&
+                        window.scrollY <
+                        sectionTop +
+                        sectionHeight
                     ) {
 
-                        link.classList.add(
-                            "active"
-                        );
+                        current =
+                            section.getAttribute(
+                                "id"
+                            );
 
                     }
 
-                });
+                }
+            );
+
+
+            document
+                .querySelectorAll(
+                    ".nav-menu a"
+                )
+                .forEach(
+                    function (link) {
+
+
+                        link.classList.remove(
+                            "active"
+                        );
+
+
+                        if (
+                            link.getAttribute(
+                                "href"
+                            ) ===
+                            "#" + current
+                        ) {
+
+                            link.classList.add(
+                                "active"
+                            );
+
+                        }
+
+                    }
+                );
 
         }
     );
@@ -505,6 +679,7 @@ if (sections.length > 0) {
 
 const revealElements =
     document.querySelectorAll(
+
         ".section-title," +
         ".card," +
         ".news-card," +
@@ -512,28 +687,36 @@ const revealElements =
         ".event-card," +
         ".contact-card," +
         ".benefit-card"
+
     );
 
 
 function revealOnScroll() {
 
+
     const trigger =
         window.innerHeight * 0.85;
 
 
-    revealElements.forEach(function (element) {
-
-        const top =
-            element.getBoundingClientRect().top;
+    revealElements.forEach(
+        function (element) {
 
 
-        if (top < trigger) {
+            const top =
+                element.getBoundingClientRect()
+                    .top;
 
-            element.classList.add("show");
+
+            if (top < trigger) {
+
+                element.classList.add(
+                    "show"
+                );
+
+            }
 
         }
-
-    });
+    );
 
 }
 
@@ -543,10 +726,12 @@ window.addEventListener(
     revealOnScroll
 );
 
+
 window.addEventListener(
     "load",
     revealOnScroll
 );
+
 
 document.addEventListener(
     "DOMContentLoaded",
@@ -559,14 +744,19 @@ document.addEventListener(
 ========================================================= */
 
 const counters =
-    document.querySelectorAll("[data-counter]");
+    document.querySelectorAll(
+        "[data-counter]"
+    );
 
 
 function startCounter(counter) {
 
+
     const target =
         parseInt(
-            counter.getAttribute("data-counter"),
+            counter.getAttribute(
+                "data-counter"
+            ),
             10
         );
 
@@ -576,19 +766,25 @@ function startCounter(counter) {
 
     const duration = 1500;
 
+
     const startTime =
         performance.now();
 
 
-    function updateCounter(currentTime) {
+    function updateCounter(
+        currentTime
+    ) {
+
 
         const elapsed =
-            currentTime - startTime;
+            currentTime -
+            startTime;
 
 
         const progress =
             Math.min(
-                elapsed / duration,
+                elapsed /
+                duration,
                 1
             );
 
@@ -605,11 +801,14 @@ function startCounter(counter) {
 
         if (progress < 1) {
 
+
             requestAnimationFrame(
                 updateCounter
             );
 
+
         } else {
+
 
             counter.innerText =
                 target.toLocaleString();
@@ -626,18 +825,26 @@ function startCounter(counter) {
 }
 
 
-if ("IntersectionObserver" in window) {
+if (
+    "IntersectionObserver"
+    in window
+) {
+
 
     const counterObserver =
         new IntersectionObserver(
+
             function (entries) {
+
 
                 entries.forEach(
                     function (entry) {
 
+
                         if (
                             entry.isIntersecting
                         ) {
+
 
                             startCounter(
                                 entry.target
@@ -654,27 +861,35 @@ if ("IntersectionObserver" in window) {
                 );
 
             },
+
             {
                 threshold: 0.5
             }
+
         );
 
 
-    counters.forEach(function (counter) {
+    counters.forEach(
+        function (counter) {
 
-        counterObserver.observe(
-            counter
-        );
+            counterObserver.observe(
+                counter
+            );
 
-    });
+        }
+    );
+
 
 } else {
 
-    counters.forEach(function (counter) {
 
-        startCounter(counter);
+    counters.forEach(
+        function (counter) {
 
-    });
+            startCounter(counter);
+
+        }
+    );
 
 }
 
@@ -683,16 +898,26 @@ if ("IntersectionObserver" in window) {
    CURRENT YEAR
 ========================================================= */
 
-const year =
-    document.getElementById("currentYear");
+document.addEventListener(
+    "DOMContentLoaded",
+    function () {
 
 
-if (year) {
+        const year =
+            document.getElementById(
+                "currentYear"
+            );
 
-    year.textContent =
-        new Date().getFullYear();
 
-}
+        if (year) {
+
+            year.textContent =
+                new Date().getFullYear();
+
+        }
+
+    }
+);
 
 
 /* =========================================================

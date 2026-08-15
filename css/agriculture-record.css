@@ -1,0 +1,548 @@
+/* =========================================================
+   AGRICULTURE RECORD OF SERVICE
+   M.A. CAMPAIGN WEBSITE
+========================================================= */
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.agriculture-record-section {
+    padding: 90px 0;
+    background: #f7f9f7;
+}
+
+.agriculture-record-section .container {
+    width: min(1200px, 92%);
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.agriculture-record-header {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 45px;
+}
+
+.agriculture-record-header .section-label {
+    display: inline-block;
+    margin-bottom: 12px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.agriculture-record-header h2 {
+    margin: 0 0 15px;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.15;
+    color: #1d1d1d;
+}
+
+.agriculture-record-header h2 span {
+    display: inline;
+    color: #008f4c;
+}
+
+.agriculture-record-header p {
+    margin: 0;
+    color: #666;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   STATISTICS
+========================================================= */
+
+.agriculture-record-statistics {
+    display: grid;
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.agriculture-stat-card {
+    padding: 28px 22px;
+    background: #ffffff;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.08);
+
+    border: 1px solid rgba(0, 0, 0, 0.05);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.agriculture-stat-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 14px 32px rgba(0, 0, 0, 0.12);
+}
+
+.agriculture-stat-card strong {
+    display: block;
+    margin-bottom: 8px;
+
+    font-size: 2rem;
+    line-height: 1;
+
+    color: #008f4c;
+}
+
+.agriculture-stat-card span {
+    display: block;
+
+    color: #666;
+    font-size: 0.9rem;
+}
+
+
+/* =========================================================
+   CONTROLS
+========================================================= */
+
+.agriculture-record-controls {
+    display: grid;
+
+    grid-template-columns:
+        180px
+        220px
+        minmax(220px, 1fr);
+
+    gap: 15px;
+
+    margin-bottom: 35px;
+}
+
+.agriculture-record-controls select,
+.agriculture-record-controls input {
+    width: 100%;
+    height: 48px;
+
+    padding: 0 15px;
+
+    border: 1px solid #d9dedb;
+    border-radius: 8px;
+
+    background: #ffffff;
+    color: #333;
+
+    font-size: 0.95rem;
+
+    outline: none;
+
+    transition:
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.agriculture-record-controls select:focus,
+.agriculture-record-controls input:focus {
+    border-color: #008f4c;
+
+    box-shadow:
+        0 0 0 3px rgba(0, 143, 76, 0.1);
+}
+
+
+/* =========================================================
+   RECORD GRID
+========================================================= */
+
+.agriculture-record-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 24px;
+}
+
+
+/* =========================================================
+   RECORD CARD
+========================================================= */
+
+.agriculture-record-card {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    min-height: 330px;
+
+    padding: 26px;
+
+    background: #ffffff;
+
+    border-radius: 14px;
+
+    border:
+        1px solid rgba(0, 0, 0, 0.06);
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.07);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.agriculture-record-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background: #008f4c;
+}
+
+.agriculture-record-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.11);
+}
+
+
+/* =========================================================
+   CARD TOP
+========================================================= */
+
+.agriculture-record-card-top {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin-bottom: 18px;
+}
+
+.agriculture-record-year {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 58px;
+    height: 30px;
+
+    padding: 0 10px;
+
+    border-radius: 20px;
+
+    background: #008f4c;
+    color: #ffffff;
+
+    font-size: 0.78rem;
+    font-weight: 700;
+}
+
+.agriculture-record-category {
+    display: inline-block;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    background: #edf7f1;
+    color: #007a40;
+
+    font-size: 0.72rem;
+    font-weight: 700;
+
+    text-align: right;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.agriculture-record-card h3 {
+    margin: 0 0 14px;
+
+    color: #222;
+
+    font-size: 1.18rem;
+    line-height: 1.45;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.agriculture-record-description {
+    margin: 0 0 18px;
+
+    color: #666;
+
+    font-size: 0.92rem;
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   FIGURE
+========================================================= */
+
+.agriculture-record-figure {
+    margin-top: auto;
+
+    padding: 13px 15px;
+
+    border-left: 4px solid #008f4c;
+
+    background: #f5faf7;
+
+    border-radius: 6px;
+
+    color: #333;
+
+    font-size: 0.88rem;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.agriculture-record-status {
+    margin-top: 14px;
+
+    font-size: 0.75rem;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+
+    color: #008f4c;
+}
+
+
+/* =========================================================
+   SOURCE
+========================================================= */
+
+.agriculture-record-source {
+    margin-top: 10px;
+
+    color: #888;
+
+    font-size: 0.75rem;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   EMPTY STATE
+========================================================= */
+
+.agriculture-record-empty {
+    grid-column: 1 / -1;
+
+    padding: 60px 25px;
+
+    background: #ffffff;
+
+    border-radius: 14px;
+
+    text-align: center;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.agriculture-record-empty h3 {
+    margin: 0 0 10px;
+
+    color: #222;
+}
+
+.agriculture-record-empty p {
+    margin: 0;
+
+    color: #777;
+}
+
+
+/* =========================================================
+   CARD REVEAL
+========================================================= */
+
+.agriculture-record-card-hidden {
+    opacity: 0;
+
+    transform: translateY(25px);
+}
+
+.agriculture-record-card-visible {
+    opacity: 1;
+
+    transform: translateY(0);
+
+    transition:
+        opacity 0.55s ease,
+        transform 0.55s ease;
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .agriculture-record-statistics {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .agriculture-record-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .agriculture-record-controls {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .agriculture-record-controls input {
+        grid-column: 1 / -1;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .agriculture-record-section {
+        padding: 65px 0;
+    }
+
+    .agriculture-record-statistics {
+        grid-template-columns: 1fr 1fr;
+
+        gap: 12px;
+    }
+
+    .agriculture-stat-card {
+        padding: 22px 12px;
+    }
+
+    .agriculture-stat-card strong {
+        font-size: 1.6rem;
+    }
+
+    .agriculture-stat-card span {
+        font-size: 0.78rem;
+    }
+
+    .agriculture-record-controls {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+    .agriculture-record-controls input {
+        grid-column: auto;
+    }
+
+    .agriculture-record-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .agriculture-record-card {
+        min-height: auto;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL DEVICES
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .agriculture-record-statistics {
+        grid-template-columns: 1fr;
+    }
+
+    .agriculture-record-card {
+        padding: 21px;
+    }
+
+    .agriculture-record-card-top {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .agriculture-record-category {
+        text-align: left;
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .agriculture-record-card,
+    .agriculture-stat-card,
+    .agriculture-record-card-hidden,
+    .agriculture-record-card-visible {
+        transition: none !important;
+        transform: none !important;
+    }
+
+}
+/* =========================================================
+   AGRICULTURE CARD ANIMATION
+========================================================= */
+
+@keyframes agricultureCardReveal {
+
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}

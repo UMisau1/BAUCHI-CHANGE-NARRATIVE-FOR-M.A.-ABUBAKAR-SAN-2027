@@ -1,0 +1,1379 @@
+/* =========================================================
+   RURAL TRANSFORMATION
+   rural-development.css
+   M.A. CAMPAIGN WEBSITE
+========================================================= */
+
+
+/* =========================================================
+   SECTION
+========================================================= */
+
+.rural-development-section {
+    padding: 90px 0;
+    background: #f7f9f8;
+    position: relative;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.rural-development-section .container {
+    width: min(1200px, 92%);
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+.rural-development-header {
+    max-width: 900px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.rural-development-header .section-label {
+    display: inline-block;
+    margin-bottom: 14px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.rural-development-header h2 {
+    margin: 0 0 18px;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.rural-development-header h2 span {
+    display: block;
+}
+
+.rural-development-header p {
+    margin: 0 auto;
+    max-width: 800px;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+
+/* =========================================================
+   INTRODUCTION
+========================================================= */
+
+.rural-introduction {
+    margin-bottom: 55px;
+}
+
+.rural-intro-content {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+    border-left: 5px solid #00a651;
+}
+
+.rural-intro-content .content-label {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.rural-intro-content h3 {
+    margin: 0 0 16px;
+    font-size: 1.65rem;
+    line-height: 1.35;
+}
+
+.rural-intro-content p {
+    margin: 0 0 14px;
+    color: #555;
+    line-height: 1.8;
+}
+
+.rural-intro-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   RURAL SECTOR GRID
+========================================================= */
+
+.rural-sector-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+    margin-bottom: 65px;
+}
+
+
+/* =========================================================
+   SECTOR CARD
+========================================================= */
+
+.rural-sector-card {
+    padding: 28px 24px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.rural-sector-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================================================
+   SECTOR ICON
+========================================================= */
+
+.rural-sector-icon {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+    border-radius: 14px;
+    background: #eef8f2;
+    font-size: 1.7rem;
+}
+
+
+/* =========================================================
+   SECTOR TITLE
+========================================================= */
+
+.rural-sector-card h3 {
+    margin: 0 0 12px;
+    font-size: 1.15rem;
+    line-height: 1.35;
+    font-weight: 700;
+}
+
+.rural-sector-card p {
+    margin: 0;
+    color: #5c5c5c;
+    font-size: 0.94rem;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   MICRO PROJECTS SECTION
+========================================================= */
+
+.micro-projects-section {
+    padding-top: 20px;
+}
+
+.micro-projects-heading {
+    max-width: 850px;
+    margin: 0 auto 35px;
+    text-align: center;
+}
+
+.micro-projects-heading .content-label {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+.micro-projects-heading h3 {
+    margin: 0 0 14px;
+    font-size: 1.8rem;
+    line-height: 1.3;
+}
+
+.micro-projects-heading p {
+    margin: 0;
+    color: #5a5a5a;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   MICRO PROJECT STATS
+========================================================= */
+
+.micro-project-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+
+/* =========================================================
+   MICRO STAT CARD
+========================================================= */
+
+.micro-stat-card {
+    padding: 30px 20px;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.micro-stat-card strong {
+    display: block;
+    margin-bottom: 8px;
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    line-height: 1;
+    font-weight: 800;
+}
+
+.micro-stat-card span {
+    display: block;
+    color: #555;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .rural-sector-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .micro-project-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .rural-development-section {
+        padding: 65px 0;
+    }
+
+    .rural-development-header {
+        margin-bottom: 40px;
+    }
+
+    .rural-development-header h2 {
+        font-size: 2rem;
+    }
+
+    .rural-development-header p {
+        font-size: 0.94rem;
+        line-height: 1.7;
+    }
+
+    .rural-intro-content {
+        padding: 25px 20px;
+        border-left-width: 4px;
+    }
+
+    .rural-intro-content h3 {
+        font-size: 1.4rem;
+    }
+
+    .rural-intro-content p {
+        font-size: 0.92rem;
+    }
+
+    .rural-sector-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-bottom: 50px;
+    }
+
+    .rural-sector-card {
+        padding: 23px 20px;
+    }
+
+    .micro-projects-heading h3 {
+        font-size: 1.5rem;
+    }
+
+    .micro-project-stats {
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+    }
+
+    .micro-stat-card {
+        padding: 24px 12px;
+    }
+
+    .micro-stat-card strong {
+        font-size: 1.7rem;
+    }
+
+    .micro-stat-card span {
+        font-size: 0.8rem;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .rural-development-section .container {
+        width: 94%;
+    }
+
+    .micro-project-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .micro-stat-card {
+        padding: 25px 15px;
+    }
+
+}
+/* =========================================================
+   RURAL TRANSFORMATION RECORD
+   CARD / GRID UI
+========================================================= */
+
+.rural-record-section {
+    width: 100%;
+    padding: 70px 0;
+    background: #f7f8f7;
+}
+
+.rural-record-container {
+    width: min(1200px, 92%);
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.rural-record-header {
+    margin-bottom: 35px;
+}
+
+.rural-record-header .content-label {
+    display: inline-block;
+    margin-bottom: 12px;
+
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+
+    color: #08783f;
+}
+
+.rural-record-header h2 {
+    margin: 0 0 14px;
+
+    font-size: clamp(28px, 4vw, 42px);
+    line-height: 1.15;
+
+    color: #222;
+}
+
+.rural-record-header p {
+    max-width: 850px;
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 1.8;
+
+    color: #666;
+}
+
+
+/* =========================================================
+   STATISTICS
+========================================================= */
+
+.rural-record-statistics {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 20px;
+
+    margin-bottom: 35px;
+}
+
+.rural-record-stat {
+    padding: 24px 20px;
+
+    background: #fff;
+
+    border: 1px solid #e5e8e6;
+    border-radius: 16px;
+
+    text-align: center;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.rural-record-stat strong {
+    display: block;
+
+    margin-bottom: 7px;
+
+    font-size: 30px;
+    font-weight: 800;
+
+    color: #08783f;
+}
+
+.rural-record-stat span {
+    display: block;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    color: #666;
+}
+
+
+/* =========================================================
+   FILTER AREA
+========================================================= */
+
+.rural-record-filters {
+    display: grid;
+
+    grid-template-columns:
+        180px
+        220px
+        1fr;
+
+    gap: 14px;
+
+    margin-bottom: 35px;
+}
+
+.rural-record-filters select,
+.rural-record-filters input {
+    width: 100%;
+
+    min-height: 48px;
+
+    padding: 0 15px;
+
+    border: 1px solid #dfe4e1;
+    border-radius: 10px;
+
+    background: #fff;
+
+    font-family: inherit;
+    font-size: 14px;
+
+    color: #333;
+
+    outline: none;
+
+    transition: 0.25s ease;
+}
+
+.rural-record-filters select:focus,
+.rural-record-filters input:focus {
+    border-color: #08783f;
+
+    box-shadow:
+        0 0 0 3px rgba(8, 120, 63, 0.10);
+}
+
+.rural-record-filters input::placeholder {
+    color: #999;
+}
+
+
+/* =========================================================
+   RECORD GRID
+========================================================= */
+
+#ruralTransformationGrid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 24px;
+
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   RECORD CARD
+========================================================= */
+
+.rural-record-card {
+
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+
+    padding: 26px;
+
+    background: #fff;
+
+    border: 1px solid #e5e8e6;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.06);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+/* Green top line */
+
+.rural-record-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    right: 0;
+
+    height: 4px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #08783f,
+            #d9a400
+        );
+}
+
+
+.rural-record-card:hover {
+
+    transform: translateY(-6px);
+
+    border-color: #d7ded9;
+
+    box-shadow:
+        0 18px 40px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================================================
+   CARD TOP
+========================================================= */
+
+.rural-record-card-top {
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin-bottom: 18px;
+}
+
+.rural-record-year {
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 58px;
+
+    padding: 7px 11px;
+
+    border-radius: 8px;
+
+    background: #edf8f1;
+
+    color: #08783f;
+
+    font-size: 13px;
+    font-weight: 800;
+}
+
+
+.rural-record-category {
+
+    max-width: 65%;
+
+    padding: 6px 10px;
+
+    border-radius: 7px;
+
+    background: #faf4df;
+
+    color: #987000;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 0.5px;
+
+    text-align: right;
+}
+
+
+/* =========================================================
+   CARD TITLE
+========================================================= */
+
+.rural-record-card h3 {
+
+    margin: 0 0 14px;
+
+    font-size: 21px;
+    line-height: 1.3;
+
+    color: #222;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.rural-record-description {
+
+    margin: 0 0 20px;
+
+    font-size: 14px;
+    line-height: 1.75;
+
+    color: #666;
+}
+
+
+/* =========================================================
+   FIGURE
+========================================================= */
+
+.rural-record-figure {
+
+    margin-top: auto;
+    margin-bottom: 14px;
+
+    padding: 13px 15px;
+
+    border-left: 4px solid #08783f;
+
+    border-radius: 8px;
+
+    background: #f4f8f5;
+
+    font-size: 14px;
+    font-weight: 800;
+
+    color: #08783f;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.rural-record-status {
+
+    display: inline-block;
+
+    width: fit-content;
+
+    margin-bottom: 12px;
+
+    padding: 6px 10px;
+
+    border-radius: 20px;
+
+    background: #edf8f1;
+
+    color: #08783f;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   SOURCE
+========================================================= */
+
+.rural-record-source {
+
+    padding-top: 12px;
+
+    border-top: 1px solid #eeeeee;
+
+    font-size: 11px;
+    line-height: 1.5;
+
+    color: #888;
+}
+
+
+/* =========================================================
+   EMPTY RESULT
+========================================================= */
+
+.rural-record-empty {
+
+    grid-column: 1 / -1;
+
+    padding: 50px 25px;
+
+    background: #fff;
+
+    border: 1px dashed #ccd5cf;
+
+    border-radius: 16px;
+
+    text-align: center;
+}
+
+.rural-record-empty h3 {
+    margin: 0 0 10px;
+
+    font-size: 20px;
+
+    color: #333;
+}
+
+.rural-record-empty p {
+    margin: 0;
+
+    font-size: 14px;
+
+    color: #777;
+}
+
+
+/* =========================================================
+   CARD ANIMATION
+========================================================= */
+
+@keyframes ruralCardReveal {
+
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .rural-record-statistics {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+    }
+
+    #ruralTransformationGrid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .rural-record-section {
+        padding: 50px 0;
+    }
+
+    .rural-record-container {
+        width: 92%;
+    }
+
+
+    .rural-record-statistics {
+
+        grid-template-columns: 1fr;
+
+        gap: 14px;
+
+    }
+
+
+    .rural-record-filters {
+
+        grid-template-columns: 1fr;
+
+        gap: 10px;
+
+    }
+
+
+    #ruralTransformationGrid {
+
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+
+    }
+
+
+    .rural-record-card {
+
+        padding: 22px;
+
+    }
+
+
+    .rural-record-card h3 {
+
+        font-size: 19px;
+
+    }
+
+
+    .rural-record-description {
+
+        font-size: 14px;
+
+    }
+
+}
+/* =========================================================
+   RURAL RECORD - WIDTH / LAYOUT FIX
+   IMPORTANT: PUT THIS AT THE VERY END OF style.css
+========================================================= */
+
+
+/* Make the whole rural record section use full available width */
+
+.rural-record-section {
+    width: 100% !important;
+    max-width: none !important;
+}
+
+
+/* Fix the main wrapper */
+
+.rural-record-section .rural-record-container {
+    width: min(1200px, 92%) !important;
+    max-width: 1200px !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+
+/* Header should use the full container */
+
+.rural-record-header {
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+
+/* Statistics must occupy full width */
+
+.rural-record-statistics {
+    width: 100% !important;
+
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr)) !important;
+
+    gap: 20px !important;
+}
+
+
+/* Filters */
+
+.rural-record-filters {
+    width: 100% !important;
+
+    display: grid !important;
+
+    grid-template-columns:
+        180px
+        220px
+        minmax(250px, 1fr) !important;
+
+    gap: 14px !important;
+}
+
+
+/* Records */
+
+#ruralTransformationGrid {
+
+    width: 100% !important;
+
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr)) !important;
+
+    gap: 24px !important;
+}
+
+
+/* Cards */
+
+#ruralTransformationGrid .rural-record-card {
+
+    width: 100% !important;
+
+    min-width: 0 !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .rural-record-statistics {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+
+    }
+
+    .rural-record-filters {
+
+        grid-template-columns:
+            1fr 1fr !important;
+
+    }
+
+    #ruralTransformationGrid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .rural-record-section {
+        width: 100% !important;
+    }
+
+    .rural-record-container {
+
+        width: 92% !important;
+
+        max-width: none !important;
+
+    }
+
+
+    .rural-record-statistics {
+
+        grid-template-columns:
+            1fr !important;
+
+    }
+
+
+    .rural-record-filters {
+
+        grid-template-columns:
+            1fr !important;
+
+    }
+
+
+    #ruralTransformationGrid {
+
+        grid-template-columns:
+            1fr !important;
+
+    }
+
+}
+/* =========================================================
+   RURAL TRANSFORMATION RECORDS
+   FINAL LAYOUT FIX
+========================================================= */
+
+.rural-records-section {
+    width: 100% !important;
+    max-width: 1200px !important;
+    margin: 60px auto !important;
+    padding: 0 20px !important;
+    box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.rural-records-heading {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 30px !important;
+}
+
+.rural-records-heading h3 {
+    margin: 10px 0 !important;
+}
+
+.rural-records-heading p {
+    max-width: 100% !important;
+}
+
+
+/* =========================================================
+   STATISTICS
+========================================================= */
+
+.rural-record-statistics {
+    width: 100% !important;
+
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr)) !important;
+
+    gap: 20px !important;
+
+    margin: 30px 0 !important;
+
+    box-sizing: border-box !important;
+}
+
+
+.rural-stat-card {
+    width: 100% !important;
+    min-width: 0 !important;
+
+    box-sizing: border-box !important;
+
+    padding: 25px 20px !important;
+
+    text-align: center !important;
+
+    border-radius: 14px !important;
+
+    background: #ffffff !important;
+
+    border: 1px solid #e5e7eb !important;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.06) !important;
+}
+
+
+.rural-stat-card strong {
+    display: block !important;
+
+    font-size: 28px !important;
+
+    font-weight: 800 !important;
+
+    margin-bottom: 8px !important;
+}
+
+
+.rural-stat-card span {
+    display: block !important;
+
+    font-size: 14px !important;
+}
+
+
+/* =========================================================
+   FILTERS
+========================================================= */
+
+.rural-record-filters {
+    width: 100% !important;
+
+    display: grid !important;
+
+    grid-template-columns:
+        180px
+        230px
+        minmax(250px, 1fr) !important;
+
+    gap: 14px !important;
+
+    margin: 25px 0 35px !important;
+
+    box-sizing: border-box !important;
+}
+
+
+.rural-record-filters select,
+.rural-record-filters input {
+    width: 100% !important;
+
+    min-width: 0 !important;
+
+    height: 48px !important;
+
+    padding: 0 14px !important;
+
+    box-sizing: border-box !important;
+
+    border: 1px solid #dfe3e8 !important;
+
+    border-radius: 10px !important;
+
+    background: #ffffff !important;
+
+    font-family: inherit !important;
+
+    font-size: 14px !important;
+
+    outline: none !important;
+}
+
+
+.rural-record-filters select:focus,
+.rural-record-filters input:focus {
+    border-color: #087f46 !important;
+
+    box-shadow:
+        0 0 0 3px rgba(8, 127, 70, 0.10) !important;
+}
+
+
+/* =========================================================
+   RECORD GRID
+   This will work with the grid ID used by JavaScript.
+========================================================= */
+
+#ruralTransformationGrid {
+    width: 100% !important;
+
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr)) !important;
+
+    gap: 24px !important;
+
+    box-sizing: border-box !important;
+}
+
+
+/* =========================================================
+   RURAL RECORD CARDS
+========================================================= */
+
+.rural-record-card {
+    width: 100% !important;
+
+    min-width: 0 !important;
+
+    box-sizing: border-box !important;
+
+    padding: 25px !important;
+
+    background: #ffffff !important;
+
+    border: 1px solid #e5e7eb !important;
+
+    border-radius: 14px !important;
+
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.06) !important;
+
+    overflow: hidden !important;
+}
+
+
+.rural-record-card h3 {
+    margin: 12px 0 !important;
+
+    line-height: 1.3 !important;
+}
+
+
+.rural-record-card p {
+    line-height: 1.7 !important;
+}
+
+
+.rural-record-year {
+    display: inline-block !important;
+
+    padding: 7px 12px !important;
+
+    border-radius: 8px !important;
+
+    background: #edf8f1 !important;
+
+    color: #087f46 !important;
+
+    font-weight: 700 !important;
+
+    font-size: 13px !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .rural-records-section {
+        width: 100% !important;
+
+        padding: 0 18px !important;
+    }
+
+
+    .rural-record-statistics {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+    }
+
+
+    .rural-record-filters {
+        grid-template-columns:
+            1fr 1fr !important;
+    }
+
+
+    .rural-record-filters input {
+        grid-column: 1 / -1 !important;
+    }
+
+
+    #ruralTransformationGrid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .rural-records-section {
+        width: 100% !important;
+
+        padding: 0 15px !important;
+    }
+
+
+    .rural-record-statistics {
+        grid-template-columns:
+            1fr !important;
+
+        gap: 15px !important;
+    }
+
+
+    .rural-record-filters {
+        grid-template-columns:
+            1fr !important;
+
+        gap: 12px !important;
+    }
+
+
+    .rural-record-filters input {
+        grid-column: auto !important;
+    }
+
+
+    #ruralTransformationGrid {
+        grid-template-columns:
+            1fr !important;
+
+        gap: 18px !important;
+    }
+
+
+    .rural-stat-card {
+        padding: 20px 15px !important;
+    }
+
+
+    .rural-record-card {
+        padding: 20px !important;
+    }
+
+}
