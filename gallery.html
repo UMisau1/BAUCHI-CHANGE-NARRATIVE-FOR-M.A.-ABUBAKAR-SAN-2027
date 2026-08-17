@@ -8,7 +8,7 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
 
-    <title>Gallery | MOHAMMED ABDULLAHI ABUBAKAR, SAN, Support Campaign 2027</title>
+    <title>Gallery | M.A. ABUBAKAR SAN Support Campaign 2027</title>
 
     <meta name="description"
           content="Official Gallery of M.A. ABUBAKAR, SAN, Support Campaign 2027">
@@ -145,45 +145,25 @@ PAGE BANNER
         GALLERY FILTER
 ===================================== -->
 
+<!-- =====================================
+        GALLERY FILTER
+===================================== -->
+
 <section class="gallery-filter">
 
     <div class="container">
 
-        <div class="filter-buttons">
+        <div
+            class="filter-buttons"
+            id="galleryFilters"
+        >
 
-            <button class="filter-btn active"
-                    data-filter="all">
-
+            <button
+                class="filter-btn active"
+                data-filter="all"
+                type="button"
+            >
                 All
-
-            </button>
-
-            <button class="filter-btn"
-                    data-filter="rallies">
-
-                Rallies
-
-            </button>
-
-            <button class="filter-btn"
-                    data-filter="community">
-
-                Community
-
-            </button>
-
-            <button class="filter-btn"
-                    data-filter="meetings">
-
-                Meetings
-
-            </button>
-
-            <button class="filter-btn"
-                    data-filter="volunteers">
-
-                Volunteers
-
             </button>
 
         </div>
@@ -196,120 +176,60 @@ PAGE BANNER
 <!-- =====================================
         GALLERY
 ===================================== -->
-
 <section class="gallery-page">
 
     <div class="container">
 
-        <div class="gallery-grid">
+        <div class="section-title">
 
-            <!-- Image 1 -->
+            <span>PROJECT GALLERY</span>
 
-            <div class="gallery-item rallies">
+            <h2>Campaign Projects & Activities</h2>
 
-                <img src="images/gallery/gallery1.jpg"
-                     alt="Campaign Rally">
-
-                <div class="gallery-overlay">
-
-                    <h3>Campaign Rally</h3>
-
-                    <p>Bauchi State Campaign Tour</p>
-
-                </div>
-
-            </div>
-
-            <!-- Image 2 -->
-
-            <div class="gallery-item community">
-
-                <img src="images/gallery/gallery2.jpg"
-                     alt="Community Visit">
-
-                <div class="gallery-overlay">
-
-                    <h3>Community Visit</h3>
-
-                    <p>Meeting with Community Leaders</p>
-
-                </div>
-
-            </div>
-
-            <!-- Image 3 -->
-
-            <div class="gallery-item meetings">
-
-                <img src="images/gallery/gallery3.jpg"
-                     alt="Strategy Meeting">
-
-                <div class="gallery-overlay">
-
-                    <h3>Strategy Meeting</h3>
-
-                    <p>Campaign Planning Session</p>
-
-                </div>
-
-            </div>
-
-            <!-- Image 4 -->
-
-            <div class="gallery-item volunteers">
-
-                <img src="images/gallery/gallery4.jpg"
-                     alt="Volunteer Training">
-
-                <div class="gallery-overlay">
-
-                    <h3>Volunteer Training</h3>
-
-                    <p>Preparing Campaign Volunteers</p>
-
-                </div>
-
-            </div>
-
-            <!-- Image 5 -->
-
-            <div class="gallery-item rallies">
-
-                <img src="images/gallery/gallery5.jpg"
-                     alt="Town Hall">
-
-                <div class="gallery-overlay">
-
-                    <h3>Town Hall Meeting</h3>
-
-                    <p>Interactive Session with Citizens</p>
-
-                </div>
-
-            </div>
-
-            <!-- Image 6 -->
-
-            <div class="gallery-item community">
-
-                <img src="images/gallery/gallery6.jpg"
-                     alt="Women Empowerment">
-
-                <div class="gallery-overlay">
-
-                    <h3>Women Empowerment</h3>
-
-                    <p>Supporting Women Development</p>
-
-                </div>
-
-            </div>
+            <p>
+                Explore projects, education, healthcare,
+                electricity, water, roads, social activities
+                and youth development initiatives.
+            </p>
 
         </div>
 
-    </div>
+        <!-- DYNAMIC PROJECT GALLERY -->
+
+<div
+    class="gallery-grid"
+    id="dynamicGallery"
+>
+
+    <!--
+        Images will be loaded automatically
+        from images/data/images.json
+    -->
+
+</div>
+
+
+<!-- ==========================================
+     LOAD MORE BUTTON
+========================================== -->
+
+<div class="gallery-load-more">
+
+    <button
+        id="loadMoreBtn"
+        type="button"
+        class="btn btn-primary"
+    >
+        Load More Pictures
+    </button>
+
+</div>
+
+
+</div>
 
 </section>
+
 <!-- =====================================
         CAMPAIGN VIDEOS
 ===================================== -->
@@ -388,15 +308,20 @@ PAGE BANNER
 
         <div class="stats-grid">
 
+            <!-- CAMPAIGN PHOTOS -->
+
             <div class="stat-card">
 
                 <i class="fas fa-images"></i>
 
-                <h2>2,500+</h2>
+                <h2 id="galleryPhotoCount">0</h2>
 
                 <p>Campaign Photos</p>
 
             </div>
+
+
+            <!-- CAMPAIGN VIDEOS -->
 
             <div class="stat-card">
 
@@ -408,6 +333,9 @@ PAGE BANNER
 
             </div>
 
+
+            <!-- SUPPORTERS -->
+
             <div class="stat-card">
 
                 <i class="fas fa-users"></i>
@@ -417,6 +345,9 @@ PAGE BANNER
                 <p>Supporters Captured</p>
 
             </div>
+
+
+            <!-- LGAs -->
 
             <div class="stat-card">
 
@@ -437,21 +368,20 @@ PAGE BANNER
         IMAGE LIGHTBOX
 ===================================== -->
 
-<div class="lightbox">
+<div class="lightbox" id="galleryLightbox">
 
-    <span class="close-lightbox">
-
+    <span class="close-lightbox" id="closeLightbox">
         &times;
-
     </span>
 
-    <img src=""
-         alt="Gallery Image"
-         class="lightbox-img">
+    <img
+        src=""
+        alt="Gallery Image"
+        class="lightbox-img"
+        id="lightboxImage"
+    >
 
 </div>
-
-
 <!-- =====================================
         CALL TO ACTION
 ===================================== -->
@@ -507,7 +437,7 @@ PAGE BANNER
                      alt="Logo"
                      class="footer-logo">
 
-                <h3>MOHAMMED ABDULLAHI ABUBAKAR, SAN, Support Campaign 2027</h3>
+                <h3>M.A. ABUBAKAR SAN Support Campaign 2027</h3>
 
                 <p>
 
@@ -565,7 +495,7 @@ PAGE BANNER
 
             <p>
 
-                © 2026 BAUCHI CHANGE NARRATIVE FOR M.A. ABUBAKAR SAN 2027 Support Campaign.
+                © 2027 BAUCHI CHANGE NARRATIVE FOR M.A. ABUBAKAR SAN Support Campaign.
                 All Rights Reserved.
 
             </p>
@@ -600,10 +530,13 @@ PAGE BANNER
 
 <script src="js/main.js"></script>
 
+<script src="js/projects-gallery.js"></script>
+
 <script src="js/gallery.js"></script>
 
 <script src="js/darkmode.js"></script>
 
+<script src="js/lightbox.js"></script>
 </body>
 
 </html>
