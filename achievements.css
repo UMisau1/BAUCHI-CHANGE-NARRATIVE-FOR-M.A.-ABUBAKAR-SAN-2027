@@ -1,0 +1,6369 @@
+/* =====================================================
+   ACHIEVEMENTS PAGE
+   CAMPAIGN WEBSITE
+===================================================== */
+
+
+/* =====================================================
+   GLOBAL
+===================================================== */
+
+.achievements-hero,
+.achievements-intro,
+.achievement-categories,
+.achievement-sector,
+.future-sectors,
+.achievements-cta {
+    width: 100%;
+}
+
+.achievements-hero .container,
+.achievements-intro .container,
+.achievement-categories .container,
+.achievement-sector .container,
+.future-sectors .container,
+.achievements-cta .container {
+    width: min(1200px, 92%);
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   ANNOUNCEMENT
+===================================================== */
+
+.announcement-bar {
+    background: #007a4d;
+    color: #ffffff;
+    padding: 11px 0;
+}
+
+.announcement-bar .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.announcement-bar p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.site-header {
+    background: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-inner {
+    min-height: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+    display: block;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.navbar a {
+    color: #222222;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00804f;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.dark-mode-btn {
+    width: 46px;
+    height: 46px;
+    border: none;
+    border-radius: 50%;
+    background: #00804f;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.join-btn {
+    background: #00804f;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.achievements-hero {
+    position: relative;
+    min-height: 470px;
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.52),
+            rgba(0, 0, 0, 0.52)
+        ),
+        url("../images/achievements-hero.jpg")
+        center/cover no-repeat;
+}
+
+.achievements-hero-overlay {
+    position: absolute;
+    inset: 0;
+}
+
+.achievements-hero-content {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+}
+
+.section-tag,
+.section-label {
+    display: inline-block;
+    color: #d8a900;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.achievements-hero h1 {
+    max-width: 800px;
+    margin: 18px 0;
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(48px, 7vw, 82px);
+    line-height: 0.98;
+    font-weight: 800;
+}
+
+.achievements-hero h1 span {
+    display: block;
+    color: #ffd000;
+}
+
+.achievements-hero p {
+    max-width: 720px;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   INTRODUCTION
+===================================================== */
+
+.achievements-intro {
+    padding: 90px 0;
+    background: #ffffff;
+}
+
+.intro-content {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro-content h2,
+.section-heading h2,
+.future-sector-box h2,
+.cta-content h2 {
+    margin: 12px 0 20px;
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(32px, 5vw, 52px);
+    line-height: 1.15;
+    color: #1d1d1d;
+}
+
+.intro-content h2 span,
+.section-heading h2 span,
+.future-sector-box h2 span,
+.cta-content h2 span {
+    color: #00804f;
+}
+
+.intro-content p {
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+
+/* =====================================================
+   CATEGORY SECTION
+===================================================== */
+
+.achievement-categories {
+    padding: 90px 0;
+    background: #f6f8f7;
+}
+
+.section-heading {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 50px;
+}
+
+.section-heading p {
+    color: #666666;
+    line-height: 1.8;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.category-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    min-height: 250px;
+    padding: 28px;
+    background: #ffffff;
+    border-radius: 16px;
+    text-decoration: none;
+    border: 1px solid #e8e8e8;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    transition: 0.35s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+    border-color: #00804f;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.10);
+}
+
+.category-icon {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    background: #eaf7f1;
+    font-size: 28px;
+}
+
+.category-content h3 {
+    margin: 0 0 10px;
+    color: #222222;
+    font-size: 20px;
+}
+
+.category-content p {
+    margin: 0;
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.category-arrow {
+    margin-top: auto;
+    color: #00804f;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+
+/* =====================================================
+   SECTOR
+===================================================== */
+
+.achievement-sector {
+    padding: 100px 0;
+    background: #ffffff;
+}
+
+.sector-heading {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    margin-bottom: 55px;
+}
+
+.sector-number {
+    min-width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #00804f;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.sector-heading h2 {
+    margin: 10px 0 15px;
+    font-family: "Poppins", sans-serif;
+    font-size: clamp(32px, 5vw, 55px);
+    line-height: 1.1;
+}
+
+.sector-heading h2 span {
+    color: #00804f;
+}
+
+.sector-heading p {
+    max-width: 800px;
+    color: #666666;
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   SUB-CATEGORIES
+===================================================== */
+
+.sub-category-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.achievement-card {
+    padding: 30px;
+    background: #f8faf9;
+    border: 1px solid #e8ecea;
+    border-radius: 16px;
+    transition: 0.35s ease;
+}
+
+.achievement-card:hover {
+    transform: translateY(-7px);
+    background: #ffffff;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.achievement-card-icon {
+    font-size: 35px;
+    margin-bottom: 18px;
+}
+
+.achievement-card h3 {
+    margin: 0 0 12px;
+    color: #222222;
+    font-size: 20px;
+}
+
+.achievement-card p {
+    margin: 0 0 20px;
+    color: #666666;
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+.view-achievements {
+    color: #00804f;
+    font-size: 14px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+
+/* =====================================================
+   FUTURE SECTORS
+===================================================== */
+
+.future-sectors {
+    padding: 90px 0;
+    background: #f6f8f7;
+}
+
+.future-sector-box {
+    max-width: 850px;
+    margin: auto;
+    padding: 55px;
+    background: #ffffff;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+}
+
+.future-sector-box p {
+    color: #666666;
+    line-height: 1.9;
+}
+
+
+/* =====================================================
+   CTA
+===================================================== */
+
+.achievements-cta {
+    padding: 100px 0;
+    background: #007a4d;
+}
+
+.cta-content {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    color: #ffffff;
+}
+
+.cta-content h2 {
+    color: #ffffff;
+}
+
+.cta-content h2 span {
+    color: #ffd000;
+}
+
+.cta-content p {
+    color: rgba(255, 255, 255, 0.85);
+    line-height: 1.8;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.primary-btn,
+.secondary-btn {
+    display: inline-block;
+    padding: 14px 24px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.primary-btn {
+    background: #ffd000;
+    color: #1d1d1d;
+}
+
+.secondary-btn {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.site-footer {
+    background: #111111;
+    color: #ffffff;
+    padding: 25px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 13px;
+    color: #bbbbbb;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1100px) {
+
+    .category-grid,
+    .sub-category-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .navbar {
+        gap: 15px;
+    }
+
+}
+
+
+@media (max-width: 850px) {
+
+    .header-inner {
+        flex-wrap: wrap;
+        padding: 15px 0;
+    }
+
+    .navbar {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .header-actions {
+        margin-left: auto;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .announcement-bar p {
+        font-size: 12px;
+    }
+
+    .category-grid,
+    .sub-category-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sector-heading {
+        flex-direction: column;
+    }
+
+    .achievements-hero {
+        min-height: 430px;
+    }
+
+    .achievements-hero h1 {
+        font-size: 48px;
+    }
+
+    .future-sector-box {
+        padding: 30px 20px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}
+/* ==========================================
+   ACHIEVEMENT SECTIONS
+========================================== */
+
+.achievement-section,
+.project-section {
+    padding: 90px 0;
+    background: #ffffff;
+}
+
+.project-section:nth-child(even) {
+    background: #f7f9f8;
+}
+
+
+/* ==========================================
+   SECTION HEADING
+========================================== */
+
+.section-heading {
+    max-width: 850px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.section-heading.left {
+    margin-left: 0;
+    text-align: left;
+}
+
+.section-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #00844a;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.section-heading h2 {
+    margin: 0 0 18px;
+    font-size: clamp(34px, 5vw, 58px);
+    line-height: 1.05;
+    font-weight: 800;
+    color: #171717;
+}
+
+.section-heading h2 span {
+    color: #f4c400;
+}
+
+.section-heading p {
+    max-width: 750px;
+    margin: auto;
+    color: #666;
+    line-height: 1.8;
+}
+
+
+/* ==========================================
+   CATEGORY GRID
+========================================== */
+
+.achievement-category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.achievement-category-card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 25px;
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 16px;
+    text-decoration: none;
+    color: inherit;
+    transition: .35s ease;
+}
+
+.achievement-category-card:hover {
+    transform: translateY(-7px);
+    border-color: #00844a;
+    box-shadow: 0 15px 35px rgba(0,0,0,.08);
+}
+
+.category-icon {
+    width: 58px;
+    height: 58px;
+    min-width: 58px;
+    display: grid;
+    place-items: center;
+    background: #00844a;
+    color: #ffffff;
+    border-radius: 14px;
+    font-size: 22px;
+}
+
+.category-content {
+    flex: 1;
+}
+
+.category-content h3 {
+    margin: 0 0 7px;
+    font-size: 18px;
+    color: #181818;
+}
+
+.category-content p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.6;
+    color: #777;
+}
+
+.category-arrow {
+    color: #00844a;
+}
+
+
+/* ==========================================
+   PROJECT GRID
+========================================== */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.project-card {
+    background: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,.07);
+    transition: .35s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0,0,0,.12);
+}
+
+.project-image {
+    height: 220px;
+    position: relative;
+    overflow: hidden;
+    background: #ddd;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s ease;
+}
+
+.project-card:hover .project-image img {
+    transform: scale(1.06);
+}
+
+.project-number {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    width: 45px;
+    height: 45px;
+    display: grid;
+    place-items: center;
+    background: #00844a;
+    color: #ffffff;
+    border-radius: 50%;
+    font-weight: 700;
+}
+
+.project-content {
+    padding: 25px;
+}
+
+.project-category {
+    color: #00844a;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.project-content h3 {
+    margin: 10px 0;
+    font-size: 21px;
+    color: #171717;
+}
+
+.project-content p {
+    color: #666;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.project-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+}
+
+.project-meta span {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: #555;
+}
+
+
+/* ==========================================
+   IMPACT SUMMARY
+========================================== */
+
+.achievement-summary,
+.impact-highlight,
+.land-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 45px;
+}
+
+.summary-card,
+.impact-item,
+.land-stat {
+    text-align: center;
+    padding: 28px 20px;
+    background: #f7f9f8;
+    border-radius: 16px;
+}
+
+.summary-card i,
+.land-stat i {
+    display: block;
+    color: #00844a;
+    font-size: 27px;
+    margin-bottom: 12px;
+}
+
+.summary-card strong,
+.impact-item strong,
+.land-stat strong {
+    display: block;
+    font-size: 25px;
+    font-weight: 800;
+    color: #171717;
+}
+
+.summary-card span,
+.impact-item span,
+.land-stat span {
+    display: block;
+    margin-top: 6px;
+    color: #777;
+    font-size: 13px;
+}
+
+
+/* ==========================================
+   PROJECT LIST
+========================================== */
+
+.project-list {
+    display: grid;
+    gap: 15px;
+}
+
+.project-list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 25px;
+    background: #ffffff;
+    border: 1px solid #e8e8e8;
+    border-radius: 14px;
+}
+
+.project-list-item .project-number {
+    position: static;
+    flex-shrink: 0;
+    background: #00844a;
+}
+
+.project-list-item h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+}
+
+.project-list-item p {
+    margin: 0 0 10px;
+    color: #666;
+}
+
+.project-list-item strong {
+    color: #00844a;
+}
+
+
+/* ==========================================
+   LAND PROJECTS
+========================================== */
+
+.land-projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.land-project {
+    padding: 25px;
+    background: #ffffff;
+    border-left: 4px solid #00844a;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,.06);
+}
+
+.land-project span {
+    color: #f4c400;
+    font-weight: 800;
+}
+
+.land-project h3 {
+    margin: 10px 0;
+}
+
+.land-project p {
+    margin: 0;
+    color: #666;
+    line-height: 1.7;
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 900px) {
+
+    .achievement-category-grid,
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .achievement-summary,
+    .impact-highlight,
+    .land-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .land-projects {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .achievement-category-grid,
+    .project-grid,
+    .achievement-summary,
+    .impact-highlight,
+    .land-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .achievement-section,
+    .project-section {
+        padding: 65px 0;
+    }
+
+    .project-image {
+        height: 200px;
+    }
+
+}
+/* ==========================================
+   ACHIEVEMENTS OVERVIEW
+========================================== */
+
+.achievements-overview {
+    padding: 80px 0;
+    background: var(--light);
+}
+
+.achievements-overview .section-header {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 45px;
+}
+
+.achievements-overview .section-badge {
+    display: inline-block;
+    margin-bottom: 12px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: var(--secondary);
+}
+
+.achievements-overview .section-header h2 {
+    margin-bottom: 15px;
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--dark);
+}
+
+.achievements-overview .section-header p {
+    color: var(--text);
+    line-height: 1.8;
+}
+
+
+/* INTRO BOX */
+
+.achievements-intro-box {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 30px;
+    margin-bottom: 45px;
+    background: var(--gray);
+    border-left: 5px solid var(--secondary);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.intro-icon {
+    min-width: 60px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--secondary);
+    color: var(--light);
+    font-size: 25px;
+}
+
+.intro-content h3 {
+    margin-bottom: 12px;
+    font-size: 24px;
+    color: var(--dark);
+}
+
+.intro-content p {
+    margin-bottom: 10px;
+    line-height: 1.8;
+    color: var(--text);
+}
+
+
+/* CATEGORY GRID */
+
+.achievement-categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+
+/* CATEGORY CARD */
+
+.achievement-category {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+    text-decoration: none;
+    background: var(--light);
+    border: 1px solid #e5e5e5;
+    border-radius: var(--radius);
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+    transition: var(--transition);
+}
+
+.achievement-category:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow);
+    border-color: var(--secondary);
+}
+
+
+/* CATEGORY ICON */
+
+.category-icon {
+    min-width: 55px;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    background: rgba(0, 166, 81, 0.10);
+    color: var(--secondary);
+    font-size: 23px;
+}
+
+.category-content {
+    flex: 1;
+}
+
+.category-content h3 {
+    margin-bottom: 7px;
+    font-size: 18px;
+    color: var(--dark);
+}
+
+.category-content p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text);
+}
+
+.category-arrow {
+    color: var(--secondary);
+    font-size: 18px;
+    transition: var(--transition);
+}
+
+.achievement-category:hover .category-arrow {
+    transform: translateX(5px);
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width: 768px) {
+
+    .achievements-overview {
+        padding: 60px 0;
+    }
+
+    .achievements-overview .section-header h2 {
+        font-size: 30px;
+    }
+
+    .achievements-intro-box {
+        flex-direction: column;
+        padding: 25px;
+    }
+
+    .achievement-categories {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .achievements-overview .section-header h2 {
+        font-size: 26px;
+    }
+
+    .achievement-category {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .category-content h3 {
+        font-size: 16px;
+    }
+
+    .category-content p {
+        font-size: 13px;
+    }
+
+}
+/* =====================================================
+   ROADS & TRANSPORTATION - DETAILED PROJECTS
+===================================================== */
+
+.infrastructure-detail-card {
+    grid-column: 1 / -1;
+    text-align: left;
+}
+
+.achievement-card-intro {
+    max-width: 850px;
+    margin: 0 auto 35px;
+    line-height: 1.8;
+    color: #666;
+}
+
+.road-project-group {
+    margin-top: 40px;
+}
+
+.road-project-group h4 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid rgba(0, 128, 96, 0.15);
+    color: #007a4d;
+    font-size: 1.25rem;
+}
+
+.road-project-list {
+    display: grid;
+    gap: 15px;
+}
+
+.road-project-item {
+    display: flex;
+    gap: 18px;
+    padding: 20px;
+    background: #f8faf9;
+    border: 1px solid #e7eee9;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.road-project-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.project-number {
+    flex: 0 0 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #007a4d;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.project-details {
+    flex: 1;
+}
+
+.project-details h5 {
+    margin: 0 0 8px;
+    font-size: 1.05rem;
+    color: #222;
+}
+
+.project-details p {
+    margin: 0 0 12px;
+    line-height: 1.7;
+    color: #666;
+}
+
+.project-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.project-info span {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #007a4d;
+}
+
+.project-info i {
+    font-size: 0.85rem;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .road-project-item {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .project-number {
+        flex: 0 0 40px;
+    }
+
+    .project-info {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+}
+/* =========================================================
+   BAGIS / INFRASTRUCTURE DETAIL CARDS
+   ========================================================= */
+
+.infrastructure-detail-card {
+    position: relative;
+    margin-top: 35px;
+    padding: 35px;
+    background: #ffffff;
+    border: 1px solid rgba(0, 128, 96, 0.12);
+    border-radius: 18px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.infrastructure-detail-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.12);
+}
+
+
+/* TOP GREEN LINE */
+
+.infrastructure-detail-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(
+        90deg,
+        #00804f,
+        #00a86b,
+        #f4c400
+    );
+}
+
+
+/* ICON */
+
+.infrastructure-detail-card .achievement-card-icon {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 20px;
+
+    background: rgba(0, 128, 79, 0.08);
+    border-radius: 15px;
+
+    font-size: 30px;
+}
+
+
+/* CONTENT */
+
+.infrastructure-detail-card .achievement-card-content {
+    width: 100%;
+}
+
+
+/* NUMBER */
+
+.infrastructure-detail-card .achievement-number {
+    display: inline-block;
+
+    margin-bottom: 8px;
+
+    color: #00804f;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+
+/* HEADING */
+
+.infrastructure-detail-card h3 {
+    margin: 0 0 12px;
+
+    color: #1d1d1d;
+
+    font-size: 27px;
+    line-height: 1.25;
+    font-weight: 700;
+}
+
+
+/* DESCRIPTION */
+
+.infrastructure-detail-card .achievement-card-content > p {
+    max-width: 850px;
+    margin: 0 0 25px;
+
+    color: #666666;
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   ACHIEVEMENT ITEMS
+   ========================================================= */
+
+.infrastructure-detail-card .achievement-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+
+    margin-top: 20px;
+}
+
+
+.infrastructure-detail-card .achievement-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+
+    padding: 16px 18px;
+
+    background: #f8faf9;
+    border-left: 4px solid #00804f;
+
+    border-radius: 8px;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.infrastructure-detail-card .achievement-item:hover {
+    background: #f0f8f4;
+    transform: translateX(4px);
+    border-left-color: #f4c400;
+}
+
+
+/* ITEM NUMBER */
+
+.infrastructure-detail-card .achievement-item strong {
+    flex: 0 0 auto;
+
+    min-width: 35px;
+
+    color: #00804f;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+/* ITEM TEXT */
+
+.infrastructure-detail-card .achievement-item span {
+    color: #444444;
+
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   DIFFERENT CARD SPACING
+   ========================================================= */
+
+.sub-category-grid .infrastructure-detail-card {
+    margin-top: 30px;
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .infrastructure-detail-card {
+        padding: 28px;
+    }
+
+    .infrastructure-detail-card h3 {
+        font-size: 24px;
+    }
+
+    .infrastructure-detail-card .achievement-card-content > p {
+        font-size: 15px;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .infrastructure-detail-card {
+        margin-top: 25px;
+        padding: 22px 18px;
+
+        border-radius: 14px;
+    }
+
+    .infrastructure-detail-card .achievement-card-icon {
+        width: 55px;
+        height: 55px;
+
+        font-size: 25px;
+    }
+
+    .infrastructure-detail-card h3 {
+        font-size: 21px;
+    }
+
+    .infrastructure-detail-card .achievement-card-content > p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .infrastructure-detail-card .achievement-item {
+        gap: 10px;
+        padding: 13px 12px;
+    }
+
+    .infrastructure-detail-card .achievement-item strong {
+        min-width: 30px;
+        font-size: 13px;
+    }
+
+    .infrastructure-detail-card .achievement-item span {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+}
+/* =========================================================
+   INFRASTRUCTURE TRANSFORMATION
+   Infrastructure Development & Public Works
+   ========================================================= */
+
+.infrastructure-achievement-section {
+    position: relative;
+    padding: 90px 0 70px;
+    background: #f7f9f8;
+    overflow: hidden;
+}
+
+
+/* Decorative background */
+
+.infrastructure-achievement-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+
+    background: linear-gradient(
+        90deg,
+        #00804f,
+        #00a86b,
+        #f4c400
+    );
+}
+
+
+/* =========================================================
+   SECTION CONTAINER
+   ========================================================= */
+
+.infrastructure-achievement-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+   ========================================================= */
+
+.infrastructure-achievement-section .section-heading {
+    max-width: 900px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+
+/* Small label */
+
+.infrastructure-achievement-section .section-label {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 15px;
+
+    color: #00804f;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+/* Main heading */
+
+.infrastructure-achievement-section .section-heading h2 {
+    margin: 0;
+
+    color: #1d1d1d;
+
+    font-size: clamp(32px, 5vw, 56px);
+    line-height: 1.15;
+    font-weight: 800;
+}
+
+
+/* Gold highlighted part */
+
+.infrastructure-achievement-section .section-heading h2 span {
+    color: #f4c400;
+}
+
+
+/* Heading paragraph */
+
+.infrastructure-achievement-section .section-heading p {
+    max-width: 780px;
+    margin: 20px auto 0;
+
+    color: #666;
+
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   INTRODUCTION / OVERVIEW BOX
+   ========================================================= */
+
+.infrastructure-achievement-section .infrastructure-intro {
+    max-width: 1000px;
+    margin: 0 auto 45px;
+
+    padding: 30px 35px;
+
+    background: #ffffff;
+
+    border-left: 5px solid #00804f;
+    border-radius: 14px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07);
+}
+
+
+.infrastructure-achievement-section .infrastructure-intro p {
+    margin: 0;
+
+    color: #555;
+
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   INFRASTRUCTURE SUB-CATEGORY GRID
+   ========================================================= */
+
+.infrastructure-achievement-section .sub-category-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 25px;
+
+    margin-top: 35px;
+}
+
+
+/* =========================================================
+   SUB-CATEGORY CARD
+   ========================================================= */
+
+.infrastructure-achievement-section .achievement-card {
+    position: relative;
+
+    padding: 30px;
+
+    background: #ffffff;
+
+    border: 1px solid rgba(0, 128, 79, 0.10);
+    border-radius: 16px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+
+    overflow: hidden;
+}
+
+
+.infrastructure-achievement-section .achievement-card::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+
+    background: #00804f;
+}
+
+
+.infrastructure-achievement-section .achievement-card:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(0, 128, 79, 0.25);
+
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================================================
+   CARD ICON
+   ========================================================= */
+
+.infrastructure-achievement-section .achievement-card-icon {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 18px;
+
+    background: rgba(0, 128, 79, 0.09);
+
+    border-radius: 14px;
+
+    font-size: 28px;
+}
+
+
+/* =========================================================
+   CARD TITLE
+   ========================================================= */
+
+.infrastructure-achievement-section .achievement-card h3 {
+    margin: 0 0 12px;
+
+    color: #1d1d1d;
+
+    font-size: 22px;
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   CARD DESCRIPTION
+   ========================================================= */
+
+.infrastructure-achievement-section .achievement-card p {
+    margin: 0;
+
+    color: #666;
+
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   GOLD ACCENT
+   ========================================================= */
+
+.infrastructure-achievement-section .achievement-card:nth-child(even)::before {
+    background: #f4c400;
+}
+
+.infrastructure-achievement-section
+.achievement-card:nth-child(even)
+.achievement-card-icon {
+    background: rgba(244, 196, 0, 0.12);
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .infrastructure-achievement-section {
+        padding: 70px 0 55px;
+    }
+
+    .infrastructure-achievement-section .sub-category-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .infrastructure-achievement-section .section-heading {
+        margin-bottom: 40px;
+    }
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .infrastructure-achievement-section {
+        padding: 55px 0 40px;
+    }
+
+    .infrastructure-achievement-section .section-heading {
+        text-align: left;
+        margin-bottom: 30px;
+    }
+
+    .infrastructure-achievement-section .section-heading h2 {
+        font-size: 32px;
+    }
+
+    .infrastructure-achievement-section .section-heading p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .infrastructure-achievement-section .infrastructure-intro {
+        padding: 22px 20px;
+        margin-bottom: 30px;
+    }
+
+    .infrastructure-achievement-section .infrastructure-intro p {
+        font-size: 14px;
+        line-height: 1.75;
+    }
+
+    .infrastructure-achievement-section .achievement-card {
+        padding: 24px 20px;
+    }
+
+    .infrastructure-achievement-section .achievement-card h3 {
+        font-size: 20px;
+    }
+
+    .infrastructure-achievement-section .achievement-card p {
+        font-size: 14px;
+    }
+}
+/* =========================================================
+   FIX — FUTURE SECTORS GRID
+   ========================================================= */
+
+.future-sectors {
+    width: 100%;
+    overflow: hidden;
+}
+
+.future-sectors .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.future-sectors .sub-category-grid {
+    width: 100%;
+    max-width: 1200px;
+
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 22px;
+
+    margin: 35px auto 0;
+}
+
+.future-sectors .achievement-card {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .future-sectors .sub-category-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    .future-sectors .sub-category-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+}
+
+/* =========================================================
+   ECONOMIC DEVELOPMENT & EMANCIPATION
+   ========================================================= */
+
+.economic-development {
+    padding: 110px 0;
+    background: #f5f8f6;
+    position: relative;
+}
+
+
+/* =========================================================
+   SECTION HEADER
+   ========================================================= */
+
+.economic-development .section-heading {
+    max-width: 850px;
+    margin: 0 auto 65px;
+    text-align: center;
+}
+
+.economic-development .section-label {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #008451;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.economic-development .section-heading h2 {
+    margin: 0 0 20px;
+    color: #17221d;
+    font-size: clamp(38px, 5vw, 62px);
+    line-height: 1.05;
+    font-weight: 800;
+}
+
+.economic-development .section-heading h2 span {
+    color: #f2b900;
+}
+
+.economic-development .section-heading p {
+    margin: 0 auto;
+    max-width: 720px;
+    color: #59655f;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   AGRICULTURE INTRO
+   ========================================================= */
+
+.economic-intro {
+    max-width: 1000px;
+    margin: 0 auto 55px;
+    padding: 45px;
+    background: #ffffff;
+    border-left: 5px solid #008451;
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.07);
+}
+
+.economic-intro-content {
+    max-width: 900px;
+}
+
+.economic-intro .mini-label {
+    display: block;
+    margin-bottom: 12px;
+    color: #008451;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+}
+
+.economic-intro h3 {
+    margin: 0 0 18px;
+    color: #1b2922;
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+.economic-intro p {
+    margin: 0 0 15px;
+    color: #59655f;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.economic-intro p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================================================
+   ECONOMIC STATS
+   ========================================================= */
+
+.economic-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 80px;
+}
+
+.economic-stat {
+    padding: 30px 20px;
+    background: #ffffff;
+    border-radius: 14px;
+    text-align: center;
+    border-bottom: 4px solid #008451;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.economic-stat:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.10);
+}
+
+.economic-stat strong {
+    display: block;
+    margin-bottom: 8px;
+    color: #008451;
+    font-size: 35px;
+    font-weight: 800;
+}
+
+.economic-stat span {
+    color: #66716b;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   BLOCK HEADINGS
+   ========================================================= */
+
+.economic-block {
+    margin-bottom: 85px;
+}
+
+.economic-block-heading {
+    max-width: 800px;
+    margin-bottom: 35px;
+}
+
+.economic-block-heading h3 {
+    margin: 0 0 12px;
+    color: #18231e;
+    font-size: 34px;
+    line-height: 1.2;
+}
+
+.economic-block-heading p {
+    margin: 0;
+    color: #5f6b65;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   AGRICULTURAL CARDS
+   ========================================================= */
+
+.economic-card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.economic-card {
+    position: relative;
+    min-height: 300px;
+    padding: 30px;
+    background: #ffffff;
+    border: 1px solid #e2ebe6;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.economic-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.09);
+}
+
+.economic-card-icon {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+    background: #e5f5ed;
+    border-radius: 14px;
+    font-size: 28px;
+}
+
+.economic-card h4 {
+    margin: 0 0 12px;
+    color: #1d2a24;
+    font-size: 20px;
+}
+
+.economic-card p {
+    margin: 0;
+    color: #68736d;
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+.economic-highlight {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.economic-highlight strong {
+    color: #008451;
+    font-size: 25px;
+}
+
+.economic-highlight span {
+    color: #737d78;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   OCP AFRICA FEATURE
+   ========================================================= */
+
+.economic-feature {
+    position: relative;
+    margin-bottom: 85px;
+    padding: 55px;
+    overflow: hidden;
+    background: #007b4d;
+    border-radius: 20px;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+}
+
+.economic-feature::after {
+    content: "";
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    right: -100px;
+    top: -100px;
+    border: 45px solid rgba(255, 255, 255, 0.06);
+    border-radius: 50%;
+}
+
+.economic-feature-content {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+}
+
+.economic-feature .section-label {
+    color: #ffd000;
+}
+
+.economic-feature h3 {
+    margin: 0 0 20px;
+    color: #ffffff;
+    font-size: 36px;
+}
+
+.economic-feature p {
+    max-width: 850px;
+    margin: 0 0 15px;
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.feature-points {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.feature-points div {
+    padding: 22px;
+    background: rgba(255, 255, 255, 0.10);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 12px;
+}
+
+.feature-points strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffd000;
+    font-size: 30px;
+}
+
+.feature-points span {
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   PROJECT LIST
+   ========================================================= */
+
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.project-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 20px 24px;
+    background: #ffffff;
+    border: 1px solid #e4ebe7;
+    border-radius: 12px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.project-item:hover {
+    transform: translateX(5px);
+    border-color: #008451;
+}
+
+.project-item strong {
+    min-width: 35px;
+    color: #f0b800;
+    font-size: 17px;
+}
+
+.project-item span {
+    color: #34413a;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   RURAL DEVELOPMENT
+   ========================================================= */
+
+.rural-development {
+    margin-bottom: 85px;
+}
+
+.rural-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.rural-grid article {
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 15px;
+    border-top: 3px solid #008451;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.05);
+}
+
+.rural-grid article > span {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.rural-grid h4 {
+    margin: 0 0 10px;
+    color: #1d2a24;
+    font-size: 19px;
+}
+
+.rural-grid p {
+    margin: 0;
+    color: #68736d;
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   ENVIRONMENT FEATURE
+   ========================================================= */
+
+.environment-feature {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    align-items: center;
+    margin-bottom: 60px;
+    padding: 50px;
+    background: #eaf6ef;
+    border-radius: 20px;
+}
+
+.environment-feature h3 {
+    margin: 0 0 15px;
+    color: #1c3025;
+    font-size: 34px;
+}
+
+.environment-feature p {
+    margin: 0;
+    color: #59685f;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.environment-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.environment-stats div {
+    padding: 22px;
+    background: #ffffff;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.environment-stats strong {
+    display: block;
+    color: #008451;
+    font-size: 28px;
+}
+
+.environment-stats span {
+    display: block;
+    margin-top: 5px;
+    color: #68736d;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   BRIDGING TRUST FUND
+   ========================================================= */
+
+.trust-fund {
+    margin-bottom: 80px;
+    padding: 45px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #e2ebe6;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.06);
+}
+
+.trust-fund h3 {
+    margin: 0 0 15px;
+    color: #1b2922;
+    font-size: 32px;
+}
+
+.trust-fund > p {
+    max-width: 850px;
+    margin: 0 0 30px;
+    color: #657069;
+    line-height: 1.8;
+}
+
+.trust-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.trust-grid div {
+    padding: 22px;
+    background: #f5f9f6;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.trust-grid strong {
+    display: block;
+    color: #008451;
+    font-size: 27px;
+}
+
+.trust-grid span {
+    display: block;
+    margin-top: 5px;
+    color: #68736d;
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   ACHIEVEMENT RECORD TABLE
+   ========================================================= */
+
+.achievement-record {
+    margin-bottom: 20px;
+}
+
+.achievement-record h3 {
+    margin: 0 0 30px;
+    color: #1b2922;
+    font-size: 32px;
+}
+
+.record-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.achievement-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 650px;
+}
+
+.achievement-table th {
+    padding: 18px 20px;
+    background: #008451;
+    color: #ffffff;
+    text-align: left;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.achievement-table td {
+    padding: 18px 20px;
+    color: #526059;
+    font-size: 14px;
+    border-bottom: 1px solid #e8eeeb;
+}
+
+.achievement-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.achievement-table tbody tr:hover {
+    background: #f5faf7;
+}
+
+.achievement-table td:first-child {
+    color: #008451;
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   RESPONSIVE DESIGN
+   ========================================================= */
+
+@media (max-width: 1100px) {
+
+    .economic-card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .economic-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .rural-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 768px) {
+
+    .economic-development {
+        padding: 75px 0;
+    }
+
+    .economic-intro {
+        padding: 30px;
+    }
+
+    .economic-feature {
+        padding: 35px 25px;
+    }
+
+    .economic-feature h3 {
+        font-size: 28px;
+    }
+
+    .feature-points {
+        grid-template-columns: 1fr;
+    }
+
+    .project-list {
+        grid-template-columns: 1fr;
+    }
+
+    .environment-feature {
+        grid-template-columns: 1fr;
+        padding: 35px 25px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .economic-stats,
+    .economic-card-grid,
+    .rural-grid,
+    .trust-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .economic-intro {
+        padding: 25px 20px;
+    }
+
+    .economic-block-heading h3,
+    .economic-feature h3,
+    .environment-feature h3,
+    .trust-fund h3,
+    .achievement-record h3 {
+        font-size: 27px;
+    }
+
+    .economic-stat {
+        padding: 25px 15px;
+    }
+
+    .economic-feature {
+        border-radius: 14px;
+    }
+
+}
+
+/* =====================================================
+   RURAL DEVELOPMENT SECTION
+===================================================== */
+
+.rural-development-section {
+    padding: 70px 0;
+    background: #f4f8f6;
+}
+.rural-development-section {
+    margin-top: 0;
+}
+
+.rural-development-header {
+    max-width: 900px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.rural-development-header .section-label,
+.content-label {
+    display: inline-block;
+    margin-bottom: 18px;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #008653;
+    text-transform: uppercase;
+}
+
+.rural-development-header h2 {
+    margin: 0 0 22px;
+    font-size: clamp(42px, 6vw, 72px);
+    line-height: 1.05;
+    font-weight: 800;
+    color: #14251e;
+}
+
+.rural-development-header h2 span {
+    display: block;
+    color: #f2b800;
+}
+
+.rural-development-header p {
+    max-width: 760px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #52645d;
+}
+
+
+/* =====================================================
+   INTRODUCTION
+===================================================== */
+
+.rural-introduction {
+    max-width: 1050px;
+    margin: 0 auto 60px;
+    padding: 45px 50px;
+    background: #ffffff;
+    border-left: 5px solid #008653;
+    border-radius: 0 22px 22px 0;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+}
+
+.rural-intro-content h3 {
+    margin: 0 0 18px;
+    font-size: 32px;
+    color: #14251e;
+}
+
+.rural-intro-content p {
+    margin: 0 0 15px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #56665f;
+}
+
+.rural-intro-content p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =====================================================
+   RURAL SECTOR GRID
+===================================================== */
+
+.rural-sector-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.rural-sector-card {
+    padding: 32px 28px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #e3ebe7;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: 0.35s ease;
+}
+
+.rural-sector-card:hover {
+    transform: translateY(-8px);
+    border-color: #008653;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.09);
+}
+
+.rural-sector-icon {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+    border-radius: 15px;
+    background: #e4f5ed;
+    font-size: 28px;
+}
+
+.rural-sector-card h3 {
+    margin: 0 0 12px;
+    font-size: 21px;
+    color: #17342a;
+}
+
+.rural-sector-card p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.75;
+    color: #5d6d66;
+}
+
+
+/* =====================================================
+   MICRO PROJECTS
+===================================================== */
+
+.micro-projects-section {
+    margin-top: 80px;
+    padding: 55px;
+    background: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+}
+
+.micro-projects-heading {
+    max-width: 750px;
+    margin-bottom: 40px;
+}
+
+.micro-projects-heading h3 {
+    margin: 0 0 15px;
+    font-size: 34px;
+    color: #14251e;
+}
+
+.micro-projects-heading p {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #5d6d66;
+}
+
+.micro-project-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.micro-stat-card {
+    padding: 30px 20px;
+    text-align: center;
+    background: #f4f8f6;
+    border-radius: 16px;
+}
+
+.micro-stat-card strong {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 34px;
+    font-weight: 800;
+    color: #008653;
+}
+
+.micro-stat-card span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #53635c;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .rural-sector-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .micro-project-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .rural-development-section {
+        padding: 75px 0;
+    }
+
+    .rural-development-header h2 {
+        font-size: 42px;
+    }
+
+    .rural-development-header p {
+        font-size: 16px;
+    }
+
+    .rural-introduction {
+        padding: 30px 25px;
+    }
+
+    .rural-intro-content h3 {
+        font-size: 26px;
+    }
+
+    .rural-sector-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .micro-projects-section {
+        padding: 30px 22px;
+    }
+
+    .micro-projects-heading h3 {
+        font-size: 27px;
+    }
+
+    .micro-project-stats {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+/* =====================================================
+   ENVIRONMENTAL SUSTAINABILITY
+===================================================== */
+
+.environmental-section {
+    padding: 110px 0;
+    background: #eef7f2;
+}
+
+.environmental-header {
+    max-width: 900px;
+    margin: 0 auto 65px;
+    text-align: center;
+}
+
+.environmental-header h2 {
+    margin: 0 0 22px;
+    font-size: clamp(42px, 6vw, 72px);
+    line-height: 1.05;
+    font-weight: 800;
+    color: #14251e;
+}
+
+.environmental-header h2 span {
+    display: block;
+    color: #f2b800;
+}
+
+.environmental-header p {
+    max-width: 760px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #52645d;
+}
+
+
+/* =====================================================
+   FEATURE
+===================================================== */
+
+.environment-feature {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: 30px;
+    align-items: stretch;
+    margin-bottom: 65px;
+}
+
+.environment-feature-content {
+    padding: 50px;
+    background: #ffffff;
+    border-left: 5px solid #008653;
+    border-radius: 0 24px 24px 0;
+    box-shadow: 0 15px 40px rgba(0,0,0,.06);
+}
+
+.environment-feature-content h3 {
+    margin: 0 0 20px;
+    font-size: 35px;
+    color: #14251e;
+}
+
+.environment-feature-content p {
+    margin: 0 0 15px;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #586a62;
+}
+
+.environment-feature-content p:last-child {
+    margin-bottom: 0;
+}
+
+.environment-highlight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+    text-align: center;
+    background: #008653;
+    border-radius: 24px;
+    color: #ffffff;
+}
+
+.environment-number {
+    font-size: 75px;
+    line-height: 1;
+    font-weight: 800;
+    color: #f2b800;
+}
+
+.environment-highlight span {
+    margin-top: 12px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.environment-highlight small {
+    margin-top: 15px;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   GGW ACHIEVEMENTS
+===================================================== */
+
+.environment-achievements {
+    margin-bottom: 80px;
+}
+
+.environment-achievements > h3 {
+    margin-bottom: 30px;
+    font-size: 34px;
+    color: #14251e;
+}
+
+.environment-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.environment-card {
+    padding: 30px 25px;
+    background: #ffffff;
+    border: 1px solid #dceae3;
+    border-radius: 18px;
+    transition: .35s ease;
+}
+
+.environment-card:hover {
+    transform: translateY(-7px);
+    border-color: #008653;
+    box-shadow: 0 18px 35px rgba(0,0,0,.08);
+}
+
+.environment-card-icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 14px;
+    background: #e3f4ec;
+    font-size: 26px;
+}
+
+.environment-card strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 23px;
+    color: #17342a;
+}
+
+.environment-card p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #5d6d66;
+}
+
+
+/* =====================================================
+   BRIDGING TRUST FUND
+===================================================== */
+
+.bridging-fund {
+    margin-bottom: 80px;
+    padding: 55px;
+    background: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0 15px 40px rgba(0,0,0,.06);
+}
+
+.bridging-fund-header {
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+.bridging-fund-header h3 {
+    margin: 0 0 18px;
+    font-size: 35px;
+    color: #14251e;
+}
+
+.bridging-fund-header p {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #586a62;
+}
+
+.bridging-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    margin-bottom: 35px;
+}
+
+.bridging-stat {
+    padding: 25px 18px;
+    text-align: center;
+    background: #f0f7f3;
+    border-radius: 16px;
+}
+
+.bridging-stat strong {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 32px;
+    color: #008653;
+}
+
+.bridging-stat span {
+    font-size: 14px;
+    color: #586a62;
+}
+
+.bridging-projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.bridging-project {
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    padding: 20px;
+    border: 1px solid #e2ebe6;
+    border-radius: 14px;
+}
+
+.bridging-project span {
+    font-weight: 800;
+    color: #f2b800;
+}
+
+.bridging-project p {
+    margin: 0;
+    line-height: 1.7;
+    color: #52645d;
+}
+
+
+/* =====================================================
+   DE-RESERVATION
+===================================================== */
+
+.dereservation-section {
+    padding: 55px;
+    background: #14251e;
+    border-radius: 25px;
+    color: #ffffff;
+}
+
+.dereservation-header {
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+.dereservation-header .content-label {
+    color: #f2b800;
+}
+
+.dereservation-header h3 {
+    margin: 0 0 18px;
+    font-size: 35px;
+    color: #ffffff;
+}
+
+.dereservation-header p {
+    margin: 0;
+    font-size: 17px;
+    line-height: 1.8;
+    color: #d7e3dd;
+}
+
+.dereservation-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.dereservation-card {
+    padding: 30px;
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 18px;
+}
+
+.dereservation-number {
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 28px;
+    font-weight: 800;
+    color: #f2b800;
+}
+
+.dereservation-card h4 {
+    margin: 0 0 10px;
+    font-size: 22px;
+}
+
+.dereservation-card p {
+    margin: 0;
+    line-height: 1.7;
+    color: #d7e3dd;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .environment-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .bridging-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .environment-feature {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .environmental-section {
+        padding: 75px 0;
+    }
+
+    .environmental-header h2 {
+        font-size: 42px;
+    }
+
+    .environment-feature-content {
+        padding: 30px 25px;
+    }
+
+    .environment-feature-content h3 {
+        font-size: 27px;
+    }
+
+    .environment-grid,
+    .bridging-stats,
+    .bridging-projects,
+    .dereservation-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .bridging-fund,
+    .dereservation-section {
+        padding: 30px 22px;
+    }
+
+}
+
+/* =========================================================
+   ENVIRONMENTAL SUSTAINABILITY
+========================================================= */
+
+.environmental-section {
+    padding: 100px 0;
+    background: #f5f8f6;
+}
+
+.environmental-section .container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   ENVIRONMENTAL HEADER
+========================================================= */
+
+.environmental-header {
+    max-width: 900px;
+    margin: 0 auto 70px;
+    text-align: center;
+}
+
+.environmental-header .section-label {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: #008451;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.environmental-header h2 {
+    margin: 0;
+    color: #10251e;
+    font-size: clamp(42px, 5vw, 70px);
+    line-height: 1.05;
+    font-weight: 800;
+}
+
+.environmental-header h2 span {
+    display: block;
+    color: #f2b800;
+}
+
+.environmental-header p {
+    max-width: 760px;
+    margin: 25px auto 0;
+    color: #53645e;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   ENVIRONMENTAL DETAIL CARD
+========================================================= */
+
+.environmental-detail-card {
+    position: relative;
+    margin-bottom: 35px;
+    padding: 45px;
+    background: #ffffff;
+    border-radius: 22px;
+    border-left: 5px solid #008451;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.06);
+    overflow: hidden;
+}
+
+.environmental-detail-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 150px;
+    background: rgba(0, 132, 81, 0.04);
+    border-radius: 0 0 0 100%;
+}
+
+
+/* =========================================================
+   CARD HEADER
+========================================================= */
+
+.environmental-card-header {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+.environmental-number {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 62px;
+    height: 62px;
+    border-radius: 15px;
+    background: #e5f5ee;
+    color: #008451;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.environmental-card-header .section-label {
+    display: block;
+    margin-bottom: 8px;
+    color: #008451;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+}
+
+.environmental-card-header h3 {
+    margin: 0;
+    color: #142a23;
+    font-size: 30px;
+    line-height: 1.25;
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   CARD TEXT
+========================================================= */
+
+.environmental-detail-card > p {
+    max-width: 950px;
+    margin: 0 0 18px;
+    color: #52645d;
+    font-size: 16px;
+    line-height: 1.85;
+}
+
+
+/* =========================================================
+   ACHIEVEMENT LIST
+========================================================= */
+
+.environmental-detail-card .achievement-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.environmental-detail-card .achievement-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px;
+    background: #f7faf8;
+    border: 1px solid #e4eee9;
+    border-radius: 14px;
+    transition: 0.3s ease;
+}
+
+.environmental-detail-card .achievement-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.environmental-detail-card .achievement-item strong {
+    flex-shrink: 0;
+    color: #008451;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.environmental-detail-card .achievement-item span {
+    color: #53645e;
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   HIGHLIGHT GRID
+========================================================= */
+
+.achievement-highlight-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.achievement-highlight {
+    padding: 30px;
+    background: #f7faf8;
+    border: 1px solid #e2eee8;
+    border-radius: 16px;
+}
+
+.achievement-highlight strong {
+    display: block;
+    margin-bottom: 10px;
+    color: #f2b800;
+    font-size: 38px;
+    font-weight: 800;
+}
+
+.achievement-highlight span {
+    color: #53645e;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   ENVIRONMENTAL SUMMARY
+========================================================= */
+
+.environmental-summary {
+    margin-top: 60px;
+    padding: 55px;
+    text-align: center;
+    background: #008451;
+    border-radius: 24px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+.environmental-summary .section-label {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #f2b800;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.environmental-summary h3 {
+    max-width: 700px;
+    margin: 0 auto 18px;
+    color: #ffffff;
+    font-size: 34px;
+    line-height: 1.25;
+}
+
+.environmental-summary p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .environmental-section {
+        padding: 80px 20px;
+    }
+
+    .environmental-detail-card {
+        padding: 35px 28px;
+    }
+
+    .environmental-detail-card .achievement-list {
+        grid-template-columns: 1fr;
+    }
+
+    .achievement-highlight-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .environmental-section {
+        padding: 65px 15px;
+    }
+
+    .environmental-header {
+        margin-bottom: 45px;
+    }
+
+    .environmental-header h2 {
+        font-size: 40px;
+    }
+
+    .environmental-header p {
+        font-size: 15px;
+    }
+
+    .environmental-detail-card {
+        padding: 28px 20px;
+        border-radius: 17px;
+    }
+
+    .environmental-card-header {
+        gap: 15px;
+    }
+
+    .environmental-number {
+        width: 50px;
+        height: 50px;
+        font-size: 15px;
+    }
+
+    .environmental-card-header h3 {
+        font-size: 23px;
+    }
+
+    .environmental-detail-card > p {
+        font-size: 15px;
+    }
+
+    .environmental-summary {
+        padding: 40px 22px;
+    }
+
+    .environmental-summary h3 {
+        font-size: 27px;
+    }
+
+}
+
+/* =========================================================
+   GOVERNANCE TRANSFORMATION
+   Building Institutions That Serve the People
+========================================================= */
+
+.governance-transformation {
+    padding: 100px 0;
+    background: #f5f8f6;
+    position: relative;
+}
+
+.governance-transformation .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+/* Section Header */
+.governance-header {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 60px;
+}
+
+.governance-header .section-label {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: #008451;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.governance-header h2 {
+    margin: 0;
+    color: #122a24;
+    font-size: clamp(42px, 6vw, 72px);
+    line-height: 1.05;
+    font-weight: 800;
+}
+
+.governance-header h2 span {
+    display: block;
+    color: #f4b400;
+}
+
+.governance-header p {
+    margin: 25px auto 0;
+    max-width: 760px;
+    color: #52635d;
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   GOVERNANCE CONTENT
+========================================================= */
+
+.governance-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+
+/* Governance Cards */
+
+.governance-content .achievement-card {
+    position: relative;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 18px;
+    border-top: 4px solid #008451;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+    transition: all 0.35s ease;
+    overflow: hidden;
+}
+
+.governance-content .achievement-card::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    right: -35px;
+    top: -35px;
+    background: rgba(0, 132, 81, 0.05);
+    border-radius: 50%;
+}
+
+.governance-content .achievement-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.10);
+}
+
+
+/* Card Number */
+
+.governance-content .card-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    margin-bottom: 20px;
+    border-radius: 14px;
+    background: #e6f5ee;
+    color: #008451;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+
+/* Card Title */
+
+.governance-content .achievement-card h3 {
+    margin: 0 0 15px;
+    color: #122a24;
+    font-size: 25px;
+    line-height: 1.25;
+    font-weight: 800;
+}
+
+.governance-content .achievement-card h3 span {
+    color: #f4b400;
+}
+
+
+/* Card Text */
+
+.governance-content .achievement-card p {
+    margin: 0;
+    color: #52635d;
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+
+/* =========================================================
+   GOVERNANCE DETAIL / MAIN FEATURE
+========================================================= */
+
+.governance-detail {
+    margin-top: 35px;
+    padding: 45px;
+    background: #ffffff;
+    border-radius: 20px;
+    border-left: 5px solid #008451;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.07);
+}
+
+.governance-detail .detail-label {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #008451;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.governance-detail h3 {
+    margin: 0 0 18px;
+    color: #122a24;
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.governance-detail p {
+    margin: 0 0 18px;
+    color: #52635d;
+    font-size: 16px;
+    line-height: 1.85;
+}
+
+
+/* =========================================================
+   BUILDING INSTITUTIONS
+========================================================= */
+
+.building-institutions {
+    margin-top: 60px;
+    padding: 55px;
+    background: #008451;
+    border-radius: 24px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.building-institutions::before {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    right: -80px;
+    top: -80px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.building-institutions::after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    left: -70px;
+    bottom: -70px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.building-institutions .section-label {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #f4b400;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.building-institutions h3 {
+    position: relative;
+    z-index: 1;
+    margin: 0 auto;
+    max-width: 800px;
+    color: #ffffff;
+    font-size: clamp(32px, 5vw, 56px);
+    line-height: 1.1;
+    font-weight: 800;
+}
+
+.building-institutions p {
+    position: relative;
+    z-index: 1;
+    max-width: 720px;
+    margin: 22px auto 0;
+    color: rgba(255, 255, 255, 0.88);
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .governance-content {
+        grid-template-columns: 1fr;
+    }
+
+    .governance-transformation {
+        padding: 75px 0;
+    }
+
+    .governance-header {
+        margin-bottom: 45px;
+    }
+
+    .governance-detail {
+        padding: 35px;
+    }
+
+    .building-institutions {
+        padding: 45px 30px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .governance-transformation .container {
+        padding: 0 18px;
+    }
+
+    .governance-header h2 {
+        font-size: 40px;
+    }
+
+    .governance-header p {
+        font-size: 16px;
+    }
+
+    .governance-content .achievement-card {
+        padding: 28px;
+    }
+
+    .governance-content .achievement-card h3 {
+        font-size: 22px;
+    }
+
+    .governance-detail {
+        padding: 28px;
+    }
+
+    .governance-detail h3 {
+        font-size: 27px;
+    }
+
+    .building-institutions {
+        padding: 40px 22px;
+    }
+
+    .building-institutions h3 {
+        font-size: 34px;
+    }
+}
+/* =========================================================
+   GOVERNANCE TRANSFORMATION
+========================================================= */
+
+.governance-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 55px;
+}
+
+
+/* =========================================================
+   GOVERNANCE CARD
+========================================================= */
+
+.governance-card {
+    display: grid;
+    grid-template-columns: 80px minmax(0, 1fr);
+    gap: 25px;
+
+    width: 100%;
+    min-width: 0;
+
+    padding: 35px 30px;
+
+    background: #ffffff;
+
+    border-radius: 22px;
+
+    border-top: 4px solid #008451;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+
+    box-sizing: border-box;
+
+    transition: all 0.3s ease;
+}
+
+
+.governance-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================================================
+   GOVERNANCE NUMBER
+========================================================= */
+
+.governance-number {
+    font-size: 28px;
+    font-weight: 800;
+
+    color: #008451;
+
+    line-height: 1;
+
+    padding-top: 3px;
+}
+
+
+/* =========================================================
+   GOVERNANCE CONTENT
+========================================================= */
+
+.governance-content {
+    min-width: 0;
+    width: 100%;
+}
+
+
+/* =========================================================
+   CARD LABEL
+========================================================= */
+
+.governance-content .card-label {
+    display: block;
+
+    margin-bottom: 12px;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    line-height: 1.3;
+
+    color: #008451;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   CARD TITLE
+========================================================= */
+
+.governance-content h3 {
+    margin: 0 0 18px;
+
+    font-size: 28px;
+
+    line-height: 1.15;
+
+    font-weight: 800;
+
+    color: #102a24;
+
+    overflow-wrap: break-word;
+}
+
+
+/* =========================================================
+   CARD DESCRIPTION
+========================================================= */
+
+.governance-content p {
+    margin: 0 0 20px;
+
+    font-size: 16px;
+
+    line-height: 1.75;
+
+    color: #53645f;
+}
+
+
+/* =========================================================
+   GOVERNANCE LIST
+========================================================= */
+
+.governance-content ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+
+.governance-content li {
+    position: relative;
+
+    margin-bottom: 10px;
+
+    padding-left: 20px;
+
+    font-size: 15px;
+
+    line-height: 1.5;
+
+    font-weight: 600;
+
+    color: #253b35;
+}
+
+
+.governance-content li::before {
+    content: "✓";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    color: #f2b400;
+
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   GOVERNANCE IMPACT
+========================================================= */
+
+.governance-impact {
+    margin-top: 45px;
+
+    padding: 45px;
+
+    background: #102a24;
+
+    border-radius: 24px;
+
+    box-sizing: border-box;
+}
+
+
+.governance-impact .section-label {
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    color: #f2b400;
+}
+
+
+.governance-impact h3 {
+    margin: 0 0 15px;
+
+    font-size: 32px;
+
+    line-height: 1.2;
+
+    color: #ffffff;
+}
+
+
+.governance-impact p {
+    max-width: 850px;
+
+    margin: 0;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    color: rgba(255, 255, 255, 0.82);
+}
+
+
+/* =========================================================
+   GOVERNANCE RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .governance-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .governance-card {
+        grid-template-columns: 60px minmax(0, 1fr);
+
+        gap: 18px;
+
+        padding: 28px 22px;
+    }
+
+
+    .governance-number {
+        font-size: 24px;
+    }
+
+
+    .governance-content h3 {
+        font-size: 23px;
+    }
+
+
+    .governance-content p {
+        font-size: 15px;
+    }
+
+
+    .governance-impact {
+        padding: 30px 22px;
+    }
+
+
+    .governance-impact h3 {
+        font-size: 26px;
+    }
+
+}
+/* =========================================================
+   FUTURE SECTORS
+   Building the Future of Bauchi State
+========================================================= */
+
+.future-sectors {
+    width: 100%;
+    margin-top: 90px;
+    padding: 90px 0;
+    background: #f5f8f6;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   FUTURE SECTORS HEADER
+========================================================= */
+
+.future-sectors .section-hero {
+    max-width: 900px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+
+.future-sectors .section-label {
+    display: inline-block;
+    margin-bottom: 18px;
+
+    color: #008451;
+
+    font-size: 14px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+.future-sectors .section-hero h2 {
+    margin: 0 0 22px;
+
+    color: #102a24;
+
+    font-size: clamp(42px, 6vw, 72px);
+    font-weight: 800;
+
+    line-height: 1.05;
+
+    letter-spacing: -2px;
+}
+
+
+.future-sectors .section-hero h2 span {
+    display: block;
+
+    color: #f2b400;
+}
+
+
+.future-sectors .section-hero p {
+    max-width: 780px;
+
+    margin: 0 auto;
+
+    color: #53645f;
+
+    font-size: 17px;
+    font-weight: 500;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   FUTURE GRID
+========================================================= */
+
+.future-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 25px;
+
+    width: 100%;
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   FUTURE CARD
+========================================================= */
+
+.future-card {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+
+    min-height: 360px;
+
+    padding: 30px;
+
+    background: #ffffff;
+
+    border-radius: 22px;
+
+    border-top: 4px solid #008451;
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.future-card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 130px;
+    height: 130px;
+
+    right: -55px;
+    bottom: -55px;
+
+    border-radius: 50%;
+
+    background: rgba(0, 132, 81, 0.05);
+
+    pointer-events: none;
+}
+
+
+.future-card:hover {
+    transform: translateY(-7px);
+
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================================================
+   FUTURE NUMBER
+========================================================= */
+
+.future-number {
+    position: absolute;
+
+    top: 25px;
+    right: 28px;
+
+    font-size: 16px;
+
+    font-weight: 800;
+
+    color: #008451;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   FUTURE ICON
+========================================================= */
+
+.future-icon {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 62px;
+    height: 62px;
+
+    margin-bottom: 25px;
+
+    background: #e4f5ee;
+
+    border-radius: 16px;
+
+    font-size: 30px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   FUTURE CONTENT
+========================================================= */
+
+.future-content {
+    position: relative;
+
+    z-index: 2;
+
+    min-width: 0;
+}
+
+
+.future-content .card-label {
+    display: block;
+
+    margin-bottom: 10px;
+
+    color: #008451;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    line-height: 1.4;
+
+    text-transform: uppercase;
+}
+
+
+.future-content h3 {
+    margin: 0 0 15px;
+
+    color: #102a24;
+
+    font-size: 25px;
+
+    font-weight: 800;
+
+    line-height: 1.2;
+
+    overflow-wrap: break-word;
+}
+
+
+.future-content p {
+    margin: 0;
+
+    color: #53645f;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   FUTURE VISION
+========================================================= */
+
+.future-vision {
+    max-width: 1100px;
+
+    margin: 55px auto 0;
+
+    padding: 50px;
+
+    background: #102a24;
+
+    border-radius: 25px;
+
+    box-sizing: border-box;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+
+.future-vision::before {
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    top: -120px;
+    left: -80px;
+
+    border-radius: 50%;
+
+    background: rgba(242, 180, 0, 0.10);
+}
+
+
+.future-vision::after {
+    content: "";
+
+    position: absolute;
+
+    width: 200px;
+    height: 200px;
+
+    right: -90px;
+    bottom: -120px;
+
+    border-radius: 50%;
+
+    background: rgba(0, 132, 81, 0.25);
+}
+
+
+.future-vision-content {
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.future-vision .section-label {
+    color: #f2b400;
+}
+
+
+.future-vision h3 {
+    max-width: 850px;
+
+    margin: 0 auto 18px;
+
+    color: #ffffff;
+
+    font-size: clamp(30px, 4vw, 48px);
+
+    font-weight: 800;
+
+    line-height: 1.15;
+
+    letter-spacing: -1px;
+}
+
+
+.future-vision p {
+    max-width: 780px;
+
+    margin: 0 auto;
+
+    color: rgba(255, 255, 255, 0.82);
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   FUTURE SECTORS RESPONSIVE
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .future-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .future-sectors {
+        margin-top: 60px;
+
+        padding: 65px 0;
+    }
+
+
+    .future-sectors .section-hero {
+        margin-bottom: 40px;
+    }
+
+
+    .future-sectors .section-hero h2 {
+        font-size: 42px;
+
+        letter-spacing: -1px;
+    }
+
+
+    .future-sectors .section-hero p {
+        padding: 0 15px;
+
+        font-size: 15px;
+    }
+
+
+    .future-grid {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    .future-card {
+        min-height: auto;
+
+        padding: 28px;
+    }
+
+
+    .future-content h3 {
+        font-size: 24px;
+    }
+
+
+    .future-vision {
+        margin-top: 40px;
+
+        padding: 38px 25px;
+    }
+
+
+    .future-vision h3 {
+        font-size: 31px;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .future-sectors .section-hero h2 {
+        font-size: 35px;
+    }
+
+
+    .future-card {
+        padding: 25px 22px;
+    }
+
+
+    .future-number {
+        top: 22px;
+        right: 22px;
+    }
+
+
+    .future-icon {
+        width: 56px;
+        height: 56px;
+
+        font-size: 27px;
+    }
+
+
+    .future-content h3 {
+        font-size: 22px;
+    }
+
+
+    .future-vision {
+        padding: 32px 20px;
+    }
+
+
+    .future-vision h3 {
+        font-size: 27px;
+    }
+
+}
+
+/* =========================================================
+   ACHIEVEMENTS CTA
+   The Record Continues
+========================================================= */
+
+.achievements-cta {
+    position: relative;
+
+    width: 100%;
+
+    margin-top: 80px;
+    padding: 95px 0;
+
+    background: #008451;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+}
+
+
+/* Decorative Circle */
+
+.achievements-cta::before {
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    top: -150px;
+    left: -100px;
+
+    border-radius: 50%;
+
+    background: rgba(242, 180, 0, 0.12);
+}
+
+
+.achievements-cta::after {
+    content: "";
+
+    position: absolute;
+
+    width: 260px;
+    height: 260px;
+
+    right: -100px;
+    bottom: -140px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.08);
+}
+
+
+/* =========================================================
+   CTA CONTENT
+========================================================= */
+
+.achievements-cta .container {
+    position: relative;
+
+    z-index: 2;
+}
+
+
+.cta-content {
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+.achievements-cta .section-label {
+    display: inline-block;
+
+    margin-bottom: 20px;
+
+    color: #f2b400;
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+/* =========================================================
+   CTA HEADING
+========================================================= */
+
+.achievements-cta h2 {
+    margin: 0 0 25px;
+
+    color: #ffffff;
+
+    font-size: clamp(40px, 5vw, 64px);
+
+    font-weight: 800;
+
+    line-height: 1.08;
+
+    letter-spacing: -1.5px;
+}
+
+
+.achievements-cta h2 span {
+    display: block;
+
+    color: #f2b400;
+}
+
+
+/* =========================================================
+   CTA DESCRIPTION
+========================================================= */
+
+.achievements-cta p {
+    max-width: 680px;
+
+    margin: 0 auto 35px;
+
+    color: rgba(255, 255, 255, 0.88);
+
+    font-size: 17px;
+
+    font-weight: 500;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   CTA BUTTONS
+========================================================= */
+
+.cta-buttons {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+/* Primary Button */
+
+.achievements-cta .primary-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 52px;
+
+    padding: 0 28px;
+
+    background: #f2b400;
+
+    color: #102a24;
+
+    border: 2px solid #f2b400;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+
+.achievements-cta .primary-btn:hover {
+    background: #ffffff;
+
+    border-color: #ffffff;
+
+    color: #008451;
+
+    transform: translateY(-3px);
+}
+
+
+/* Secondary Button */
+
+.achievements-cta .secondary-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 52px;
+
+    padding: 0 28px;
+
+    background: transparent;
+
+    color: #ffffff;
+
+    border: 2px solid rgba(255, 255, 255, 0.75);
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    font-weight: 800;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+
+.achievements-cta .secondary-btn:hover {
+    background: #ffffff;
+
+    border-color: #ffffff;
+
+    color: #008451;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   CTA RESPONSIVE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .achievements-cta {
+        margin-top: 60px;
+
+        padding: 70px 20px;
+    }
+
+
+    .achievements-cta h2 {
+        font-size: 40px;
+
+        letter-spacing: -1px;
+    }
+
+
+    .achievements-cta p {
+        font-size: 15px;
+    }
+
+
+    .cta-buttons {
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+
+    .achievements-cta .primary-btn,
+    .achievements-cta .secondary-btn {
+        width: 100%;
+
+        max-width: 320px;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .achievements-cta {
+        padding: 60px 18px;
+    }
+
+
+    .achievements-cta h2 {
+        font-size: 34px;
+    }
+
+
+    .achievements-cta .section-label {
+        font-size: 12px;
+
+        letter-spacing: 1.5px;
+    }
+
+}
+/* =========================================================
+   GOVERNANCE TRANSFORMATION
+========================================================= */
+
+.section-hero {
+    max-width: 900px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.section-hero .section-label {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.section-hero h2 {
+    margin: 0 0 18px;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.section-hero h2 span {
+    display: block;
+    color: var(--primary);
+}
+
+.section-hero p {
+    max-width: 760px;
+    margin: 0 auto;
+    color: var(--text);
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   GOVERNANCE GRID
+========================================================= */
+
+.governance-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+
+/* =========================================================
+   GOVERNANCE CARD
+========================================================= */
+
+.governance-card {
+    position: relative;
+    display: flex;
+    gap: 22px;
+    padding: 30px;
+    background: var(--light);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: transform var(--transition),
+                box-shadow var(--transition);
+    overflow: hidden;
+}
+
+.governance-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--primary);
+}
+
+.governance-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =========================================================
+   GOVERNANCE NUMBER
+========================================================= */
+
+.governance-number {
+    flex: 0 0 55px;
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background: var(--primary);
+    color: var(--light);
+
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   GOVERNANCE CONTENT
+========================================================= */
+
+.governance-content {
+    flex: 1;
+}
+
+.governance-content .card-label {
+    display: block;
+    margin-bottom: 8px;
+
+    color: var(--secondary);
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.governance-content h3 {
+    margin: 0 0 12px;
+
+    color: var(--dark);
+    font-size: 1.35rem;
+    line-height: 1.3;
+}
+
+.governance-content p {
+    margin: 0 0 15px;
+
+    color: var(--text);
+    line-height: 1.75;
+}
+
+.governance-content ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.governance-content li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 8px;
+
+    color: var(--text);
+    line-height: 1.5;
+}
+
+.governance-content li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    color: var(--secondary);
+    font-weight: 800;
+}
+
+
+/* =========================================================
+   GOVERNANCE IMPACT
+========================================================= */
+
+.governance-impact {
+    margin-top: 55px;
+    padding: 55px 40px;
+
+    background: linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    border-radius: var(--radius);
+    color: var(--light);
+    text-align: center;
+
+    box-shadow: var(--shadow);
+}
+
+.impact-content {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.governance-impact .section-label {
+    color: var(--light);
+}
+
+.governance-impact h3 {
+    margin: 12px 0 15px;
+
+    font-size: clamp(1.7rem, 3vw, 2.5rem);
+    line-height: 1.25;
+}
+
+.governance-impact p {
+    max-width: 750px;
+    margin: 0 auto;
+
+    line-height: 1.8;
+    opacity: 0.95;
+}
+
+
+/* =========================================================
+   GOVERNANCE RESPONSIVE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .governance-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .governance-card {
+        padding: 25px 20px;
+    }
+
+    .governance-number {
+        flex-basis: 48px;
+        width: 48px;
+        height: 48px;
+    }
+
+    .governance-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .governance-impact {
+        padding: 40px 25px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .section-hero {
+        margin-bottom: 35px;
+    }
+
+    .governance-card {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .governance-number {
+        flex-basis: auto;
+    }
+
+    .governance-impact {
+        padding: 35px 20px;
+    }
+
+}
+/* =========================================================
+   LEGISLATIVE RECORD
+   ========================================================= */
+
+.legislative-record {
+    width: 100%;
+    padding: 100px 0;
+    background: #f5f8f6;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+.legislative-header {
+    max-width: 900px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.legislative-header .section-label {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: #008451;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.legislative-header h2 {
+    margin: 0 0 22px;
+    color: #102a24;
+    font-size: clamp(42px, 6vw, 72px);
+    line-height: 1.05;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+
+.legislative-header h2 span {
+    display: block;
+    color: #f2b400;
+}
+
+.legislative-header p {
+    max-width: 780px;
+    margin: 0 auto;
+    color: #53645f;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   STATISTICS
+   ========================================================= */
+
+.legislative-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.legislative-stat {
+    padding: 30px 20px;
+    background: #ffffff;
+    border-radius: 18px;
+    text-align: center;
+    border: 1px solid #e1ebe6;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.05);
+}
+
+.legislative-stat strong {
+    display: block;
+    margin-bottom: 8px;
+    color: #008451;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.legislative-stat span {
+    color: #5a6a64;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   YEAR RECORD
+   ========================================================= */
+
+.legislative-years {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin-bottom: 70px;
+}
+
+.legislative-year-card {
+    padding: 22px 15px;
+    background: #102a24;
+    border-radius: 14px;
+    text-align: center;
+}
+
+.legislative-year-card strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #f2b400;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.legislative-year-card span {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   INTRODUCTION
+   ========================================================= */
+
+.legislative-content {
+    margin-bottom: 55px;
+}
+
+.legislative-intro {
+    max-width: 800px;
+    margin-bottom: 35px;
+}
+
+.legislative-intro .content-label {
+    display: inline-block;
+    margin-bottom: 12px;
+    color: #008451;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+
+.legislative-intro h3 {
+    margin: 0 0 15px;
+    color: #102a24;
+    font-size: 35px;
+    line-height: 1.2;
+}
+
+.legislative-intro p {
+    margin: 0;
+    color: #53645f;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   LEGISLATIVE GRID
+   ========================================================= */
+
+.legislative-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+
+/* =========================================================
+   LEGISLATIVE CARD
+   ========================================================= */
+
+.legislative-card {
+    display: grid;
+    grid-template-columns: 65px minmax(0, 1fr);
+    gap: 20px;
+
+    min-width: 0;
+
+    padding: 30px;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    border-top: 4px solid #008451;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+    box-sizing: border-box;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.legislative-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 38px rgba(0, 0, 0, 0.09);
+}
+
+
+/* =========================================================
+   ICON
+   ========================================================= */
+
+.legislative-icon {
+    width: 58px;
+    height: 58px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #e4f5ee;
+
+    border-radius: 15px;
+
+    font-size: 27px;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   CARD CONTENT
+   ========================================================= */
+
+.legislative-card-label {
+    display: block;
+    margin-bottom: 8px;
+
+    color: #008451;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    line-height: 1.4;
+}
+
+.legislative-card h3 {
+    margin: 0 0 15px;
+
+    color: #102a24;
+
+    font-size: 23px;
+    font-weight: 800;
+
+    line-height: 1.25;
+
+    overflow-wrap: break-word;
+}
+
+
+/* =========================================================
+   CARD LIST
+   ========================================================= */
+
+.legislative-card ul {
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.legislative-card li {
+    position: relative;
+
+    margin-bottom: 9px;
+
+    padding-left: 20px;
+
+    color: #53645f;
+
+    font-size: 14px;
+
+    line-height: 1.55;
+}
+
+.legislative-card li:last-child {
+    margin-bottom: 0;
+}
+
+.legislative-card li::before {
+    content: "✓";
+
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    color: #f2b400;
+
+    font-weight: 900;
+}
+
+
+/* =========================================================
+   LEGISLATIVE HIGHLIGHT
+   ========================================================= */
+
+.legislative-highlight {
+    position: relative;
+
+    margin-top: 65px;
+
+    padding: 55px;
+
+    background: #008451;
+
+    border-radius: 24px;
+
+    text-align: center;
+
+    overflow: hidden;
+
+    box-sizing: border-box;
+}
+
+.legislative-highlight::before {
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    left: -90px;
+    top: -100px;
+
+    border-radius: 50%;
+
+    background: rgba(242, 180, 0, 0.12);
+}
+
+.legislative-highlight::after {
+    content: "";
+
+    position: absolute;
+
+    width: 180px;
+    height: 180px;
+
+    right: -70px;
+    bottom: -90px;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.legislative-highlight .section-label,
+.legislative-highlight h3,
+.legislative-highlight p {
+    position: relative;
+    z-index: 2;
+}
+
+.legislative-highlight .section-label {
+    display: inline-block;
+
+    margin-bottom: 15px;
+
+    color: #f2b400;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+.legislative-highlight h3 {
+    max-width: 850px;
+
+    margin: 0 auto 18px;
+
+    color: #ffffff;
+
+    font-size: clamp(30px, 4vw, 48px);
+
+    line-height: 1.15;
+
+    font-weight: 800;
+}
+
+.legislative-highlight p {
+    max-width: 780px;
+
+    margin: 0 auto;
+
+    color: rgba(255, 255, 255, 0.88);
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   SOURCE
+   ========================================================= */
+
+.legislative-source {
+    margin-top: 25px;
+
+    padding: 18px 20px;
+
+    background: #ffffff;
+
+    border-left: 4px solid #f2b400;
+
+    border-radius: 8px;
+
+    color: #52635d;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+.legislative-source strong {
+    color: #102a24;
+}
+
+.legislative-source span {
+    display: block;
+    margin-top: 5px;
+    color: #7a8580;
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+    .legislative-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .legislative-years {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .legislative-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    .legislative-record {
+        padding: 70px 0;
+    }
+
+    .legislative-header {
+        margin-bottom: 45px;
+    }
+
+    .legislative-header h2 {
+        font-size: 40px;
+        letter-spacing: -1px;
+    }
+
+    .legislative-header p {
+        padding: 0 10px;
+        font-size: 15px;
+    }
+
+    .legislative-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .legislative-years {
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 50px;
+    }
+
+    .legislative-intro h3 {
+        font-size: 28px;
+    }
+
+    .legislative-card {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 28px 22px;
+    }
+
+    .legislative-icon {
+        width: 55px;
+        height: 55px;
+    }
+
+    .legislative-card h3 {
+        font-size: 22px;
+    }
+
+    .legislative-highlight {
+        padding: 40px 22px;
+    }
+
+    .legislative-highlight h3 {
+        font-size: 30px;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 430px) {
+
+    .legislative-years {
+        grid-template-columns: 1fr;
+    }
+
+    .legislative-stat {
+        padding: 25px 15px;
+    }
+
+    .legislative-header h2 {
+        font-size: 35px;
+    }
+
+    .legislative-highlight h3 {
+        font-size: 27px;
+    }
+
+}
+/* =========================================================
+   LEGISLATIVE LAWS
+========================================================= */
+
+.legislative-laws {
+    width: 100%;
+    padding: 100px 0;
+    background: #f5f8f6;
+}
+
+.legislative-laws .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.legislative-law-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.legislative-law-card {
+    display: flex;
+    gap: 22px;
+    min-width: 0;
+    padding: 28px;
+    background: #ffffff;
+    border-radius: 18px;
+    border-left: 4px solid #008451;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.06);
+    box-sizing: border-box;
+    transition: 0.3s ease;
+}
+
+.legislative-law-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 35px rgba(0, 0, 0, 0.10);
+}
+
+.law-number {
+    flex: 0 0 75px;
+    color: #008451;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.4;
+}
+
+.law-content {
+    min-width: 0;
+}
+
+.law-year {
+    display: inline-block;
+    margin-bottom: 7px;
+    padding: 5px 10px;
+    background: #e5f5ee;
+    border-radius: 6px;
+    color: #008451;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.law-category {
+    display: block;
+    margin-bottom: 10px;
+    color: #f2b400;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.legislative-law-card h3 {
+    margin: 0;
+    color: #263a33;
+    font-size: 16px;
+    line-height: 1.7;
+    font-weight: 600;
+    overflow-wrap: break-word;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .legislative-law-list {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .legislative-laws {
+        padding: 70px 0;
+    }
+
+    .legislative-laws .container {
+        padding: 0 15px;
+    }
+
+    .legislative-law-card {
+        flex-direction: column;
+        gap: 12px;
+        padding: 24px 20px;
+    }
+
+    .law-number {
+        flex: none;
+    }
+
+    .legislative-law-card h3 {
+        font-size: 15px;
+    }
+
+}
+/* =========================================================
+   LEGISLATIVE RECORD
+   2015 - 2019
+========================================================= */
+
+.legislative-section {
+    width: 100%;
+    padding: 90px 0;
+    background: #f5f8f6;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   LEGISLATIVE HEADER
+========================================================= */
+
+.legislative-section .section-hero {
+    max-width: 900px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.legislative-section .section-label {
+    display: inline-block;
+    margin-bottom: 16px;
+
+    color: #008451;
+
+    font-size: 13px;
+    font-weight: 800;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.legislative-section .section-hero h2 {
+    margin: 0 0 20px;
+
+    color: #102a24;
+
+    font-size: clamp(38px, 5vw, 62px);
+    font-weight: 800;
+
+    line-height: 1.08;
+    letter-spacing: -1.5px;
+}
+
+.legislative-section .section-hero h2 span {
+    display: block;
+    color: #f2b400;
+}
+
+.legislative-section .section-hero p {
+    max-width: 760px;
+    margin: 0 auto;
+
+    color: #53645f;
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   LEGISLATIVE SUMMARY
+========================================================= */
+
+.legislative-summary {
+    display: grid;
+
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 20px;
+
+    max-width: 1000px;
+
+    margin: 0 auto 35px;
+}
+
+.legislative-stat {
+    padding: 25px;
+
+    background: #ffffff;
+
+    border-radius: 16px;
+
+    text-align: center;
+
+    border: 1px solid rgba(0, 132, 81, 0.08);
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+
+    box-sizing: border-box;
+}
+
+.legislative-stat strong {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #008451;
+
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.legislative-stat span {
+    color: #53645f;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================================================
+   LEGISLATIVE CONTROLS
+========================================================= */
+
+.legislative-controls {
+    display: grid;
+
+    grid-template-columns:
+        minmax(150px, 0.8fr)
+        minmax(180px, 1fr)
+        minmax(250px, 1.5fr);
+
+    gap: 15px;
+
+    max-width: 1000px;
+
+    margin: 0 auto 35px;
+}
+
+.legislative-controls select,
+.legislative-controls input {
+    width: 100%;
+
+    min-height: 50px;
+
+    padding: 0 16px;
+
+    background: #ffffff;
+
+    color: #102a24;
+
+    border: 1px solid #dce7e2;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    box-sizing: border-box;
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.legislative-controls select:focus,
+.legislative-controls input:focus {
+    border-color: #008451;
+
+    box-shadow:
+        0 0 0 3px rgba(0, 132, 81, 0.10);
+}
+
+.legislative-controls input::placeholder {
+    color: #8a9994;
+}
+
+
+/* =========================================================
+   LEGISLATIVE GRID
+========================================================= */
+
+.legislative-laws-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 22px;
+
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   LEGISLATIVE CARD
+========================================================= */
+
+.legislative-law-card {
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-width: 0;
+
+    min-height: 300px;
+
+    padding: 28px;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    border-left: 4px solid #008451;
+
+    box-shadow:
+        0 10px 28px rgba(0, 0, 0, 0.06);
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.legislative-law-card::after {
+    content: "";
+
+    position: absolute;
+
+    width: 120px;
+    height: 120px;
+
+    right: -55px;
+    bottom: -55px;
+
+    border-radius: 50%;
+
+    background: rgba(0, 132, 81, 0.045);
+
+    pointer-events: none;
+}
+
+.legislative-law-card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 18px 38px rgba(0, 0, 0, 0.10);
+}
+
+
+/* =========================================================
+   LAW CARD TOP
+========================================================= */
+
+.law-card-top {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 22px;
+}
+
+.law-number {
+    display: inline-flex;
+
+    align-items: center;
+
+    min-height: 32px;
+
+    padding: 0 11px;
+
+    background: #e4f5ee;
+
+    color: #008451;
+
+    border-radius: 7px;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.8px;
+
+    white-space: nowrap;
+}
+
+.law-year {
+    color: #f2b400;
+
+    font-size: 16px;
+
+    font-weight: 800;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   LAW CARD CONTENT
+========================================================= */
+
+.law-card-content {
+    position: relative;
+
+    z-index: 2;
+
+    flex: 1;
+
+    min-width: 0;
+}
+
+.law-category {
+    display: inline-block;
+
+    margin-bottom: 10px;
+
+    color: #008451;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.3px;
+
+    line-height: 1.4;
+
+    text-transform: uppercase;
+}
+
+.law-card-content h3 {
+    margin: 0;
+
+    color: #102a24;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    line-height: 1.55;
+
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================================================
+   LAW CARD FOOTER
+========================================================= */
+
+.law-card-footer {
+    position: relative;
+
+    z-index: 2;
+
+    margin-top: 25px;
+
+    padding-top: 17px;
+
+    border-top: 1px solid #edf2ef;
+}
+
+.law-status {
+    display: inline-flex;
+
+    align-items: center;
+
+    min-height: 28px;
+
+    padding: 0 10px;
+
+    border-radius: 6px;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 0.5px;
+}
+
+.status-recorded {
+    background: #e9f7ef;
+
+    color: #087443;
+}
+
+.status-verification {
+    background: #fff5d9;
+
+    color: #9a7000;
+}
+
+
+/* =========================================================
+   EMPTY RESULT
+========================================================= */
+
+.legislative-empty {
+    grid-column: 1 / -1;
+
+    padding: 60px 25px;
+
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.empty-icon {
+    margin-bottom: 15px;
+
+    font-size: 40px;
+}
+
+.legislative-empty h3 {
+    margin: 0 0 10px;
+
+    color: #102a24;
+
+    font-size: 22px;
+}
+
+.legislative-empty p {
+    margin: 0;
+
+    color: #53645f;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .legislative-laws-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .legislative-controls {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .legislative-controls input {
+        grid-column: 1 / -1;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 700px) {
+
+    .legislative-section {
+        padding: 65px 0;
+    }
+
+    .legislative-section .section-hero {
+        margin-bottom: 40px;
+    }
+
+    .legislative-section .section-hero h2 {
+        font-size: 40px;
+
+        letter-spacing: -1px;
+    }
+
+    .legislative-section .section-hero p {
+        padding: 0 15px;
+
+        font-size: 15px;
+    }
+
+    .legislative-summary {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+
+        margin-bottom: 25px;
+    }
+
+    .legislative-stat {
+        padding: 20px;
+    }
+
+    .legislative-stat strong {
+        font-size: 28px;
+    }
+
+    .legislative-controls {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+    .legislative-controls input {
+        grid-column: auto;
+    }
+
+    .legislative-laws-grid {
+        gap: 18px;
+    }
+
+    .legislative-law-card {
+        min-height: auto;
+
+        padding: 24px 22px;
+    }
+
+    .law-card-content h3 {
+        font-size: 17px;
+
+        line-height: 1.55;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 450px) {
+
+    .legislative-section .section-hero h2 {
+        font-size: 34px;
+    }
+
+    .legislative-law-card {
+        padding: 22px 18px;
+    }
+
+    .law-card-top {
+        align-items: flex-start;
+    }
+
+    .law-number {
+        font-size: 10px;
+    }
+
+    .law-year {
+        font-size: 14px;
+    }
+
+    .law-card-content h3 {
+        font-size: 16px;
+    }
+
+}
